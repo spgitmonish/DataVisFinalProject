@@ -1,0 +1,356 @@
+<!--
+1. Use Avg Debt for changing the color
+2. Use Per Debt to change the size of the circle which points to the capital
+3. That way one can display two things at once
+-->
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8">
+    <style>
+        .legend {
+            font-size: 12px;
+        }
+        rect {
+            stroke-width: 2;
+        }
+
+        h2 {
+          text-align: center;
+          color: black;
+        }
+    </style>
+<head>
+    <!-- Add D3 and TopoJSON libraries. -->
+    <script src = "http://d3js.org/d3.v3.min.js" > </script>
+    <script src = "http://d3js.org/topojson.v1.min.js"> </script>
+
+    <!-- Add D3 Scripting here. -->
+    <script type="text/javascript">
+        function draw(error, us_states) {
+            if (error) {
+                return console.error(error);
+            } else {
+                console.log(us_states);
+            }
+
+            d3.select("body")
+              .append("h2")
+              .text("Year ");
+
+            // Define width and height for SVG canvas.
+            var width = 1300;
+            var height = 800;
+
+            // Append SVG canvas to the DOM.
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append('g')
+                .attr('class', 'map');
+
+            // Define the variable states.
+            // Assign the "states" variable to the GeoJSON feature collection("geometric collection") for the specified topology object.
+            // While TopoJSON data is stored more efficiently, we need to convert back to GeoJSON for display purposes.
+            // The function "topojson.feature" is used to return the GeoJSON Feature or FeatureCollection for the specified object in the given topology.
+            var statesOne = topojson.feature(us_states, us_states.objects.states);
+            var statesTwo = statesOne;
+
+            var usStates = [
+                { name: 'ALABAMA', abbreviation: 'AL'},
+                { name: 'ALASKA', abbreviation: 'AK'},
+                { name: 'AMERICAN SAMOA', abbreviation: 'AS'},
+                { name: 'ARIZONA', abbreviation: 'AZ'},
+                { name: 'ARKANSAS', abbreviation: 'AR'},
+                { name: 'CALIFORNIA', abbreviation: 'CA'},
+                { name: 'COLORADO', abbreviation: 'CO'},
+                { name: 'CONNECTICUT', abbreviation: 'CT'},
+                { name: 'DELAWARE', abbreviation: 'DE'},
+                { name: 'DISTRICT OF COLUMBIA', abbreviation: 'DC'},
+                { name: 'FEDERATED STATES OF MICRONESIA', abbreviation: 'FM'},
+                { name: 'FLORIDA', abbreviation: 'FL'},
+                { name: 'GEORGIA', abbreviation: 'GA'},
+                { name: 'GUAM', abbreviation: 'GU'},
+                { name: 'HAWAII', abbreviation: 'HI'},
+                { name: 'IDAHO', abbreviation: 'ID'},
+                { name: 'ILLINOIS', abbreviation: 'IL'},
+                { name: 'INDIANA', abbreviation: 'IN'},
+                { name: 'IOWA', abbreviation: 'IA'},
+                { name: 'KANSAS', abbreviation: 'KS'},
+                { name: 'KENTUCKY', abbreviation: 'KY'},
+                { name: 'LOUISIANA', abbreviation: 'LA'},
+                { name: 'MAINE', abbreviation: 'ME'},
+                { name: 'MARSHALL ISLANDS', abbreviation: 'MH'},
+                { name: 'MARYLAND', abbreviation: 'MD'},
+                { name: 'MASSACHUSETTS', abbreviation: 'MA'},
+                { name: 'MICHIGAN', abbreviation: 'MI'},
+                { name: 'MINNESOTA', abbreviation: 'MN'},
+                { name: 'MISSISSIPPI', abbreviation: 'MS'},
+                { name: 'MISSOURI', abbreviation: 'MO'},
+                { name: 'MONTANA', abbreviation: 'MT'},
+                { name: 'NEBRASKA', abbreviation: 'NE'},
+                { name: 'NEVADA', abbreviation: 'NV'},
+                { name: 'NEW HAMPSHIRE', abbreviation: 'NH'},
+                { name: 'NEW JERSEY', abbreviation: 'NJ'},
+                { name: 'NEW MEXICO', abbreviation: 'NM'},
+                { name: 'NEW YORK', abbreviation: 'NY'},
+                { name: 'NORTH CAROLINA', abbreviation: 'NC'},
+                { name: 'NORTH DAKOTA', abbreviation: 'ND'},
+                { name: 'NORTHERN MARIANA ISLANDS', abbreviation: 'MP'},
+                { name: 'OHIO', abbreviation: 'OH'},
+                { name: 'OKLAHOMA', abbreviation: 'OK'},
+                { name: 'OREGON', abbreviation: 'OR'},
+                { name: 'PALAU', abbreviation: 'PW'},
+                { name: 'PENNSYLVANIA', abbreviation: 'PA'},
+                { name: 'PUERTO RICO', abbreviation: 'PR'},
+                { name: 'RHODE ISLAND', abbreviation: 'RI'},
+                { name: 'SOUTH CAROLINA', abbreviation: 'SC'},
+                { name: 'SOUTH DAKOTA', abbreviation: 'SD'},
+                { name: 'TENNESSEE', abbreviation: 'TN'},
+                { name: 'TEXAS', abbreviation: 'TX'},
+                { name: 'UTAH', abbreviation: 'UT'},
+                { name: 'VERMONT', abbreviation: 'VT'},
+                { name: 'VIRGIN ISLANDS', abbreviation: 'VI'},
+                { name: 'VIRGINIA', abbreviation: 'VA'},
+                { name: 'WASHINGTON', abbreviation: 'WA'},
+                { name: 'WEST VIRGINIA', abbreviation: 'WV'},
+                { name: 'WISCONSIN', abbreviation: 'WI'},
+                { name: 'WYOMING', abbreviation: 'WY' }
+            ];
+
+            // "states" is an object which has a "type"(FeatureCollection) and a "features" array which is a collection of objects one for each
+            // US State, this includes Washington DC
+            console.log(statesOne);
+
+            // Create a projection suited to fit the US (pre-defined in the library).
+            // A projection simply describes how you want to view your specified area of the globe.
+            // Spherical coordinates are projected onto the Cartesian plane (our canvas).
+            // Projections can be rotated, scaled, transformed, translated etc.
+            var projectionOne = d3.geo.albersUsa()
+                .translate([(width) / 2, height * 0.4])
+                .scale(1400);
+
+            var projectionTwo = d3.geo.albersUsa()
+                .translate([(width + 150) / 2, height * 0.5])
+                .scale(700);
+
+            // Create a path generator to draw lines around US, state borders.
+            // Path generators take in a geometry/features object and create a path to be used for outline rendering.
+            // Use our previously-defined projection.
+            // NOTE: The primary mechanism for displaying geographic data is d3.geo.path.
+            //       It generates the path data string suitable for the "d" attribute of an SVG path element.
+            //       The d3.geo.path class can render directly to Canvas, which may offer better performance when animating the projection.
+            var pathOne = d3.geo.path().projection(projectionOne);
+            var pathTwo = d3.geo.path().projection(projectionTwo);
+
+            // Append the newly-created path generator to the map.
+            var mapOne = svg.selectAll('path')
+                .data(statesOne)
+                .enter()
+                .append('path')
+                .attr('d', pathOne);
+
+            var mapTwo = svg.selectAll('path')
+                .data(statesTwo)
+                .enter()
+                .append('path')
+                .attr('d', pathTwo);
+
+            // Create state boundaries and coloring.
+            // Create and select elements for each state.
+            // The states.features data creates a specific path (boundary) for each state which is then appended.
+            svg.selectAll('.states')
+               .data(statesOne.features)
+               .enter()
+               .append('path')
+               .attr('id', function(d) {
+                   var reg = new RegExp(" ","g");
+                   return d.id.replace(reg,"");
+               })
+               .attr('d', pathOne)
+               .style('fill', "white")
+               .style('stroke', "black");
+
+            // Add the names of the states into the map
+            svg.selectAll("text")
+               .data(statesOne.features)
+               .enter()
+               .append("svg:text")
+               .text(function(d){
+                   var stateAbbr = "";
+                   usStates.forEach(function(state){
+                       if( (state.name.toString().toLowerCase() ) == (d.id.toString().toLowerCase()) )
+                       {
+                           console.log(state.abbreviation.toString());
+                           stateAbbr = state.abbreviation.toString();
+                       }
+                   });
+                   return stateAbbr;
+               })
+               .attr("x", function(d){
+                   return pathOne.centroid(d)[0];
+               })
+               .attr("y", function(d){
+                   return  pathOne.centroid(d)[1];
+               })
+               .attr("text-anchor","middle")
+               .attr('font-size','8pt');
+
+            var legend = svg.append("g")
+                            .attr("class", "legend")
+                            .attr("height", 100)
+                            .attr("width", 100);
+
+            debugger;
+
+            /*svg.selectAll('.states')
+               .data(statesTwo.features)
+               .enter()
+               .append('path')
+               .attr('class', function(d) {
+                   return d.id;
+               })
+               .attr('d', pathTwo)
+               .style('fill', "lightBlue")
+               .style('stroke', "black");*/
+
+            // This is the callback function which is called when
+            // d3.csv is called after loading the data
+            function plot_points(data){
+                // Parse each row in the CSV file
+                debtData = data.map(function(d){
+                    return{
+                        'state': d['Name'],
+                        'year': d['Year'],
+                        'avgdebt': d['Average debt of graduates'],
+                        'perdebt': d['Percent of graduates with debt'],
+                        'schooltype': d['Public or Private']
+                    }
+                });
+
+                // Call a function which plots the data
+                var yearsArray = ["2003-04", "2004-05", "2005-06", "2006-07",
+                                  "2007-08", "2008-09", "2009-10", "2010-11",
+                                  "2011-12", "2012-13"];
+
+                var yearIndex = 0;
+
+                var yearInterval = setInterval(function() {
+                    modify(debtData, yearsArray[yearIndex]);
+
+                    yearIndex++;
+
+                    if(yearIndex >= yearsArray.length) {
+                        clearInterval(yearInterval);
+                    }
+                }, 2000);
+            };
+
+            function modify(debtData, year){
+                var filtered = debtData.filter(function(d) {
+                    return d.year === year && d.schooltype == "Public";
+                });
+
+                d3.select("h2")
+                  .text("Year: " + year);
+
+                // This array is just for figuring out the max and min values
+                // of Average Debt
+                /*var avgDebtArray = [];
+
+                filtered.forEach(function(d) {
+                    console.log("State: " + d.state + ", " + d.perdebt);
+                    if(!isNaN(d.avgdebt)){
+                        avgDebtArray.push(d.avgdebt);
+                    }
+                });
+                //console.log(avgDebtArray);
+
+                // Get the maximum value of 'avgdebt'
+                var avgDebtMax = d3.max(avgDebtArray);
+                console.log("Max:" + avgDebtMax);
+
+                // Get the minimum value of 'avgdebt'
+                var avgDebtMin = d3.min(avgDebtArray);
+                console.log("Min:" + avgDebtMin);
+
+                // Create a scale with the specified domain and range
+                var avgDebtScale = d3.scale.linear()
+                                           .domain([avgDebtMin, avgDebtMax])
+                                           .range([1, 10]);
+
+                console.log("Avg Debt(max scaled):" + avgDebtScale(avgDebtMax));
+                console.log("Avg Debt(min scaled):" + avgDebtScale(avgDebtMin));
+
+                // Create a custom color range for our map
+                var colorMap = d3.scale.linear()
+                                       .domain([avgDebtMin, avgDebtMax])
+                                       .range(['#00FF00', '#FF0000']);*/
+
+                var colorMap = d3.scale.linear()
+                                       .domain([0, 1])
+                                       .range(['#00FF00', '#FF0000']);
+
+                // Create a custom array for our legend
+                var legendData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+                // This is for our custom legend
+                var legendRectSize = 18;
+                var legendSpacing = 1;
+
+                var legend = svg.selectAll('.legend')
+                                .data(legendData)
+                                .enter()
+                                .append('g')
+                                .attr('class', 'legend')
+                                .attr('transform', function(d, i) {
+                                    var height = legendRectSize + legendSpacing;
+                                    var offset = height * colorMap.domain().length / 2;
+                                    var horz = legendRectSize;
+                                    var vert = 125 + i * height - offset;
+                                    return 'translate(' + horz + ',' + vert + ')';
+                                });
+
+                legend.append('rect')
+                      .attr('width', legendRectSize)
+                      .attr('height', legendRectSize)
+                      .style('fill', function(d){
+                          return colorMap(d/10);
+                      });
+
+                legend.append('text')
+                      .attr('x', legendRectSize + legendSpacing)
+                      .attr('y', legendRectSize - legendSpacing)
+                      .text(function(d) { return (d - 1) * 10 + " to " + d * 10 + "%" });
+
+                filtered.forEach(function(d){
+                    var reg = new RegExp(" ","g");
+                    var stateName =  d.state.replace(reg,"");
+
+                    d3.select("#" + stateName)
+                      .style("fill", function(parameter){
+                          if(!isNaN(d.perdebt)){
+                              console.log("State(" + d.state + "):" + d.perdebt);
+                              var colorSet = colorMap(d.perdebt);
+                              return colorSet;
+                          }
+                    });
+               });
+            };
+
+            // Load the student debt data and use the callback to analyze
+            // the data
+            d3.csv("StudentDebt.csv", plot_points);
+        };
+    </script>
+</head>
+<body>
+    <button id="Private" value="Private">Private</button>
+    <button id="Public" value="Public">Public</button>
+    <script type="text/javascript">
+        // Use D3's JSON method to load in TopoJSON data and pass
+        // in a callback function draw to it.
+        d3.json("convertedstates.json", draw);
+    </script>
+</body>
+</html>
