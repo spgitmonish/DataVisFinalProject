@@ -181,17 +181,39 @@
                    usStates.forEach(function(state){
                        if( (state.name.toString().toLowerCase() ) == (d.id.toString().toLowerCase()) )
                        {
-                           console.log(state.abbreviation.toString());
                            stateAbbr = state.abbreviation.toString();
                        }
                    });
                    return stateAbbr;
                })
                .attr("x", function(d){
-                   return pathOne.centroid(d)[0];
+                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware")
+                   {
+                       return pathOne.centroid(d)[0] + 60;
+                   }
+                   else
+                   {
+                       return pathOne.centroid(d)[0];
+                   }
                })
                .attr("y", function(d){
-                   return  pathOne.centroid(d)[1];
+                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware")
+                   {
+                       var point1 = pathOne.centroid(d)[0];
+                       var point2 = pathOne.centroid(d)[1];
+                       svg.append("line")
+                          .attr('x1', point1)
+                          .attr('y1', point2)
+                          .attr('x2', point1 + 50)
+                          .attr('y2', point2 + 50)
+                          .attr("stroke-width", 2)
+                          .attr("stroke", "black");
+                      return  pathOne.centroid(d)[1] + 60;
+                   }
+                   else
+                   {
+                      return  pathOne.centroid(d)[1];
+                   }
                })
                .attr("text-anchor","middle")
                .attr('font-size','8pt');
@@ -228,6 +250,31 @@
                     }
                 });
 
+                // This array is just for figuring out the max and min values
+                // of Average Debt
+                var avgDebtArray = [];
+
+                debtData.forEach(function(d) {
+                    if(!isNaN(d.avgdebt)){
+                        avgDebtArray.push(Number(d.avgdebt));
+                    }
+                });
+                console.log(avgDebtArray);
+
+                // Get the maximum value of 'avgdebt'
+                var avgDebtMax = d3.max(avgDebtArray);
+                console.log("Max:" + avgDebtMax);
+
+                // Get the minimum value of 'avgdebt'
+                var avgDebtMin = d3.min(avgDebtArray);
+                console.log("Min:" + avgDebtMin);
+
+                console.log( ( parseInt(avgDebtMax / 5000) ) * 5000 + 5000);
+                console.log( ( parseInt(avgDebtMin / 5000) ) * 5000);
+
+                avgDebtMax = parseInt(avgDebtMax / 5000) * 5000 + 5000;
+                avgDebtMin = parseInt(avgDebtMin / 5000) * 5000;
+
                 // Call a function which plots the data
                 var yearsArray = ["2003-04", "2004-05", "2005-06", "2006-07",
                                   "2007-08", "2008-09", "2009-10", "2010-11",
@@ -248,51 +295,31 @@
 
             function modify(debtData, year){
                 var filtered = debtData.filter(function(d) {
-                    return d.year === year && d.schooltype == "Public";
+                    return d.year === year && d.schooltype == "Private";
                 });
 
                 d3.select("h2")
                   .text("Year: " + year);
 
-                // This array is just for figuring out the max and min values
-                // of Average Debt
-                /*var avgDebtArray = [];
+                var colorMap = d3.scale.category10();
+                colorMap.domain([0, 1]);
 
-                filtered.forEach(function(d) {
-                    console.log("State: " + d.state + ", " + d.perdebt);
-                    if(!isNaN(d.avgdebt)){
-                        avgDebtArray.push(d.avgdebt);
-                    }
-                });
-                //console.log(avgDebtArray);
-
-                // Get the maximum value of 'avgdebt'
-                var avgDebtMax = d3.max(avgDebtArray);
-                console.log("Max:" + avgDebtMax);
-
-                // Get the minimum value of 'avgdebt'
-                var avgDebtMin = d3.min(avgDebtArray);
-                console.log("Min:" + avgDebtMin);
-
-                // Create a scale with the specified domain and range
-                var avgDebtScale = d3.scale.linear()
-                                           .domain([avgDebtMin, avgDebtMax])
-                                           .range([1, 10]);
-
-                console.log("Avg Debt(max scaled):" + avgDebtScale(avgDebtMax));
-                console.log("Avg Debt(min scaled):" + avgDebtScale(avgDebtMin));
-
-                // Create a custom color range for our map
-                var colorMap = d3.scale.linear()
-                                       .domain([avgDebtMin, avgDebtMax])
-                                       .range(['#00FF00', '#FF0000']);*/
-
-                var colorMap = d3.scale.linear()
-                                       .domain([0, 1])
-                                       .range(['#00FF00', '#FF0000']);
-
-                // Create a custom array for our legend
+                // Create a custom array for our legend(10 ranges)
                 var legendData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+                var avgDebtDict = [
+                    { rangeMin: '0000', rangeMax: '4999'},
+                    { rangeMin: '5000', rangeMax: '9999'},
+                    { rangeMin: '10000', rangeMax: '14999'},
+                    { rangeMin: '15000', rangeMax: '19999'},
+                    { rangeMin: '20000', rangeMax: '24999'},
+                    { rangeMin: '25000', rangeMax: '29999'},
+                    { rangeMin: '30000', rangeMax: '34999'},
+                    { rangeMin: '35000', rangeMax: '39999'},
+                    { rangeMin: '40000', rangeMax: '44999'},
+                    { rangeMin: '45000', rangeMax: '49999'},
+                    { rangeMin: '50000', rangeMax: '54999'},
+                ]
 
                 // This is for our custom legend
                 var legendRectSize = 18;
@@ -321,7 +348,10 @@
                 legend.append('text')
                       .attr('x', legendRectSize + legendSpacing)
                       .attr('y', legendRectSize - legendSpacing)
-                      .text(function(d) { return (d - 1) * 10 + " to " + d * 10 + "%" });
+                      .text(function(d, i) {
+                          console.log("Index:" + i);
+                          return "$" + avgDebtDict[i].rangeMin + " to $" + avgDebtDict[i].rangeMax;
+                      });
 
                 filtered.forEach(function(d){
                     var reg = new RegExp(" ","g");
@@ -329,11 +359,22 @@
 
                     d3.select("#" + stateName)
                       .style("fill", function(parameter){
-                          if(!isNaN(d.perdebt)){
+                          /*if(!isNaN(d.perdebt)){
                               console.log("State(" + d.state + "):" + d.perdebt);
                               var colorSet = colorMap(d.perdebt);
                               return colorSet;
+                          }*/
+                          var colorSet;
+                          if(!isNaN(d.avgdebt)){
+                              console.log("State(" + d.state + "):" + d.avgdebt);
+                              avgDebtDict.forEach(function(amount, index){
+                                  if(parseInt(d.avgdebt) >= parseInt(amount.rangeMin) && parseInt(d.avgdebt) <= parseInt(amount.rangeMax))
+                                  {
+                                      colorSet = colorMap(index/10);
+                                  }
+                              });
                           }
+                          return colorSet;
                     });
                });
             };

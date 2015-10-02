@@ -1,645 +1,81 @@
 Name,Year,Average debt of graduates,Percent of graduates with debt,Average debt of graduates in federal loans,Percent of graduates borrowing federal loans,Public or Private
-Alabama,2003-04,20051,0.72,N/A,N/A,Private
-Alabama,2003-04,17601,0.54,N/A,N/A,Public
-Alabama,2004-05,20837,0.71,N/A,N/A,Private
-Alabama,2004-05,17948,0.56,N/A,N/A,Public
-Alabama,2005-06,21120,0.75,N/A,N/A,Private
-Alabama,2005-06,20179,0.54,N/A,N/A,Public
-Alabama,2006-07,20867,0.71,N/A,N/A,Private
-Alabama,2006-07,21569,0.59,N/A,N/A,Public
-Alabama,2007-08,20469,0.71,21563,0.69,Private
-Alabama,2007-08,24799,0.49,21763,0.44,Public
-Alabama,2008-09,24011,0.55,25047,0.53,Private
-Alabama,2008-09,24009,0.51,19763,0.49,Public
-Alabama,2009-10,22383,0.64,19343,0.58,Private
-Alabama,2009-10,25388,0.55,21525,0.53,Public
-Alabama,2010-11,23435,0.69,21051,0.66,Private
-Alabama,2010-11,25920,0.51,21916,0.5,Public
-Alabama,2011-12,26067,0.75,23292,0.71,Private
-Alabama,2011-12,26544,0.5,23028,0.48,Public
-Alabama,2012-13,28267,0.63,25217,0.61,Private
-Alabama,2012-13,28994,0.53,25728,0.51,Public
 Alaska,2003-04,N/A,N/A,N/A,N/A,Private
-Alaska,2003-04,14770,0.47,N/A,N/A,Public
 Alaska,2004-05,N/A,N/A,N/A,N/A,Private
 Alaska,2004-05,N/A,N/A,N/A,N/A,Public
 Alaska,2005-06,N/A,N/A,N/A,N/A,Private
 Alaska,2005-06,N/A,N/A,N/A,N/A,Public
-Alaska,2006-07,10197,0.93,N/A,N/A,Private
-Alaska,2006-07,27063,0.5,N/A,N/A,Public
 Alaska,2007-08,N/A,N/A,N/A,N/A,Private
-Alaska,2007-08,28597,0.54,14740,0.45,Public
 Alaska,2008-09,N/A,N/A,N/A,N/A,Private
-Alaska,2008-09,24707,0.51,15316,0.48,Public
-Alaska,2009-10,31000,0.55,19450,0.55,Private
 Alaska,2009-10,N/A,N/A,N/A,N/A,Public
 Alaska,2010-11,N/A,N/A,N/A,N/A,Private
 Alaska,2010-11,N/A,N/A,N/A,N/A,Public
 Alaska,2011-12,N/A,N/A,N/A,N/A,Private
-Alaska,2011-12,30164,0.47,21792,0.46,Public
-Alaska,2012-13,9757,0.56,3921,0.54,Private
-Alaska,2012-13,29467,0.49,22737,0.47,Public
 Arizona,2003-04,N/A,N/A,N/A,N/A,Private
-Arizona,2003-04,17066,0.47,N/A,N/A,Public
 Arizona,2004-05,N/A,N/A,N/A,N/A,Private
-Arizona,2004-05,16795,0.54,N/A,N/A,Public
-Arizona,2005-06,49152,0.83,N/A,N/A,Private
-Arizona,2005-06,16762,0.47,N/A,N/A,Public
-Arizona,2006-07,54159,0.83,N/A,N/A,Private
-Arizona,2006-07,17186,0.46,N/A,N/A,Public
 Arizona,2007-08,N/A,N/A,N/A,N/A,Private
-Arizona,2007-08,17340,0.44,14648,0.44,Public
 Arizona,2008-09,N/A,N/A,N/A,N/A,Private
-Arizona,2008-09,17428,0.45,14325,0.44,Public
-Arizona,2009-10,7708,0.71,21048,0.7,Private
-Arizona,2009-10,18984,0.47,15711,0.46,Public
 Arizona,2010-11,N/A,N/A,N/A,N/A,Private
-Arizona,2010-11,20017,0.49,16787,0.49,Public
 Arizona,2011-12,N/A,N/A,N/A,N/A,Private
-Arizona,2011-12,20265,0.54,17868,0.55,Public
 Arizona,2012-13,N/A,N/A,N/A,N/A,Private
-Arizona,2012-13,22165,0.54,20491,0.56,Public
-Arkansas,2003-04,17380,0.6,N/A,N/A,Private
-Arkansas,2003-04,15402,0.58,N/A,N/A,Public
 Arkansas,2004-05,N/A,N/A,N/A,N/A,Private
-Arkansas,2004-05,17647,0.58,N/A,N/A,Public
 Arkansas,2005-06,N/A,N/A,N/A,N/A,Private
-Arkansas,2005-06,17969,0.56,N/A,N/A,Public
-Arkansas,2006-07,22381,0.73,N/A,N/A,Private
-Arkansas,2006-07,18615,0.54,N/A,N/A,Public
-Arkansas,2007-08,23545,0.65,17313,0.64,Private
-Arkansas,2007-08,16662,0.52,15649,0.52,Public
-Arkansas,2008-09,24304,0.68,19741,0.67,Private
-Arkansas,2008-09,17835,0.53,16751,0.53,Public
-Arkansas,2009-10,25087,0.65,20444,0.64,Private
-Arkansas,2009-10,19562,0.54,18278,0.53,Public
-Arkansas,2010-11,26849,0.62,24138,0.61,Private
-Arkansas,2010-11,21413,0.54,20363,0.52,Public
-Arkansas,2011-12,28069,0.61,24148,0.6,Private
-Arkansas,2011-12,21514,0.53,20388,0.52,Public
-Arkansas,2012-13,25700,0.55,21731,0.54,Private
-Arkansas,2012-13,25257,0.54,23545,0.53,Public
-California,2003-04,21332,0.64,N/A,N/A,Private
-California,2003-04,13637,0.45,N/A,N/A,Public
-California,2004-05,21186,0.6,N/A,N/A,Private
-California,2004-05,13131,0.45,N/A,N/A,Public
-California,2005-06,22611,0.58,N/A,N/A,Private
-California,2005-06,14761,0.44,N/A,N/A,Public
-California,2006-07,23690,0.58,N/A,N/A,Private
-California,2006-07,13903,0.41,N/A,N/A,Public
-California,2007-08,24570,0.62,18598,0.59,Private
-California,2007-08,14541,0.43,14118,0.43,Public
-California,2008-09,25911,0.6,18180,0.57,Private
-California,2008-09,14739,0.45,14112,0.45,Public
-California,2009-10,26510,0.58,18007,0.56,Private
-California,2009-10,15913,0.46,15184,0.47,Public
-California,2010-11,28063,0.61,20997,0.58,Private
-California,2010-11,16840,0.5,16603,0.49,Public
-California,2011-12,29037,0.62,22331,0.6,Private
-California,2011-12,17994,0.5,17558,0.5,Public
-California,2012-13,28191,0.6,22274,0.58,Private
-California,2012-13,18066,0.53,17322,0.53,Public
-Colorado,2003-04,20228,0.61,N/A,N/A,Private
-Colorado,2003-04,15429,0.51,N/A,N/A,Public
-Colorado,2004-05,21050,0.47,N/A,N/A,Private
-Colorado,2004-05,16352,0.51,N/A,N/A,Public
-Colorado,2005-06,26283,0.44,N/A,N/A,Private
-Colorado,2005-06,17382,0.49,N/A,N/A,Public
-Colorado,2006-07,23564,0.43,N/A,N/A,Private
-Colorado,2006-07,18320,0.52,N/A,N/A,Public
-Colorado,2007-08,22838,0.48,17362,0.46,Private
-Colorado,2007-08,18762,0.52,16111,0.51,Public
-Colorado,2008-09,25131,0.53,18047,0.42,Private
-Colorado,2008-09,20087,0.54,17284,0.53,Public
-Colorado,2009-10,27176,0.52,18500,0.41,Private
-Colorado,2009-10,21192,0.55,18639,0.53,Public
-Colorado,2010-11,24896,0.42,20162,0.42,Private
-Colorado,2010-11,22054,0.56,19159,0.54,Public
-Colorado,2011-12,27958,0.49,21674,0.4,Private
-Colorado,2011-12,23987,0.52,21326,0.51,Public
-Colorado,2012-13,28506,0.54,23245,0.53,Private
-Colorado,2012-13,23937,0.55,20824,0.54,Public
-Connecticut,2003-04,21389,0.59,N/A,N/A,Private
-Connecticut,2003-04,15619,0.54,N/A,N/A,Public
-Connecticut,2004-05,21946,0.6,N/A,N/A,Private
-Connecticut,2004-05,17607,0.54,N/A,N/A,Public
-Connecticut,2005-06,25137,0.56,N/A,N/A,Private
-Connecticut,2005-06,17707,0.58,N/A,N/A,Public
-Connecticut,2006-07,28462,0.59,N/A,N/A,Private
-Connecticut,2006-07,17544,0.56,N/A,N/A,Public
-Connecticut,2007-08,30148,0.62,16821,0.59,Private
-Connecticut,2007-08,19869,0.58,15642,0.61,Public
-Connecticut,2008-09,29563,0.61,15320,0.58,Private
-Connecticut,2008-09,20451,0.57,15382,0.55,Public
-Connecticut,2009-10,32316,0.56,20132,0.55,Private
-Connecticut,2009-10,22443,0.65,16852,0.57,Public
-Connecticut,2010-11,33459,0.56,22640,0.54,Private
-Connecticut,2010-11,24402,0.69,19603,0.68,Public
-Connecticut,2011-12,33741,0.56,23262,0.54,Private
-Connecticut,2011-12,23972,0.64,19892,0.62,Public
-Connecticut,2012-13,36300,0.63,24274,0.64,Private
-Connecticut,2012-13,25348,0.65,21729,0.62,Public
-Delaware,2003-04,15012,0.62,N/A,N/A,Private
-Delaware,2003-04,14639,0.38,N/A,N/A,Public
 Delaware,2004-05,N/A,N/A,N/A,N/A,Private
-Delaware,2004-05,15200,0.4,N/A,N/A,Public
 Delaware,2005-06,N/A,N/A,N/A,N/A,Private
-Delaware,2005-06,17200,0.44,N/A,N/A,Public
 Delaware,2006-07,N/A,N/A,N/A,N/A,Private
-Delaware,2006-07,17200,0.44,N/A,N/A,Public
 Delaware,2007-08,N/A,N/A,N/A,N/A,Private
-Delaware,2007-08,17200,0.44,N/A,N/A,Public
 Delaware,2008-09,N/A,N/A,N/A,N/A,Private
-Delaware,2008-09,17200,0.44,N/A,N/A,Public
 Delaware,2009-10,N/A,N/A,N/A,N/A,Private
 Delaware,2009-10,N/A,N/A,N/A,N/A,Public
 Delaware,2010-11,N/A,N/A,N/A,N/A,Private
 Delaware,2010-11,N/A,N/A,N/A,N/A,Public
 Delaware,2011-12,N/A,N/A,N/A,N/A,Private
-Delaware,2011-12,33649,0.56,22257,0.54,Public
 Delaware,2012-13,N/A,N/A,N/A,N/A,Private
-Delaware,2012-13,32571,0.62,22846,0.6,Public
-District of Columbia,2003-04,19536,0.57,N/A,N/A,Private
-District of Columbia,2003-04,16270,0.74,N/A,N/A,Public
 District of Columbia,2004-05,N/A,N/A,N/A,N/A,Private
-District of Columbia,2004-05,16270,0.74,N/A,N/A,Public
 District of Columbia,2005-06,N/A,N/A,N/A,N/A,Private
 District of Columbia,2005-06,N/A,N/A,N/A,N/A,Public
-District of Columbia,2006-07,23738,0.57,N/A,N/A,Private
-District of Columbia,2006-07,16270,0.74,N/A,N/A,Public
-District of Columbia,2007-08,25996,0.55,17391,0.39,Private
 District of Columbia,2007-08,N/A,N/A,N/A,N/A,Public
-District of Columbia,2008-09,31608,0.48,17799,0.46,Private
 District of Columbia,2008-09,N/A,N/A,N/A,N/A,Public
-District of Columbia,2009-10,26932,0.51,17406,0.4,Private
 District of Columbia,2009-10,N/A,N/A,N/A,N/A,Public
-District of Columbia,2010-11,28241,0.52,17371,0.51,Private
 District of Columbia,2010-11,N/A,N/A,N/A,N/A,Public
-District of Columbia,2011-12,22106,0.56,14925,0.54,Private
 District of Columbia,2011-12,N/A,N/A,N/A,N/A,Public
-District of Columbia,2012-13,22048,0.52,19302,0.44,Private
 District of Columbia,2012-13,N/A,N/A,N/A,N/A,Public
-Florida,2003-04,22759,0.58,N/A,N/A,Private
-Florida,2003-04,15398,0.46,N/A,N/A,Public
-Florida,2004-05,21658,0.58,N/A,N/A,Private
-Florida,2004-05,17391,0.5,N/A,N/A,Public
-Florida,2005-06,26489,0.56,N/A,N/A,Private
-Florida,2005-06,14815,0.46,N/A,N/A,Public
-Florida,2006-07,25770,0.58,N/A,N/A,Private
-Florida,2006-07,16069,0.44,N/A,N/A,Public
-Florida,2007-08,25357,0.64,18313,0.65,Private
-Florida,2007-08,15601,0.43,14312,0.42,Public
-Florida,2008-09,27316,0.64,19387,0.63,Private
-Florida,2008-09,17705,0.44,15732,0.43,Public
-Florida,2009-10,26266,0.65,19969,0.63,Private
-Florida,2009-10,19114,0.45,17609,0.44,Public
-Florida,2010-11,30501,0.64,23737,0.62,Private
-Florida,2010-11,20221,0.47,19112,0.46,Public
-Florida,2011-12,29990,0.61,23350,0.6,Private
-Florida,2011-12,20554,0.49,19325,0.47,Public
-Florida,2012-13,30044,0.63,25116,0.62,Private
-Florida,2012-13,22065,0.51,20672,0.5,Public
-Georgia,2003-04,16869,0.57,N/A,N/A,Private
-Georgia,2003-04,14733,0.51,N/A,N/A,Public
-Georgia,2004-05,19061,0.59,N/A,N/A,Private
-Georgia,2004-05,15381,0.53,N/A,N/A,Public
-Georgia,2005-06,22913,0.64,N/A,N/A,Private
-Georgia,2005-06,14587,0.51,N/A,N/A,Public
-Georgia,2006-07,21837,0.57,N/A,N/A,Private
-Georgia,2006-07,17347,0.5,N/A,N/A,Public
-Georgia,2007-08,20558,0.62,17314,0.78,Private
-Georgia,2007-08,15071,0.54,13526,0.53,Public
-Georgia,2008-09,24310,0.61,18156,0.77,Private
-Georgia,2008-09,14588,0.57,13031,0.55,Public
-Georgia,2009-10,27208,0.61,18951,0.73,Private
-Georgia,2009-10,16434,0.54,14565,0.52,Public
-Georgia,2010-11,28777,0.64,20980,0.75,Private
-Georgia,2010-11,20479,0.56,19162,0.54,Public
-Georgia,2011-12,29924,0.64,23006,0.63,Private
-Georgia,2011-12,21423,0.58,19685,0.57,Public
-Georgia,2012-13,30773,0.63,24925,0.62,Private
-Georgia,2012-13,22833,0.61,20611,0.59,Public
-Hawaii,2003-04,20017,0.38,N/A,N/A,Private
 Hawaii,2003-04,N/A,N/A,N/A,N/A,Public
-Hawaii,2004-05,16796,0.36,N/A,N/A,Private
 Hawaii,2004-05,N/A,N/A,N/A,N/A,Public
-Hawaii,2005-06,15596,0.36,N/A,N/A,Private
-Hawaii,2005-06,11643,0.28,N/A,N/A,Public
-Hawaii,2006-07,17961,0.4,N/A,N/A,Private
-Hawaii,2006-07,12501,0.3,N/A,N/A,Public
 Hawaii,2007-08,N/A,N/A,N/A,N/A,Private
-Hawaii,2007-08,15156,0.37,13881,0.36,Public
 Hawaii,2008-09,N/A,N/A,N/A,N/A,Private
 Hawaii,2008-09,N/A,N/A,N/A,N/A,Public
 Hawaii,2009-10,N/A,N/A,N/A,N/A,Private
-Hawaii,2009-10,15550,0.38,14981,0.37,Public
 Hawaii,2010-11,N/A,N/A,N/A,N/A,Private
-Hawaii,2010-11,17034,0.4,16319,0.4,Public
-Hawaii,2011-12,30893,0.5,21291,0.49,Private
-Hawaii,2011-12,19526,0.44,19864,0.43,Public
 Hawaii,2012-13,N/A,N/A,N/A,N/A,Private
-Hawaii,2012-13,21979,0.46,19823,0.45,Public
 Idaho,2003-04,N/A,N/A,N/A,N/A,Private
-Idaho,2003-04,22126,0.66,N/A,N/A,Public
 Idaho,2004-05,N/A,N/A,N/A,N/A,Private
-Idaho,2004-05,19733,0.69,N/A,N/A,Public
 Idaho,2005-06,N/A,N/A,N/A,N/A,Private
-Idaho,2005-06,20064,0.68,N/A,N/A,Public
 Idaho,2006-07,N/A,N/A,N/A,N/A,Private
-Idaho,2006-07,21796,0.67,N/A,N/A,Public
 Idaho,2007-08,N/A,N/A,N/A,N/A,Private
 Idaho,2007-08,N/A,N/A,N/A,N/A,Public
 Idaho,2008-09,N/A,N/A,N/A,N/A,Private
 Idaho,2008-09,N/A,N/A,N/A,N/A,Public
 Idaho,2009-10,N/A,N/A,N/A,N/A,Private
-Idaho,2009-10,23946,0.66,23599,0.66,Public
 Idaho,2010-11,N/A,N/A,N/A,N/A,Private
-Idaho,2010-11,24112,0.66,23631,0.66,Public
 Idaho,2011-12,N/A,N/A,N/A,N/A,Private
-Idaho,2011-12,26624,0.65,25464,0.64,Public
 Idaho,2012-13,N/A,N/A,N/A,N/A,Private
-Idaho,2012-13,26385,0.68,25794,0.67,Public
-Illinois,2003-04,16908,0.66,N/A,N/A,Private
-Illinois,2003-04,14765,0.5,N/A,N/A,Public
-Illinois,2004-05,18765,0.68,N/A,N/A,Private
-Illinois,2004-05,15597,0.49,N/A,N/A,Public
-Illinois,2005-06,19462,0.72,N/A,N/A,Private
-Illinois,2005-06,16392,0.47,N/A,N/A,Public
-Illinois,2006-07,20383,0.7,N/A,N/A,Private
-Illinois,2006-07,16756,0.48,N/A,N/A,Public
-Illinois,2007-08,22968,0.68,18594,0.66,Private
-Illinois,2007-08,17666,0.52,14672,0.52,Public
-Illinois,2008-09,24081,0.67,19111,0.64,Private
-Illinois,2008-09,20192,0.54,16423,0.54,Public
-Illinois,2009-10,26950,0.75,21411,0.74,Private
-Illinois,2009-10,21842,0.56,17794,0.56,Public
-Illinois,2010-11,27795,0.71,22734,0.69,Private
-Illinois,2010-11,25623,0.61,21117,0.61,Public
-Illinois,2011-12,29444,0.72,23985,0.71,Private
-Illinois,2011-12,26956,0.6,23022,0.6,Public
-Illinois,2012-13,28851,0.72,24417,0.7,Private
-Illinois,2012-13,28260,0.67,24744,0.68,Public
-Indiana,2003-04,21679,0.66,N/A,N/A,Private
-Indiana,2003-04,18536,0.51,N/A,N/A,Public
-Indiana,2004-05,20920,0.69,N/A,N/A,Private
-Indiana,2004-05,18907,0.51,N/A,N/A,Public
-Indiana,2005-06,23835,0.71,N/A,N/A,Private
-Indiana,2005-06,20230,0.54,N/A,N/A,Public
-Indiana,2006-07,25024,0.68,N/A,N/A,Private
-Indiana,2006-07,20722,0.56,N/A,N/A,Public
-Indiana,2007-08,25752,0.68,18562,0.67,Private
-Indiana,2007-08,22261,0.6,17870,0.58,Public
-Indiana,2008-09,26588,0.7,18434,0.68,Private
-Indiana,2008-09,24487,0.6,19193,0.58,Public
-Indiana,2009-10,28629,0.67,19359,0.65,Private
-Indiana,2009-10,25762,0.59,20454,0.57,Public
-Indiana,2010-11,29623,0.7,21207,0.67,Private
-Indiana,2010-11,26488,0.6,21745,0.59,Public
-Indiana,2011-12,28429,0.7,21726,0.69,Private
-Indiana,2011-12,27626,0.62,23903,0.61,Public
-Indiana,2012-13,30058,0.68,24061,0.65,Private
-Indiana,2012-13,27878,0.6,24485,0.59,Public
-Iowa,2003-04,22003,0.8,N/A,N/A,Private
-Iowa,2003-04,26826,0.72,N/A,N/A,Public
-Iowa,2004-05,22929,0.83,N/A,N/A,Private
-Iowa,2004-05,20051,0.66,N/A,N/A,Public
-Iowa,2005-06,25035,0.83,N/A,N/A,Private
-Iowa,2005-06,20809,0.68,N/A,N/A,Public
-Iowa,2006-07,27457,0.81,N/A,N/A,Private
-Iowa,2006-07,26070,0.68,N/A,N/A,Public
-Iowa,2007-08,30131,0.82,18494,0.8,Private
-Iowa,2007-08,26763,0.68,20012,0.66,Public
-Iowa,2008-09,32345,0.82,20208,0.81,Private
-Iowa,2008-09,26066,0.69,20403,0.67,Public
-Iowa,2009-10,31217,0.83,21243,0.81,Private
-Iowa,2009-10,28108,0.64,20590,0.63,Public
-Iowa,2010-11,29547,0.82,22706,0.81,Private
-Iowa,2010-11,27891,0.65,22072,0.63,Public
-Iowa,2011-12,30997,0.81,24633,0.8,Private
-Iowa,2011-12,28073,0.64,23491,0.62,Public
-Iowa,2012-13,31487,0.77,26385,0.77,Private
-Iowa,2012-13,27695,0.64,23588,0.64,Public
-Kansas,2003-04,17088,0.81,N/A,N/A,Private
-Kansas,2003-04,16011,0.52,N/A,N/A,Public
-Kansas,2004-05,18529,0.83,N/A,N/A,Private
-Kansas,2004-05,16902,0.54,N/A,N/A,Public
-Kansas,2005-06,20431,0.85,N/A,N/A,Private
-Kansas,2005-06,17335,0.55,N/A,N/A,Public
-Kansas,2006-07,22327,0.82,N/A,N/A,Private
-Kansas,2006-07,18485,0.55,N/A,N/A,Public
-Kansas,2007-08,23938,0.82,20438,0.81,Private
-Kansas,2007-08,19049,0.54,17574,0.45,Public
-Kansas,2008-09,25130,0.81,22036,0.82,Private
-Kansas,2008-09,19553,0.55,17745,0.52,Public
-Kansas,2009-10,28821,0.83,26122,0.82,Private
-Kansas,2009-10,21177,0.54,20557,0.53,Public
-Kansas,2010-11,28403,0.83,25827,0.82,Private
-Kansas,2010-11,22589,0.62,19854,0.61,Public
 Kansas,2011-12,N/A,N/A,N/A,N/A,Private
-Kansas,2011-12,23046,0.57,20591,0.61,Public
-Kansas,2012-13,27023,0.79,26163,0.79,Private
-Kansas,2012-13,26087,0.63,24338,0.62,Public
-Kentucky,2003-04,13919,0.67,N/A,N/A,Private
-Kentucky,2003-04,14426,0.47,N/A,N/A,Public
-Kentucky,2004-05,15249,0.72,N/A,N/A,Private
-Kentucky,2004-05,16210,0.56,N/A,N/A,Public
-Kentucky,2005-06,16920,0.71,N/A,N/A,Private
-Kentucky,2005-06,14495,0.59,N/A,N/A,Public
-Kentucky,2006-07,16907,0.67,N/A,N/A,Private
-Kentucky,2006-07,16654,0.61,N/A,N/A,Public
-Kentucky,2007-08,17995,0.73,16990,0.68,Private
-Kentucky,2007-08,16176,0.55,14517,0.49,Public
-Kentucky,2008-09,19766,0.73,17669,0.7,Private
-Kentucky,2008-09,18855,0.49,16765,0.47,Public
-Kentucky,2009-10,19754,0.75,17825,0.73,Private
-Kentucky,2009-10,19255,0.54,16992,0.52,Public
-Kentucky,2010-11,22880,0.73,20097,0.69,Private
-Kentucky,2010-11,22119,0.57,19784,0.54,Public
-Kentucky,2011-12,22421,0.69,20726,0.66,Private
-Kentucky,2011-12,24196,0.61,21503,0.6,Public
-Kentucky,2012-13,23267,0.69,21399,0.67,Private
-Kentucky,2012-13,25036,0.57,23310,0.56,Public
-Louisiana,2003-04,21038,0.7,N/A,N/A,Private
-Louisiana,2003-04,18621,0.59,N/A,N/A,Public
-Louisiana,2004-05,18203,0.66,N/A,N/A,Private
-Louisiana,2004-05,18679,0.58,N/A,N/A,Public
-Louisiana,2005-06,20507,0.44,N/A,N/A,Private
-Louisiana,2005-06,17693,0.52,N/A,N/A,Public
-Louisiana,2006-07,25076,0.56,N/A,N/A,Private
-Louisiana,2006-07,18565,0.55,N/A,N/A,Public
-Louisiana,2007-08,23701,0.66,18698,0.61,Private
-Louisiana,2007-08,17228,0.47,16628,0.47,Public
-Louisiana,2008-09,25677,0.55,20969,0.56,Private
-Louisiana,2008-09,17948,0.46,16517,0.46,Public
-Louisiana,2009-10,29971,0.58,25000,0.57,Private
-Louisiana,2009-10,23184,0.46,22209,0.46,Public
-Louisiana,2010-11,32107,0.58,26815,0.58,Private
-Louisiana,2010-11,19946,0.42,19164,0.42,Public
-Louisiana,2011-12,28486,0.55,23601,0.54,Private
-Louisiana,2011-12,21112,0.46,18594,0.43,Public
-Louisiana,2012-13,27775,0.59,24875,0.59,Private
-Louisiana,2012-13,21640,0.45,20740,0.44,Public
-Maine,2003-04,20706,0.63,N/A,N/A,Private
-Maine,2003-04,18578,0.64,N/A,N/A,Public
-Maine,2004-05,21351,0.66,N/A,N/A,Private
-Maine,2004-05,20359,0.67,N/A,N/A,Public
-Maine,2005-06,25114,0.72,N/A,N/A,Private
-Maine,2005-06,20601,0.71,N/A,N/A,Public
-Maine,2006-07,25301,0.63,N/A,N/A,Private
-Maine,2006-07,20878,0.71,N/A,N/A,Public
-Maine,2007-08,28145,0.63,19195,0.6,Private
 Maine,2007-08,N/A,N/A,N/A,N/A,Public
-Maine,2008-09,26502,0.56,17280,0.54,Private
 Maine,2008-09,N/A,N/A,N/A,N/A,Public
-Maine,2009-10,22251,0.5,16422,0.49,Private
-Maine,2009-10,28289,0.7,21437,0.73,Public
-Maine,2010-11,23630,0.52,20267,0.51,Private
-Maine,2010-11,26670,0.78,20688,0.77,Public
-Maine,2011-12,28167,0.5,22950,0.49,Private
-Maine,2011-12,29756,0.78,24267,0.78,Public
-Maine,2012-13,26281,0.46,23364,0.45,Private
-Maine,2012-13,31449,0.77,25681,0.75,Public
-Maryland,2003-04,16137,0.6,N/A,N/A,Private
 Maryland,2003-04,N/A,N/A,N/A,N/A,Public
-Maryland,2004-05,16360,0.63,N/A,N/A,Private
 Maryland,2004-05,N/A,N/A,N/A,N/A,Public
-Maryland,2005-06,18098,0.65,N/A,N/A,Private
-Maryland,2005-06,16435,0.5,N/A,N/A,Public
-Maryland,2006-07,18585,0.62,N/A,N/A,Private
-Maryland,2006-07,17210,0.5,N/A,N/A,Public
-Maryland,2007-08,24014,0.63,15849,0.61,Private
-Maryland,2007-08,16741,0.49,14317,0.47,Public
-Maryland,2008-09,24474,0.62,17337,0.58,Private
-Maryland,2008-09,18011,0.45,14340,0.43,Public
-Maryland,2009-10,26113,0.62,17504,0.59,Private
-Maryland,2009-10,20066,0.51,15276,0.5,Public
-Maryland,2010-11,28642,0.59,20460,0.58,Private
-Maryland,2010-11,22695,0.54,18121,0.53,Public
-Maryland,2011-12,28772,0.62,21842,0.6,Private
-Maryland,2011-12,25060,0.57,20202,0.55,Public
-Maryland,2012-13,30233,0.63,24490,0.62,Private
-Maryland,2012-13,25156,0.58,21366,0.56,Public
-Massachusetts,2003-04,18594,0.6,N/A,N/A,Private
-Massachusetts,2003-04,13378,0.58,N/A,N/A,Public
-Massachusetts,2004-05,19779,0.61,N/A,N/A,Private
-Massachusetts,2004-05,14728,0.57,N/A,N/A,Public
-Massachusetts,2005-06,20781,0.6,N/A,N/A,Private
-Massachusetts,2005-06,15910,0.62,N/A,N/A,Public
-Massachusetts,2006-07,23460,0.61,N/A,N/A,Private
-Massachusetts,2006-07,15897,0.61,N/A,N/A,Public
-Massachusetts,2007-08,25059,0.62,16105,0.59,Private
-Massachusetts,2007-08,19556,0.63,15293,0.61,Public
-Massachusetts,2008-09,26305,0.59,17098,0.56,Private
-Massachusetts,2008-09,21554,0.69,16579,0.67,Public
-Massachusetts,2009-10,26126,0.6,18406,0.56,Private
-Massachusetts,2009-10,23525,0.69,18887,0.67,Public
-Massachusetts,2010-11,28047,0.6,20376,0.56,Private
-Massachusetts,2010-11,25882,0.72,20675,0.69,Public
-Massachusetts,2011-12,29093,0.6,22293,0.57,Private
-Massachusetts,2011-12,27627,0.75,22334,0.73,Public
-Massachusetts,2012-13,29388,0.61,22661,0.58,Private
-Massachusetts,2012-13,27348,0.74,23466,0.73,Public
-Michigan,2003-04,18831,0.66,N/A,N/A,Private
-Michigan,2003-04,18735,0.57,N/A,N/A,Public
-Michigan,2004-05,20504,0.66,N/A,N/A,Private
-Michigan,2004-05,18722,0.58,N/A,N/A,Public
-Michigan,2005-06,23928,0.7,N/A,N/A,Private
-Michigan,2005-06,19935,0.58,N/A,N/A,Public
-Michigan,2006-07,24069,0.72,N/A,N/A,Private
-Michigan,2006-07,21245,0.57,N/A,N/A,Public
-Michigan,2007-08,29519,0.74,18659,0.72,Private
-Michigan,2007-08,21488,0.54,18249,0.47,Public
-Michigan,2008-09,30365,0.74,19104,0.72,Private
-Michigan,2008-09,24252,0.56,19536,0.58,Public
-Michigan,2009-10,29735,0.73,20447,0.72,Private
-Michigan,2009-10,24854,0.59,20164,0.61,Public
-Michigan,2010-11,30310,0.74,22613,0.73,Private
-Michigan,2010-11,26937,0.6,22572,0.62,Public
-Michigan,2011-12,32030,0.73,25015,0.72,Private
-Michigan,2011-12,28147,0.6,23906,0.62,Public
-Michigan,2012-13,32432,0.72,26449,0.71,Private
-Michigan,2012-13,29092,0.61,25547,0.63,Public
-Minnesota,2003-04,22048,0.73,N/A,N/A,Private
-Minnesota,2003-04,17256,0.7,N/A,N/A,Public
-Minnesota,2004-05,23769,0.72,N/A,N/A,Private
-Minnesota,2004-05,18170,0.67,N/A,N/A,Public
-Minnesota,2005-06,26705,0.74,N/A,N/A,Private
-Minnesota,2005-06,20618,0.72,N/A,N/A,Public
-Minnesota,2006-07,28365,0.73,N/A,N/A,Private
-Minnesota,2006-07,22224,0.72,N/A,N/A,Public
-Minnesota,2007-08,29205,0.76,18764,0.71,Private
-Minnesota,2007-08,23526,0.71,15971,0.69,Public
-Minnesota,2008-09,29195,0.77,31749,0.76,Private
-Minnesota,2008-09,26308,0.71,17322,0.68,Public
-Minnesota,2009-10,31400,0.74,20304,0.73,Private
-Minnesota,2009-10,27613,0.7,18374,0.67,Public
-Minnesota,2010-11,32128,0.73,22431,0.72,Private
-Minnesota,2010-11,28907,0.7,20355,0.67,Public
-Minnesota,2011-12,34221,0.73,23941,0.71,Private
-Minnesota,2011-12,29958,0.69,22611,0.67,Public
-Minnesota,2012-13,33305,0.72,23707,0.7,Private
-Minnesota,2012-13,29657,0.69,22635,0.65,Public
-Mississippi,2003-04,16958,0.68,N/A,N/A,Private
-Mississippi,2003-04,14998,0.58,N/A,N/A,Public
-Mississippi,2004-05,17554,0.8,N/A,N/A,Private
-Mississippi,2004-05,16909,0.56,N/A,N/A,Public
-Mississippi,2005-06,17337,0.77,N/A,N/A,Private
-Mississippi,2005-06,17673,0.59,N/A,N/A,Public
-Mississippi,2006-07,20849,0.74,N/A,N/A,Private
-Mississippi,2006-07,18762,0.5,N/A,N/A,Public
-Mississippi,2007-08,22553,0.81,20916,0.81,Private
-Mississippi,2007-08,19465,0.52,18248,0.51,Public
-Mississippi,2008-09,26111,0.79,24513,0.79,Private
-Mississippi,2008-09,21521,0.52,20000,0.52,Public
 Mississippi,2009-10,N/A,N/A,N/A,N/A,Private
-Mississippi,2009-10,22006,0.52,20633,0.52,Public
-Mississippi,2010-11,24211,0.56,20748,0.55,Private
-Mississippi,2010-11,23641,0.54,22833,0.54,Public
-Mississippi,2011-12,31254,0.68,26595,0.68,Private
-Mississippi,2011-12,26552,0.55,25926,0.54,Public
-Mississippi,2012-13,29691,0.61,28219,0.61,Private
-Mississippi,2012-13,27222,0.57,25774,0.56,Public
-Missouri,2003-04,16446,0.56,N/A,N/A,Private
-Missouri,2003-04,14906,0.61,N/A,N/A,Public
-Missouri,2004-05,21155,0.65,N/A,N/A,Private
-Missouri,2004-05,15777,0.57,N/A,N/A,Public
-Missouri,2005-06,21188,0.63,N/A,N/A,Private
-Missouri,2005-06,16882,0.66,N/A,N/A,Public
-Missouri,2006-07,20982,0.53,N/A,N/A,Private
-Missouri,2006-07,18960,0.67,N/A,N/A,Public
-Missouri,2007-08,21885,0.64,17223,0.62,Private
-Missouri,2007-08,20521,0.7,18121,0.67,Public
-Missouri,2008-09,22578,0.65,17499,0.64,Private
-Missouri,2008-09,20774,0.66,18076,0.64,Public
-Missouri,2009-10,23192,0.66,17089,0.64,Private
-Missouri,2009-10,22372,0.64,19891,0.62,Public
-Missouri,2010-11,24649,0.62,20160,0.59,Private
-Missouri,2010-11,22590,0.67,20101,0.66,Public
-Missouri,2011-12,23342,0.57,19958,0.56,Private
-Missouri,2011-12,22824,0.66,21168,0.66,Public
-Missouri,2012-13,25940,0.57,22432,0.57,Private
-Missouri,2012-13,24353,0.67,22626,0.67,Public
-Montana,2003-04,24769,0.8,N/A,N/A,Private
-Montana,2003-04,16815,0.66,N/A,N/A,Public
-Montana,2004-05,26002,0.78,N/A,N/A,Private
-Montana,2004-05,17750,0.67,N/A,N/A,Public
 Montana,2005-06,N/A,N/A,N/A,N/A,Private
-Montana,2005-06,16708,0.68,N/A,N/A,Public
 Montana,2006-07,N/A,N/A,N/A,N/A,Private
-Montana,2006-07,17332,0.69,N/A,N/A,Public
-Montana,2007-08,25246,0.71,17836,0.7,Private
-Montana,2007-08,20217,0.68,19695,0.68,Public
-Montana,2008-09,24361,0.68,19040,0.67,Private
-Montana,2008-09,22223,0.68,21193,0.68,Public
-Montana,2009-10,25643,0.75,22631,0.74,Private
-Montana,2009-10,22489,0.64,21058,0.64,Public
-Montana,2010-11,28123,0.73,21869,0.73,Private
-Montana,2010-11,23714,0.64,22950,0.64,Public
-Montana,2011-12,27895,0.76,24245,0.76,Private
-Montana,2011-12,27401,0.62,26037,0.62,Public
-Montana,2012-13,24708,0.75,21661,0.74,Private
-Montana,2012-13,28030,0.65,27282,0.65,Public
-Nation,2003-04,19669,0.64,N/A,N/A,Private
-Nation,2003-04,16389,0.54,N/A,N/A,Public
-Nation,2004-05,20724,0.64,N/A,N/A,Private
-Nation,2004-05,16867,0.54,N/A,N/A,Public
-Nation,2005-06,22694,0.64,N/A,N/A,Private
-Nation,2005-06,17606,0.55,N/A,N/A,Public
-Nation,2006-07,23845,0.64,N/A,N/A,Private
-Nation,2006-07,18564,0.54,N/A,N/A,Public
-Nation,2007-08,25200,0.66,18248,0.64,Private
-Nation,2007-08,19065,0.55,16314,0.53,Public
-Nation,2008-09,26726,0.65,19357,0.63,Private
-Nation,2008-09,20459,0.56,17167,0.54,Public
-Nation,2009-10,27772,0.65,20030,0.63,Private
-Nation,2009-10,21604,0.56,18290,0.55,Public
-Nation,2010-11,29031,0.65,21889,0.63,Private
-Nation,2010-11,23096,0.57,20014,0.56,Public
-Nation,2011-12,29312,0.65,22942,0.63,Private
-Nation,2011-12,24477,0.58,21200,0.57,Public
-Nation,2012-13,29708,0.65,24044,0.63,Private
-Nation,2012-13,25043,0.6,22205,0.59,Public
-Nebraska,2003-04,17754,0.73,N/A,N/A,Private
-Nebraska,2003-04,17181,0.57,N/A,N/A,Public
-Nebraska,2004-05,19729,0.78,N/A,N/A,Private
-Nebraska,2004-05,17722,0.62,N/A,N/A,Public
-Nebraska,2005-06,20853,0.74,N/A,N/A,Private
-Nebraska,2005-06,19366,0.59,N/A,N/A,Public
-Nebraska,2006-07,21499,0.76,N/A,N/A,Private
-Nebraska,2006-07,19544,0.61,N/A,N/A,Public
-Nebraska,2007-08,23655,0.74,19828,0.74,Private
-Nebraska,2007-08,18893,0.59,17432,0.62,Public
-Nebraska,2008-09,27651,0.76,21914,0.76,Private
-Nebraska,2008-09,20080,0.6,18381,0.59,Public
-Nebraska,2009-10,27286,0.75,22096,0.74,Private
-Nebraska,2009-10,17677,0.56,14449,0.59,Public
-Nebraska,2010-11,29146,0.73,23647,0.73,Private
-Nebraska,2010-11,22222,0.6,20845,0.6,Public
-Nebraska,2011-12,31786,0.7,25199,0.7,Private
-Nebraska,2011-12,23982,0.61,22458,0.6,Public
-Nebraska,2012-13,33135,0.7,28000,0.7,Private
-Nebraska,2012-13,24130,0.59,22634,0.58,Public
-Nevada,2003-04,18000,0.65,N/A,N/A,Private
-Nevada,2003-04,14094,0.46,N/A,N/A,Public
 Nevada,2004-05,N/A,N/A,N/A,N/A,Private
-Nevada,2004-05,16748,0.41,N/A,N/A,Public
 Nevada,2005-06,N/A,N/A,N/A,N/A,Private
 Nevada,2005-06,N/A,N/A,N/A,N/A,Public
 Nevada,2006-07,N/A,N/A,N/A,N/A,Private
-Nevada,2006-07,16591,0.4,N/A,N/A,Public
 Nevada,2007-08,N/A,N/A,N/A,N/A,Private
-Nevada,2007-08,17921,0.4,16732,0.39,Public
 Nevada,2008-09,N/A,N/A,N/A,N/A,Private
-Nevada,2008-09,16742,0.37,14739,0.36,Public
 Nevada,2009-10,N/A,N/A,N/A,N/A,Private
-Nevada,2009-10,16672,0.38,15357,0.37,Public
 Nevada,2010-11,N/A,N/A,N/A,N/A,Private
-Nevada,2010-11,20037,0.44,18640,0.43,Public
 Nevada,2011-12,N/A,N/A,N/A,N/A,Private
-Nevada,2011-12,20442,0.4,19105,0.39,Public
-Nevada,2012-13,26368,0.5,24628,0.5,Private
-Nevada,2012-13,21577,0.43,20129,0.42,Public
-New Hampshire,2003-04,21550,0.6,N/A,N/A,Private
-New Hampshire,2003-04,21366,0.68,N/A,N/A,Public
-New Hampshire,2004-05,25931,0.61,N/A,N/A,Private
-New Hampshire,2004-05,21307,0.72,N/A,N/A,Public
-New Hampshire,2005-06,27806,0.69,N/A,N/A,Private
-New Hampshire,2005-06,22932,0.73,N/A,N/A,Public
-New Hampshire,2006-07,24507,0.61,N/A,N/A,Private
-New Hampshire,2006-07,24474,0.76,N/A,N/A,Public
-New Hampshire,2007-08,29404,0.67,18067,0.63,Private
-New Hampshire,2007-08,26493,0.77,17014,0.74,Public
-New Hampshire,2008-09,28777,0.63,16327,0.59,Private
-New Hampshire,2008-09,29675,0.76,18473,0.75,Public
-New Hampshire,2009-10,30863,0.65,16793,0.6,Private
-New Hampshire,2009-10,31111,0.77,20282,0.76,Public
-New Hampshire,2010-11,32570,0.68,20647,0.61,Private
-New Hampshire,2010-11,32385,0.79,22309,0.78,Public
-New Hampshire,2011-12,29926,0.61,22079,0.54,Private
-New Hampshire,2011-12,33578,0.8,24456,0.79,Public
-New Hampshire,2012-13,28779,0.68,21457,0.57,Private
-New Hampshire,2012-13,34170,0.79,25090,0.78,Public
-New Jersey,2003-04,21834,0.61,N/A,N/A,Private
-New Jersey,2003-04,14539,0.57,N/A,N/A,Public
-New Jersey,2004-05,21278,0.62,N/A,N/A,Private
-New Jersey,2004-05,14693,0.61,N/A,N/A,Public
-New Jersey,2005-06,22106,0.58,N/A,N/A,Private
-New Jersey,2005-06,18250,0.66,N/A,N/A,Public
-New Jersey,2006-07,25621,0.64,N/A,N/A,Private
-New Jersey,2006-07,20345,0.69,N/A,N/A,Public
-New Jersey,2007-08,25109,0.64,18216,0.59,Private
-New Jersey,2007-08,18835,0.67,16167,0.66,Public
-New Jersey,2008-09,24138,0.64,18570,0.61,Private
-New Jersey,2008-09,22383,0.62,17743,0.61,Public
-New Jersey,2009-10,27644,0.62,20907,0.58,Private
-New Jersey,2009-10,22533,0.66,18390,0.65,Public
-New Jersey,2010-11,31150,0.64,22646,0.6,Private
-New Jersey,2010-11,26794,0.64,20697,0.63,Public
-New Jersey,2011-12,29200,0.65,23423,0.61,Private
-New Jersey,2011-12,29306,0.65,22220,0.65,Public
-New Jersey,2012-13,29241,0.65,25388,0.61,Private
-New Jersey,2012-13,27914,0.7,22982,0.68,Public
-New Mexico,2003-04,15916,0.51,N/A,N/A,Private
 New Mexico,2003-04,N/A,N/A,N/A,N/A,Public
 New Mexico,2004-05,N/A,N/A,N/A,N/A,Private
 New Mexico,2004-05,N/A,N/A,N/A,N/A,Public
@@ -650,392 +86,956 @@ New Mexico,2006-07,N/A,N/A,N/A,N/A,Public
 New Mexico,2007-08,N/A,N/A,N/A,N/A,Private
 New Mexico,2007-08,N/A,N/A,N/A,N/A,Public
 New Mexico,2008-09,N/A,N/A,N/A,N/A,Private
-New Mexico,2008-09,20483,0.45,17983,0.45,Public
 New Mexico,2009-10,N/A,N/A,N/A,N/A,Private
-New Mexico,2009-10,16298,0.56,15975,0.52,Public
-New Mexico,2010-11,25084,0.7,22011,0.66,Private
 New Mexico,2010-11,N/A,N/A,N/A,N/A,Public
-New Mexico,2011-12,28563,0.68,18980,0.68,Private
-New Mexico,2011-12,17722,0.61,17615,0.6,Public
-New Mexico,2012-13,25256,0.77,24771,0.64,Private
-New Mexico,2012-13,18473,0.54,18133,0.53,Public
-New York,2003-04,20870,0.64,N/A,N/A,Private
-New York,2003-04,15728,0.61,N/A,N/A,Public
-New York,2004-05,21582,0.64,N/A,N/A,Private
-New York,2004-05,15326,0.61,N/A,N/A,Public
-New York,2005-06,24805,0.67,N/A,N/A,Private
-New York,2005-06,15469,0.66,N/A,N/A,Public
-New York,2006-07,26512,0.63,N/A,N/A,Private
-New York,2006-07,17385,0.61,N/A,N/A,Public
-New York,2007-08,27453,0.67,18653,0.64,Private
-New York,2007-08,18026,0.56,15880,0.55,Public
-New York,2008-09,28971,0.68,19749,0.66,Private
-New York,2008-09,20911,0.56,18843,0.54,Public
-New York,2009-10,29737,0.67,20555,0.65,Private
-New York,2009-10,21706,0.55,18185,0.5,Public
-New York,2010-11,30015,0.66,21690,0.64,Private
-New York,2010-11,20561,0.54,20155,0.51,Public
-New York,2011-12,30228,0.65,22887,0.64,Private
-New York,2011-12,20875,0.55,18475,0.52,Public
-New York,2012-13,30397,0.65,23813,0.63,Private
-New York,2012-13,21720,0.55,19319,0.53,Public
-North Carolina,2003-04,18436,0.59,N/A,N/A,Private
-North Carolina,2003-04,16133,0.48,N/A,N/A,Public
-North Carolina,2004-05,19207,0.58,N/A,N/A,Private
-North Carolina,2004-05,15018,0.51,N/A,N/A,Public
-North Carolina,2005-06,19856,0.58,N/A,N/A,Private
-North Carolina,2005-06,16323,0.56,N/A,N/A,Public
-North Carolina,2006-07,20426,0.57,N/A,N/A,Private
-North Carolina,2006-07,15623,0.55,N/A,N/A,Public
-North Carolina,2007-08,22940,0.62,18000,0.59,Private
-North Carolina,2007-08,15434,0.54,14939,0.49,Public
-North Carolina,2008-09,24498,0.6,19788,0.58,Private
-North Carolina,2008-09,17373,0.53,16067,0.5,Public
-North Carolina,2009-10,25267,0.6,19491,0.57,Private
-North Carolina,2009-10,18845,0.5,17668,0.48,Public
-North Carolina,2010-11,25094,0.63,20732,0.61,Private
-North Carolina,2010-11,18750,0.53,17472,0.49,Public
-North Carolina,2011-12,27024,0.6,22889,0.56,Private
-North Carolina,2011-12,22779,0.59,20778,0.55,Public
-North Carolina,2012-13,27051,0.62,22962,0.58,Private
-North Carolina,2012-13,23440,0.61,21986,0.58,Public
 North Dakota,2003-04,N/A,N/A,N/A,N/A,Private
-North Dakota,2003-04,22852,0.72,N/A,N/A,Public
 North Dakota,2004-05,N/A,N/A,N/A,N/A,Private
-North Dakota,2004-05,25093,0.69,N/A,N/A,Public
-North Dakota,2005-06,22381,0.93,N/A,N/A,Private
-North Dakota,2005-06,20511,0.65,N/A,N/A,Public
-North Dakota,2006-07,22869,0.92,N/A,N/A,Private
-North Dakota,2006-07,22461,0.67,N/A,N/A,Public
 North Dakota,2007-08,N/A,N/A,N/A,N/A,Private
 North Dakota,2007-08,N/A,N/A,N/A,N/A,Public
 North Dakota,2008-09,N/A,N/A,N/A,N/A,Private
 North Dakota,2008-09,N/A,N/A,N/A,N/A,Public
-North Dakota,2009-10,25439,0.8,20868,0.79,Private
-North Dakota,2009-10,26655,0.81,17396,0.78,Public
-North Dakota,2010-11,25750,0.85,21944,0.84,Private
-North Dakota,2010-11,28008,0.83,20812,0.82,Public
-North Dakota,2011-12,28970,0.81,23393,0.81,Private
 North Dakota,2011-12,N/A,N/A,N/A,N/A,Public
 North Dakota,2012-13,N/A,N/A,N/A,N/A,Private
 North Dakota,2012-13,N/A,N/A,N/A,N/A,Public
-Ohio,2003-04,19504,0.71,N/A,N/A,Private
-Ohio,2003-04,19002,0.58,N/A,N/A,Public
-Ohio,2004-05,20444,0.73,N/A,N/A,Private
-Ohio,2004-05,19124,0.61,N/A,N/A,Public
-Ohio,2005-06,21445,0.73,N/A,N/A,Private
-Ohio,2005-06,20061,0.61,N/A,N/A,Public
-Ohio,2006-07,23738,0.73,N/A,N/A,Private
-Ohio,2006-07,21661,0.62,N/A,N/A,Public
-Ohio,2007-08,25316,0.73,18551,0.71,Private
-Ohio,2007-08,23217,0.63,17571,0.61,Public
-Ohio,2008-09,30321,0.71,19912,0.7,Private
-Ohio,2008-09,23812,0.64,17714,0.63,Public
-Ohio,2009-10,31183,0.74,21195,0.72,Private
-Ohio,2009-10,26175,0.66,20132,0.64,Public
-Ohio,2010-11,32210,0.75,22803,0.74,Private
-Ohio,2010-11,26881,0.66,21418,0.65,Public
-Ohio,2011-12,32389,0.73,24469,0.72,Private
-Ohio,2011-12,27990,0.68,23350,0.67,Public
-Ohio,2012-13,32101,0.74,25231,0.73,Private
-Ohio,2012-13,28010,0.65,24293,0.65,Public
-Oklahoma,2003-04,21787,0.66,N/A,N/A,Private
-Oklahoma,2003-04,15692,0.53,N/A,N/A,Public
-Oklahoma,2004-05,24379,0.67,N/A,N/A,Private
-Oklahoma,2004-05,16525,0.51,N/A,N/A,Public
 Oklahoma,2005-06,N/A,N/A,N/A,N/A,Private
-Oklahoma,2005-06,16911,0.53,N/A,N/A,Public
 Oklahoma,2006-07,N/A,N/A,N/A,N/A,Private
-Oklahoma,2006-07,17939,0.51,N/A,N/A,Public
-Oklahoma,2007-08,23832,0.64,22126,0.66,Private
-Oklahoma,2007-08,18549,0.53,16911,0.52,Public
-Oklahoma,2008-09,28718,0.63,21575,0.65,Private
-Oklahoma,2008-09,18450,0.55,16349,0.51,Public
-Oklahoma,2009-10,26589,0.67,18892,0.66,Private
-Oklahoma,2009-10,19874,0.54,18895,0.53,Public
-Oklahoma,2010-11,24511,0.52,16688,0.5,Private
-Oklahoma,2010-11,20815,0.53,20109,0.51,Public
-Oklahoma,2011-12,28569,0.56,23510,0.53,Private
-Oklahoma,2011-12,22374,0.52,21284,0.51,Public
-Oklahoma,2012-13,28660,0.57,25404,0.57,Private
-Oklahoma,2012-13,20750,0.52,20414,0.5,Public
-Oregon,2003-04,19661,0.71,N/A,N/A,Private
-Oregon,2003-04,16361,0.6,N/A,N/A,Public
-Oregon,2004-05,21084,0.71,N/A,N/A,Private
-Oregon,2004-05,19068,0.66,N/A,N/A,Public
-Oregon,2005-06,21404,0.69,N/A,N/A,Private
-Oregon,2005-06,18808,0.65,N/A,N/A,Public
-Oregon,2006-07,22282,0.68,N/A,N/A,Private
-Oregon,2006-07,18843,0.65,N/A,N/A,Public
-Oregon,2007-08,23465,0.7,18149,0.67,Private
-Oregon,2007-08,20291,0.59,17918,0.58,Public
-Oregon,2008-09,24122,0.62,19383,0.6,Private
-Oregon,2008-09,21618,0.59,19123,0.56,Public
-Oregon,2009-10,24579,0.69,19614,0.67,Private
-Oregon,2009-10,23675,0.6,20652,0.59,Public
-Oregon,2010-11,27334,0.69,22347,0.68,Private
-Oregon,2010-11,24616,0.6,21373,0.59,Public
-Oregon,2011-12,28227,0.71,23466,0.69,Private
-Oregon,2011-12,25880,0.56,23092,0.55,Public
-Oregon,2012-13,28035,0.7,24315,0.68,Private
-Oregon,2012-13,24248,0.56,22147,0.55,Public
-Pennsylvania,2003-04,20296,0.67,N/A,N/A,Private
-Pennsylvania,2003-04,18788,0.71,N/A,N/A,Public
-Pennsylvania,2004-05,22065,0.69,N/A,N/A,Private
-Pennsylvania,2004-05,20693,0.68,N/A,N/A,Public
-Pennsylvania,2005-06,23301,0.67,N/A,N/A,Private
-Pennsylvania,2005-06,22309,0.71,N/A,N/A,Public
-Pennsylvania,2006-07,24599,0.7,N/A,N/A,Private
-Pennsylvania,2006-07,23630,0.72,N/A,N/A,Public
-Pennsylvania,2007-08,26493,0.7,18561,0.67,Private
-Pennsylvania,2007-08,24126,0.72,17983,0.71,Public
-Pennsylvania,2008-09,28367,0.69,19373,0.67,Private
-Pennsylvania,2008-09,26005,0.74,19088,0.73,Public
-Pennsylvania,2009-10,29617,0.68,20661,0.65,Private
-Pennsylvania,2009-10,27838,0.71,20337,0.7,Public
-Pennsylvania,2010-11,31166,0.69,22376,0.66,Private
-Pennsylvania,2010-11,29207,0.71,22251,0.71,Public
-Pennsylvania,2011-12,30522,0.68,23041,0.65,Private
-Pennsylvania,2011-12,32458,0.73,25490,0.72,Public
-Pennsylvania,2012-13,32338,0.68,24349,0.66,Private
-Pennsylvania,2012-13,32659,0.74,25892,0.73,Public
-Rhode Island,2003-04,21586,0.7,N/A,N/A,Private
-Rhode Island,2003-04,14000,0.64,N/A,N/A,Public
-Rhode Island,2004-05,24074,0.71,N/A,N/A,Private
-Rhode Island,2004-05,16200,0.56,N/A,N/A,Public
 Rhode Island,2005-06,N/A,N/A,N/A,N/A,Private
-Rhode Island,2005-06,16200,0.56,N/A,N/A,Public
-Rhode Island,2006-07,26139,0.68,N/A,N/A,Private
-Rhode Island,2006-07,18928,0.66,N/A,N/A,Public
-Rhode Island,2007-08,29211,0.7,18615,0.67,Private
-Rhode Island,2007-08,20029,0.72,17155,0.69,Public
-Rhode Island,2008-09,32434,0.6,18831,0.58,Private
-Rhode Island,2008-09,21386,0.72,18087,0.69,Public
-Rhode Island,2009-10,32165,0.61,20874,0.57,Private
-Rhode Island,2009-10,21502,0.73,18295,0.7,Public
-Rhode Island,2010-11,33463,0.66,21527,0.62,Private
-Rhode Island,2010-11,24500,0.74,19547,0.73,Public
-Rhode Island,2011-12,33212,0.62,21686,0.59,Private
-Rhode Island,2011-12,27919,0.78,21106,0.77,Public
-Rhode Island,2012-13,34271,0.62,23998,0.61,Private
-Rhode Island,2012-13,28875,0.78,24427,0.77,Public
-South Carolina,2003-04,17266,0.7,N/A,N/A,Private
-South Carolina,2003-04,16570,0.5,N/A,N/A,Public
-South Carolina,2004-05,16833,0.61,N/A,N/A,Private
-South Carolina,2004-05,17900,0.52,N/A,N/A,Public
-South Carolina,2005-06,18823,0.77,N/A,N/A,Private
-South Carolina,2005-06,19485,0.51,N/A,N/A,Public
-South Carolina,2006-07,21618,0.69,N/A,N/A,Private
-South Carolina,2006-07,20477,0.52,N/A,N/A,Public
-South Carolina,2007-08,21115,0.65,17461,0.61,Private
-South Carolina,2007-08,21076,0.54,17787,0.51,Public
-South Carolina,2008-09,24090,0.56,18634,0.54,Private
-South Carolina,2008-09,21958,0.53,17904,0.51,Public
-South Carolina,2009-10,26527,0.62,23062,0.59,Private
-South Carolina,2009-10,22851,0.54,18893,0.52,Public
-South Carolina,2010-11,27087,0.62,23773,0.6,Private
-South Carolina,2010-11,25358,0.53,20447,0.51,Public
-South Carolina,2011-12,28734,0.66,25289,0.66,Private
-South Carolina,2011-12,27100,0.53,23706,0.52,Public
-South Carolina,2012-13,27829,0.67,24989,0.66,Private
-South Carolina,2012-13,29407,0.57,24173,0.56,Public
-South Dakota,2003-04,19980,0.8,N/A,N/A,Private
-South Dakota,2003-04,18858,0.82,N/A,N/A,Public
-South Dakota,2004-05,21184,0.83,N/A,N/A,Private
-South Dakota,2004-05,19702,0.77,N/A,N/A,Public
-South Dakota,2005-06,25743,0.82,N/A,N/A,Private
-South Dakota,2005-06,20599,0.84,N/A,N/A,Public
-South Dakota,2006-07,26898,0.83,N/A,N/A,Private
-South Dakota,2006-07,21708,0.85,N/A,N/A,Public
-South Dakota,2007-08,26530,0.8,21830,0.8,Private
-South Dakota,2007-08,21963,0.83,20764,0.79,Public
-South Dakota,2008-09,27753,0.75,22132,0.75,Private
-South Dakota,2008-09,22796,0.78,21901,0.71,Public
-South Dakota,2009-10,32647,0.82,24663,0.82,Private
-South Dakota,2009-10,21005,0.73,19740,0.7,Public
-South Dakota,2010-11,31813,0.81,26529,0.81,Private
-South Dakota,2010-11,22887,0.75,22208,0.73,Public
-South Dakota,2011-12,33425,0.82,26693,0.82,Private
-South Dakota,2011-12,23642,0.77,22716,0.76,Public
-South Dakota,2012-13,33900,0.82,28002,0.82,Private
-South Dakota,2012-13,24181,0.7,23378,0.69,Public
-Tennessee,2003-04,16987,0.57,N/A,N/A,Private
-Tennessee,2003-04,16790,0.29,N/A,N/A,Public
-Tennessee,2004-05,19678,0.58,N/A,N/A,Private
-Tennessee,2004-05,19190,0.33,N/A,N/A,Public
-Tennessee,2005-06,19091,0.58,N/A,N/A,Private
-Tennessee,2005-06,19467,0.34,N/A,N/A,Public
-Tennessee,2006-07,20193,0.59,N/A,N/A,Private
-Tennessee,2006-07,19404,0.34,N/A,N/A,Public
-Tennessee,2007-08,20014,0.58,15891,0.53,Private
-Tennessee,2007-08,20345,0.46,18183,0.44,Public
-Tennessee,2008-09,19813,0.6,16496,0.59,Private
-Tennessee,2008-09,21475,0.47,18025,0.45,Public
-Tennessee,2009-10,22017,0.61,18115,0.6,Private
-Tennessee,2009-10,17694,0.49,16955,0.48,Public
-Tennessee,2010-11,21576,0.59,17397,0.58,Private
-Tennessee,2010-11,19702,0.51,18352,0.5,Public
-Tennessee,2011-12,23328,0.58,20391,0.55,Private
-Tennessee,2011-12,21064,0.58,19472,0.57,Public
-Tennessee,2012-13,26266,0.55,23472,0.54,Private
-Tennessee,2012-13,24016,0.58,22204,0.59,Public
-Texas,2003-04,19866,0.64,N/A,N/A,Private
-Texas,2003-04,16468,0.48,N/A,N/A,Public
-Texas,2004-05,20135,0.68,N/A,N/A,Private
-Texas,2004-05,16123,0.48,N/A,N/A,Public
-Texas,2005-06,22582,0.57,N/A,N/A,Private
-Texas,2005-06,16503,0.53,N/A,N/A,Public
-Texas,2006-07,22285,0.64,N/A,N/A,Private
-Texas,2006-07,17498,0.55,N/A,N/A,Public
-Texas,2007-08,24645,0.64,19593,0.61,Private
-Texas,2007-08,17732,0.6,16623,0.6,Public
-Texas,2008-09,25932,0.64,20308,0.61,Private
-Texas,2008-09,18748,0.57,16964,0.56,Public
-Texas,2009-10,28346,0.6,20699,0.57,Private
-Texas,2009-10,19376,0.55,17700,0.54,Public
-Texas,2010-11,29043,0.59,22938,0.57,Private
-Texas,2010-11,21089,0.56,19704,0.56,Public
-Texas,2011-12,32024,0.57,24442,0.56,Private
-Texas,2011-12,22449,0.56,20634,0.55,Public
-Texas,2012-13,31799,0.63,25054,0.62,Private
-Texas,2012-13,23860,0.58,21922,0.57,Public
-Utah,2003-04,12914,0.36,N/A,N/A,Private
-Utah,2003-04,12037,0.48,N/A,N/A,Public
-Utah,2004-05,12955,0.35,N/A,N/A,Private
-Utah,2004-05,13228,0.43,N/A,N/A,Public
-Utah,2005-06,14021,0.32,N/A,N/A,Private
-Utah,2005-06,10530,0.27,N/A,N/A,Public
-Utah,2006-07,13245,0.34,N/A,N/A,Private
-Utah,2006-07,13257,0.4,N/A,N/A,Public
-Utah,2007-08,14997,0.4,13721,0.4,Private
-Utah,2007-08,11996,0.46,11487,0.44,Public
 Utah,2008-09,N/A,N/A,N/A,N/A,Private
 Utah,2008-09,N/A,N/A,N/A,N/A,Public
 Utah,2009-10,N/A,N/A,N/A,N/A,Private
-Utah,2009-10,15738,0.47,13605,0.46,Public
 Utah,2010-11,N/A,N/A,N/A,N/A,Private
-Utah,2010-11,16317,0.51,14543,0.5,Public
 Utah,2011-12,N/A,N/A,N/A,N/A,Private
-Utah,2011-12,18065,0.54,15124,0.48,Public
-Utah,2012-13,27588,0.54,27442,0.54,Private
-Utah,2012-13,18065,0.51,16355,0.49,Public
-Vermont,2003-04,19260,0.67,N/A,N/A,Private
-Vermont,2003-04,22771,0.45,N/A,N/A,Public
 Vermont,2004-05,N/A,N/A,N/A,N/A,Private
-Vermont,2004-05,19801,0.61,N/A,N/A,Public
-Vermont,2005-06,20661,0.59,N/A,N/A,Private
-Vermont,2005-06,23405,0.6,N/A,N/A,Public
-Vermont,2006-07,23909,0.58,N/A,N/A,Private
-Vermont,2006-07,25123,0.65,N/A,N/A,Public
-Vermont,2007-08,25033,0.59,17056,0.57,Private
-Vermont,2007-08,25057,0.61,15591,0.6,Public
-Vermont,2008-09,28032,0.63,19312,0.61,Private
-Vermont,2008-09,27619,0.64,16526,0.63,Public
-Vermont,2009-10,29323,0.68,19390,0.65,Private
-Vermont,2009-10,27538,0.64,16639,0.63,Public
-Vermont,2010-11,29282,0.67,21630,0.64,Private
-Vermont,2010-11,27317,0.6,19699,0.59,Public
-Vermont,2011-12,29470,0.66,22515,0.64,Private
-Vermont,2011-12,27272,0.6,19694,0.59,Public
-Vermont,2012-13,25875,0.6,20725,0.56,Private
-Vermont,2012-13,27886,0.65,22461,0.65,Public
-Virginia,2003-04,16950,0.63,N/A,N/A,Private
-Virginia,2003-04,15446,0.54,N/A,N/A,Public
-Virginia,2004-05,18272,0.61,N/A,N/A,Private
-Virginia,2004-05,15926,0.51,N/A,N/A,Public
-Virginia,2005-06,21504,0.66,N/A,N/A,Private
-Virginia,2005-06,17121,0.53,N/A,N/A,Public
-Virginia,2006-07,20141,0.65,N/A,N/A,Private
-Virginia,2006-07,17672,0.56,N/A,N/A,Public
-Virginia,2007-08,23833,0.68,19201,0.68,Private
-Virginia,2007-08,18298,0.55,15250,0.52,Public
 Virginia,2008-09,N/A,N/A,N/A,N/A,Private
-Virginia,2008-09,19675,0.55,16231,0.53,Public
 Virginia,2009-10,N/A,N/A,N/A,N/A,Private
-Virginia,2009-10,21495,0.55,18470,0.53,Public
-Virginia,2010-11,29950,0.7,23830,0.68,Private
-Virginia,2010-11,22655,0.56,19846,0.54,Public
-Virginia,2011-12,24346,0.69,18747,0.68,Private
-Virginia,2011-12,25329,0.57,21858,0.55,Public
-Virginia,2012-13,24503,0.69,20857,0.68,Private
-Virginia,2012-13,26380,0.56,22348,0.54,Public
-Washington,2003-04,21252,0.64,N/A,N/A,Private
-Washington,2003-04,16190,0.53,N/A,N/A,Public
-Washington,2004-05,22851,0.67,N/A,N/A,Private
-Washington,2004-05,19721,0.58,N/A,N/A,Public
-Washington,2005-06,21852,0.7,N/A,N/A,Private
-Washington,2005-06,15370,0.53,N/A,N/A,Public
-Washington,2006-07,22465,0.71,N/A,N/A,Private
-Washington,2006-07,16493,0.54,N/A,N/A,Public
-Washington,2007-08,22731,0.73,17151,0.73,Private
-Washington,2007-08,16696,0.52,15898,0.5,Public
-Washington,2008-09,25191,0.71,18984,0.7,Private
-Washington,2008-09,16806,0.53,16011,0.48,Public
-Washington,2009-10,27245,0.7,20964,0.69,Private
-Washington,2009-10,17767,0.52,15887,0.52,Public
-Washington,2010-11,27171,0.7,22920,0.69,Private
-Washington,2010-11,20436,0.53,18551,0.54,Public
-Washington,2011-12,28849,0.67,24108,0.67,Private
-Washington,2011-12,21383,0.53,13101,0.53,Public
-Washington,2012-13,29773,0.69,24805,0.68,Private
-Washington,2012-13,22629,0.55,21172,0.53,Public
-West Virginia,2003-04,19714,0.78,N/A,N/A,Private
-West Virginia,2003-04,17884,0.67,N/A,N/A,Public
-West Virginia,2004-05,20986,0.69,N/A,N/A,Private
-West Virginia,2004-05,15143,0.65,N/A,N/A,Public
-West Virginia,2005-06,23862,0.83,N/A,N/A,Private
-West Virginia,2005-06,18603,0.55,N/A,N/A,Public
-West Virginia,2006-07,24741,0.82,N/A,N/A,Private
-West Virginia,2006-07,16137,0.63,N/A,N/A,Public
-West Virginia,2007-08,23986,0.84,22538,0.84,Private
-West Virginia,2007-08,18366,0.68,17560,0.68,Public
-West Virginia,2008-09,27790,0.84,23990,0.83,Private
-West Virginia,2008-09,18251,0.67,18073,0.67,Public
-West Virginia,2009-10,30365,0.81,26555,0.8,Private
-West Virginia,2009-10,20090,0.7,18971,0.69,Public
-West Virginia,2010-11,32351,0.73,25019,0.71,Private
-West Virginia,2010-11,25029,0.63,21222,0.61,Public
 West Virginia,2011-12,N/A,N/A,N/A,N/A,Private
-West Virginia,2011-12,26122,0.53,22519,0.52,Public
-West Virginia,2012-13,27997,0.75,25893,0.75,Private
-West Virginia,2012-13,27264,0.7,23461,0.62,Public
-Wisconsin,2003-04,19003,0.7,N/A,N/A,Private
-Wisconsin,2003-04,15840,0.58,N/A,N/A,Public
-Wisconsin,2004-05,21030,0.68,N/A,N/A,Private
-Wisconsin,2004-05,16803,0.58,N/A,N/A,Public
-Wisconsin,2005-06,23426,0.66,N/A,N/A,Private
-Wisconsin,2005-06,18418,0.61,N/A,N/A,Public
-Wisconsin,2006-07,26781,0.82,N/A,N/A,Private
-Wisconsin,2006-07,17766,0.59,N/A,N/A,Public
-Wisconsin,2007-08,26506,0.72,19743,0.7,Private
-Wisconsin,2007-08,19789,0.62,17085,0.61,Public
-Wisconsin,2008-09,28376,0.75,21353,0.73,Private
-Wisconsin,2008-09,20554,0.63,18389,0.61,Public
-Wisconsin,2009-10,29297,0.76,22379,0.75,Private
-Wisconsin,2009-10,22740,0.64,19879,0.62,Public
-Wisconsin,2010-11,32127,0.75,25816,0.75,Private
-Wisconsin,2010-11,24232,0.64,21967,0.63,Public
-Wisconsin,2011-12,31601,0.77,26414,0.76,Private
-Wisconsin,2011-12,26603,0.65,22877,0.64,Public
-Wisconsin,2012-13,31244,0.78,25712,0.76,Private
-Wisconsin,2012-13,27094,0.67,23664,0.66,Public
 Wyoming,2003-04,N/A,N/A,N/A,N/A,Private
-Wyoming,2003-04,15352,0.44,N/A,N/A,Public
 Wyoming,2004-05,N/A,N/A,N/A,N/A,Private
-Wyoming,2004-05,16741,0.45,N/A,N/A,Public
 Wyoming,2005-06,N/A,N/A,N/A,N/A,Private
-Wyoming,2005-06,16855,0.44,N/A,N/A,Public
 Wyoming,2006-07,N/A,N/A,N/A,N/A,Private
-Wyoming,2006-07,16005,0.49,N/A,N/A,Public
 Wyoming,2007-08,N/A,N/A,N/A,N/A,Private
-Wyoming,2007-08,16307,0.48,14902,0.47,Public
 Wyoming,2008-09,N/A,N/A,N/A,N/A,Private
-Wyoming,2008-09,17084,0.5,15127,0.49,Public
 Wyoming,2009-10,N/A,N/A,N/A,N/A,Private
-Wyoming,2009-10,20571,0.42,18419,0.41,Public
 Wyoming,2010-11,N/A,N/A,N/A,N/A,Private
-Wyoming,2010-11,23341,0.47,21706,0.46,Public
 Wyoming,2011-12,N/A,N/A,N/A,N/A,Private
-Wyoming,2011-12,21241,0.47,19238,0.46,Public
 Wyoming,2012-13,N/A,N/A,N/A,N/A,Private
+North Dakota,2005-06,22381,0.93,N/A,N/A,Private
+Alaska,2006-07,10197,0.93,N/A,N/A,Private
+North Dakota,2006-07,22869,0.92,N/A,N/A,Private
+North Dakota,2010-11,25750,0.85,21944,0.84,Private
+South Dakota,2006-07,21708,0.85,N/A,N/A,Public
+Kansas,2005-06,20431,0.85,N/A,N/A,Private
+West Virginia,2008-09,27790,0.84,23990,0.83,Private
+West Virginia,2007-08,23986,0.84,22538,0.84,Private
+South Dakota,2005-06,20599,0.84,N/A,N/A,Public
+Arizona,2006-07,54159,0.83,N/A,N/A,Private
+Arizona,2005-06,49152,0.83,N/A,N/A,Private
+Iowa,2009-10,31217,0.83,21243,0.81,Private
+Kansas,2009-10,28821,0.83,26122,0.82,Private
+Kansas,2010-11,28403,0.83,25827,0.82,Private
+North Dakota,2010-11,28008,0.83,20812,0.82,Public
+South Dakota,2006-07,26898,0.83,N/A,N/A,Private
+Iowa,2005-06,25035,0.83,N/A,N/A,Private
+West Virginia,2005-06,23862,0.83,N/A,N/A,Private
+Iowa,2004-05,22929,0.83,N/A,N/A,Private
+South Dakota,2007-08,21963,0.83,20764,0.79,Public
+South Dakota,2004-05,21184,0.83,N/A,N/A,Private
+Kansas,2004-05,18529,0.83,N/A,N/A,Private
+South Dakota,2012-13,33900,0.82,28002,0.82,Private
+South Dakota,2011-12,33425,0.82,26693,0.82,Private
+South Dakota,2009-10,32647,0.82,24663,0.82,Private
+Iowa,2008-09,32345,0.82,20208,0.81,Private
+Iowa,2007-08,30131,0.82,18494,0.8,Private
+Iowa,2010-11,29547,0.82,22706,0.81,Private
+Wisconsin,2006-07,26781,0.82,N/A,N/A,Private
+South Dakota,2005-06,25743,0.82,N/A,N/A,Private
+West Virginia,2006-07,24741,0.82,N/A,N/A,Private
+Kansas,2007-08,23938,0.82,20438,0.81,Private
+Kansas,2006-07,22327,0.82,N/A,N/A,Private
+South Dakota,2003-04,18858,0.82,N/A,N/A,Public
+South Dakota,2010-11,31813,0.81,26529,0.81,Private
+Iowa,2011-12,30997,0.81,24633,0.8,Private
+West Virginia,2009-10,30365,0.81,26555,0.8,Private
+North Dakota,2011-12,28970,0.81,23393,0.81,Private
+Iowa,2006-07,27457,0.81,N/A,N/A,Private
+North Dakota,2009-10,26655,0.81,17396,0.78,Public
+Kansas,2008-09,25130,0.81,22036,0.82,Private
+Mississippi,2007-08,22553,0.81,20916,0.81,Private
+Kansas,2003-04,17088,0.81,N/A,N/A,Private
+New Hampshire,2011-12,33578,0.8,24456,0.79,Public
+South Dakota,2007-08,26530,0.8,21830,0.8,Private
+North Dakota,2009-10,25439,0.8,20868,0.79,Private
+Montana,2003-04,24769,0.8,N/A,N/A,Private
+Iowa,2003-04,22003,0.8,N/A,N/A,Private
+South Dakota,2003-04,19980,0.8,N/A,N/A,Private
+Mississippi,2004-05,17554,0.8,N/A,N/A,Private
+New Hampshire,2012-13,34170,0.79,25090,0.78,Public
+New Hampshire,2010-11,32385,0.79,22309,0.78,Public
+Kansas,2012-13,27023,0.79,26163,0.79,Private
+Mississippi,2008-09,26111,0.79,24513,0.79,Private
+Wisconsin,2012-13,31244,0.78,25712,0.76,Private
+Maine,2011-12,29756,0.78,24267,0.78,Public
+Rhode Island,2012-13,28875,0.78,24427,0.77,Public
+Rhode Island,2011-12,27919,0.78,21106,0.77,Public
+Maine,2010-11,26670,0.78,20688,0.77,Public
+Montana,2004-05,26002,0.78,N/A,N/A,Private
+South Dakota,2008-09,22796,0.78,21901,0.71,Public
+Nebraska,2004-05,19729,0.78,N/A,N/A,Private
+West Virginia,2003-04,19714,0.78,N/A,N/A,Private
+Wisconsin,2011-12,31601,0.77,26414,0.76,Private
+Iowa,2012-13,31487,0.77,26385,0.77,Private
+Maine,2012-13,31449,0.77,25681,0.75,Public
+New Hampshire,2009-10,31111,0.77,20282,0.76,Public
+Minnesota,2008-09,29195,0.77,31749,0.76,Private
+New Hampshire,2007-08,26493,0.77,17014,0.74,Public
+New Mexico,2012-13,25256,0.77,24771,0.64,Private
+South Dakota,2011-12,23642,0.77,22716,0.76,Public
+South Dakota,2004-05,19702,0.77,N/A,N/A,Public
+South Carolina,2005-06,18823,0.77,N/A,N/A,Private
+Mississippi,2005-06,17337,0.77,N/A,N/A,Private
+New Hampshire,2008-09,29675,0.76,18473,0.75,Public
+Wisconsin,2009-10,29297,0.76,22379,0.75,Private
+Minnesota,2007-08,29205,0.76,18764,0.71,Private
+Montana,2011-12,27895,0.76,24245,0.76,Private
+Nebraska,2008-09,27651,0.76,21914,0.76,Private
+New Hampshire,2006-07,24474,0.76,N/A,N/A,Public
+Nebraska,2006-07,21499,0.76,N/A,N/A,Private
+Ohio,2010-11,32210,0.75,22803,0.74,Private
+Wisconsin,2010-11,32127,0.75,25816,0.75,Private
+Wisconsin,2008-09,28376,0.75,21353,0.73,Private
+West Virginia,2012-13,27997,0.75,25893,0.75,Private
+South Dakota,2008-09,27753,0.75,22132,0.75,Private
+Massachusetts,2011-12,27627,0.75,22334,0.73,Public
+Nebraska,2009-10,27286,0.75,22096,0.74,Private
+Illinois,2009-10,26950,0.75,21411,0.74,Private
+Alabama,2011-12,26067,0.75,23292,0.71,Private
+Montana,2009-10,25643,0.75,22631,0.74,Private
+Montana,2012-13,24708,0.75,21661,0.74,Private
+South Dakota,2010-11,22887,0.75,22208,0.73,Public
+Alabama,2005-06,21120,0.75,N/A,N/A,Private
+Kentucky,2009-10,19754,0.75,17825,0.73,Private
+Pennsylvania,2012-13,32659,0.74,25892,0.73,Public
+Ohio,2012-13,32101,0.74,25231,0.73,Private
+Minnesota,2009-10,31400,0.74,20304,0.73,Private
+Ohio,2009-10,31183,0.74,21195,0.72,Private
+Michigan,2008-09,30365,0.74,19104,0.72,Private
+Michigan,2010-11,30310,0.74,22613,0.73,Private
+Michigan,2007-08,29519,0.74,18659,0.72,Private
+Massachusetts,2012-13,27348,0.74,23466,0.73,Public
+Minnesota,2005-06,26705,0.74,N/A,N/A,Private
+Pennsylvania,2008-09,26005,0.74,19088,0.73,Public
+Rhode Island,2010-11,24500,0.74,19547,0.73,Public
+Nebraska,2007-08,23655,0.74,19828,0.74,Private
+Nebraska,2005-06,20853,0.74,N/A,N/A,Private
+Mississippi,2006-07,20849,0.74,N/A,N/A,Private
+District of Columbia,2003-04,16270,0.74,N/A,N/A,Public
+District of Columbia,2004-05,16270,0.74,N/A,N/A,Public
+District of Columbia,2006-07,16270,0.74,N/A,N/A,Public
+Minnesota,2011-12,34221,0.73,23941,0.71,Private
+Pennsylvania,2011-12,32458,0.73,25490,0.72,Public
+Ohio,2011-12,32389,0.73,24469,0.72,Private
+West Virginia,2010-11,32351,0.73,25019,0.71,Private
+Minnesota,2010-11,32128,0.73,22431,0.72,Private
+Michigan,2011-12,32030,0.73,25015,0.72,Private
+Michigan,2009-10,29735,0.73,20447,0.72,Private
+Nebraska,2010-11,29146,0.73,23647,0.73,Private
+Minnesota,2006-07,28365,0.73,N/A,N/A,Private
+Montana,2010-11,28123,0.73,21869,0.73,Private
+Ohio,2007-08,25316,0.73,18551,0.71,Private
+Ohio,2006-07,23738,0.73,N/A,N/A,Private
+New Hampshire,2005-06,22932,0.73,N/A,N/A,Public
+Kentucky,2010-11,22880,0.73,20097,0.69,Private
+Washington,2007-08,22731,0.73,17151,0.73,Private
+Arkansas,2006-07,22381,0.73,N/A,N/A,Private
+Minnesota,2003-04,22048,0.73,N/A,N/A,Private
+Rhode Island,2009-10,21502,0.73,18295,0.7,Public
+Ohio,2005-06,21445,0.73,N/A,N/A,Private
+South Dakota,2009-10,21005,0.73,19740,0.7,Public
+Ohio,2004-05,20444,0.73,N/A,N/A,Private
+Kentucky,2008-09,19766,0.73,17669,0.7,Private
+Kentucky,2007-08,17995,0.73,16990,0.68,Private
+Nebraska,2003-04,17754,0.73,N/A,N/A,Private
+Minnesota,2012-13,33305,0.72,23707,0.7,Private
+Michigan,2012-13,32432,0.72,26449,0.71,Private
+Illinois,2011-12,29444,0.72,23985,0.71,Private
+Illinois,2012-13,28851,0.72,24417,0.7,Private
+Iowa,2003-04,26826,0.72,N/A,N/A,Public
+Wisconsin,2007-08,26506,0.72,19743,0.7,Private
+Massachusetts,2010-11,25882,0.72,20675,0.69,Public
+Maine,2005-06,25114,0.72,N/A,N/A,Private
+Pennsylvania,2007-08,24126,0.72,17983,0.71,Public
+Michigan,2006-07,24069,0.72,N/A,N/A,Private
+Minnesota,2004-05,23769,0.72,N/A,N/A,Private
+Pennsylvania,2006-07,23630,0.72,N/A,N/A,Public
+North Dakota,2003-04,22852,0.72,N/A,N/A,Public
+Minnesota,2006-07,22224,0.72,N/A,N/A,Public
+Rhode Island,2008-09,21386,0.72,18087,0.69,Public
+New Hampshire,2004-05,21307,0.72,N/A,N/A,Public
+Minnesota,2005-06,20618,0.72,N/A,N/A,Public
+Alabama,2003-04,20051,0.72,N/A,N/A,Private
+Rhode Island,2007-08,20029,0.72,17155,0.69,Public
+Illinois,2005-06,19462,0.72,N/A,N/A,Private
+Kentucky,2004-05,15249,0.72,N/A,N/A,Private
+Ohio,2008-09,30321,0.71,19912,0.7,Private
+Pennsylvania,2010-11,29207,0.71,22251,0.71,Public
+Oregon,2011-12,28227,0.71,23466,0.69,Private
+Pennsylvania,2009-10,27838,0.71,20337,0.7,Public
+Illinois,2010-11,27795,0.71,22734,0.69,Private
+Minnesota,2008-09,26308,0.71,17322,0.68,Public
+Montana,2007-08,25246,0.71,17836,0.7,Private
+Washington,2008-09,25191,0.71,18984,0.7,Private
+Rhode Island,2004-05,24074,0.71,N/A,N/A,Private
+Indiana,2005-06,23835,0.71,N/A,N/A,Private
+Minnesota,2007-08,23526,0.71,15971,0.69,Public
+Washington,2006-07,22465,0.71,N/A,N/A,Private
+Pennsylvania,2005-06,22309,0.71,N/A,N/A,Public
+Oregon,2004-05,21084,0.71,N/A,N/A,Private
+Maine,2006-07,20878,0.71,N/A,N/A,Public
+Alabama,2006-07,20867,0.71,N/A,N/A,Private
+Alabama,2004-05,20837,0.71,N/A,N/A,Private
+Maine,2005-06,20601,0.71,N/A,N/A,Public
+Alabama,2007-08,20469,0.71,21563,0.69,Private
+Oregon,2003-04,19661,0.71,N/A,N/A,Private
+Ohio,2003-04,19504,0.71,N/A,N/A,Private
+Pennsylvania,2003-04,18788,0.71,N/A,N/A,Public
+Kentucky,2005-06,16920,0.71,N/A,N/A,Private
+Arizona,2009-10,7708,0.71,21048,0.7,Private
+Nebraska,2012-13,33135,0.7,28000,0.7,Private
+Nebraska,2011-12,31786,0.7,25199,0.7,Private
+Virginia,2010-11,29950,0.7,23830,0.68,Private
+Indiana,2010-11,29623,0.7,21207,0.67,Private
+Rhode Island,2007-08,29211,0.7,18615,0.67,Private
+Minnesota,2010-11,28907,0.7,20355,0.67,Public
+Indiana,2011-12,28429,0.7,21726,0.69,Private
+Maine,2009-10,28289,0.7,21437,0.73,Public
+Oregon,2012-13,28035,0.7,24315,0.68,Private
+New Jersey,2012-13,27914,0.7,22982,0.68,Public
+Minnesota,2009-10,27613,0.7,18374,0.67,Public
+West Virginia,2012-13,27264,0.7,23461,0.62,Public
+Washington,2009-10,27245,0.7,20964,0.69,Private
+Washington,2010-11,27171,0.7,22920,0.69,Private
+Indiana,2008-09,26588,0.7,18434,0.68,Private
+Pennsylvania,2007-08,26493,0.7,18561,0.67,Private
+New Mexico,2010-11,25084,0.7,22011,0.66,Private
+Pennsylvania,2006-07,24599,0.7,N/A,N/A,Private
+South Dakota,2012-13,24181,0.7,23378,0.69,Public
+Michigan,2005-06,23928,0.7,N/A,N/A,Private
+Oregon,2007-08,23465,0.7,18149,0.67,Private
+Washington,2005-06,21852,0.7,N/A,N/A,Private
+Rhode Island,2003-04,21586,0.7,N/A,N/A,Private
+Louisiana,2003-04,21038,0.7,N/A,N/A,Private
+Missouri,2007-08,20521,0.7,18121,0.67,Public
+Illinois,2006-07,20383,0.7,N/A,N/A,Private
+West Virginia,2009-10,20090,0.7,18971,0.69,Public
+Wisconsin,2003-04,19003,0.7,N/A,N/A,Private
+South Carolina,2003-04,17266,0.7,N/A,N/A,Private
+Minnesota,2003-04,17256,0.7,N/A,N/A,Public
+Pennsylvania,2010-11,31166,0.69,22376,0.66,Private
+Minnesota,2011-12,29958,0.69,22611,0.67,Public
+Washington,2012-13,29773,0.69,24805,0.68,Private
+Minnesota,2012-13,29657,0.69,22635,0.65,Public
+Pennsylvania,2008-09,28367,0.69,19373,0.67,Private
+New Hampshire,2005-06,27806,0.69,N/A,N/A,Private
+Oregon,2010-11,27334,0.69,22347,0.68,Private
+Iowa,2008-09,26066,0.69,20403,0.67,Public
+North Dakota,2004-05,25093,0.69,N/A,N/A,Public
+Oregon,2009-10,24579,0.69,19614,0.67,Private
+Virginia,2012-13,24503,0.69,20857,0.68,Private
+Connecticut,2010-11,24402,0.69,19603,0.68,Public
+Virginia,2011-12,24346,0.69,18747,0.68,Private
+Massachusetts,2009-10,23525,0.69,18887,0.67,Public
+Alabama,2010-11,23435,0.69,21051,0.66,Private
+Kentucky,2012-13,23267,0.69,21399,0.67,Private
+Kentucky,2011-12,22421,0.69,20726,0.66,Private
+Pennsylvania,2004-05,22065,0.69,N/A,N/A,Private
+South Carolina,2006-07,21618,0.69,N/A,N/A,Private
+Massachusetts,2008-09,21554,0.69,16579,0.67,Public
+Oregon,2005-06,21404,0.69,N/A,N/A,Private
+West Virginia,2004-05,20986,0.69,N/A,N/A,Private
+Indiana,2004-05,20920,0.69,N/A,N/A,Private
+New Jersey,2006-07,20345,0.69,N/A,N/A,Public
+Idaho,2004-05,19733,0.69,N/A,N/A,Public
+Montana,2006-07,17332,0.69,N/A,N/A,Public
+New Hampshire,2010-11,32570,0.68,20647,0.61,Private
+Pennsylvania,2012-13,32338,0.68,24349,0.66,Private
+Mississippi,2011-12,31254,0.68,26595,0.68,Private
+Pennsylvania,2011-12,30522,0.68,23041,0.65,Private
+Indiana,2012-13,30058,0.68,24061,0.65,Private
+Pennsylvania,2009-10,29617,0.68,20661,0.65,Private
+Vermont,2009-10,29323,0.68,19390,0.65,Private
+New York,2008-09,28971,0.68,19749,0.66,Private
+New Hampshire,2012-13,28779,0.68,21457,0.57,Private
+New Mexico,2011-12,28563,0.68,18980,0.68,Private
+Ohio,2011-12,27990,0.68,23350,0.67,Public
+Iowa,2007-08,26763,0.68,20012,0.66,Public
+Idaho,2012-13,26385,0.68,25794,0.67,Public
+Rhode Island,2006-07,26139,0.68,N/A,N/A,Private
+Iowa,2006-07,26070,0.68,N/A,N/A,Public
+Indiana,2007-08,25752,0.68,18562,0.67,Private
+Indiana,2006-07,25024,0.68,N/A,N/A,Private
+Montana,2008-09,24361,0.68,19040,0.67,Private
+Arkansas,2008-09,24304,0.68,19741,0.67,Private
+Virginia,2007-08,23833,0.68,19201,0.68,Private
+Illinois,2007-08,22968,0.68,18594,0.66,Private
+Oregon,2006-07,22282,0.68,N/A,N/A,Private
+Montana,2008-09,22223,0.68,21193,0.68,Public
+New Hampshire,2003-04,21366,0.68,N/A,N/A,Public
+Wisconsin,2004-05,21030,0.68,N/A,N/A,Private
+Iowa,2005-06,20809,0.68,N/A,N/A,Public
+Pennsylvania,2004-05,20693,0.68,N/A,N/A,Public
+Montana,2007-08,20217,0.68,19695,0.68,Public
+Texas,2004-05,20135,0.68,N/A,N/A,Private
+Idaho,2005-06,20064,0.68,N/A,N/A,Public
+Illinois,2004-05,18765,0.68,N/A,N/A,Private
+West Virginia,2007-08,18366,0.68,17560,0.68,Public
+Mississippi,2003-04,16958,0.68,N/A,N/A,Private
+Montana,2005-06,16708,0.68,N/A,N/A,Public
+New York,2009-10,29737,0.67,20555,0.65,Private
+New Hampshire,2007-08,29404,0.67,18067,0.63,Private
+Vermont,2010-11,29282,0.67,21630,0.64,Private
+Washington,2011-12,28849,0.67,24108,0.67,Private
+Indiana,2009-10,28629,0.67,19359,0.65,Private
+Illinois,2012-13,28260,0.67,24744,0.68,Public
+South Carolina,2012-13,27829,0.67,24989,0.66,Private
+New York,2007-08,27453,0.67,18653,0.64,Private
+Wisconsin,2012-13,27094,0.67,23664,0.66,Public
+Oklahoma,2009-10,26589,0.67,18892,0.66,Private
+New York,2005-06,24805,0.67,N/A,N/A,Private
+Oklahoma,2004-05,24379,0.67,N/A,N/A,Private
+Missouri,2012-13,24353,0.67,22626,0.67,Public
+Illinois,2008-09,24081,0.67,19111,0.64,Private
+Pennsylvania,2005-06,23301,0.67,N/A,N/A,Private
+Washington,2004-05,22851,0.67,N/A,N/A,Private
+Missouri,2010-11,22590,0.67,20101,0.66,Public
+North Dakota,2006-07,22461,0.67,N/A,N/A,Public
+Idaho,2006-07,21796,0.67,N/A,N/A,Public
+Maine,2004-05,20359,0.67,N/A,N/A,Public
+Pennsylvania,2003-04,20296,0.67,N/A,N/A,Private
+Vermont,2003-04,19260,0.67,N/A,N/A,Private
+Missouri,2006-07,18960,0.67,N/A,N/A,Public
+New Jersey,2007-08,18835,0.67,16167,0.66,Public
+West Virginia,2008-09,18251,0.67,18073,0.67,Public
+Minnesota,2004-05,18170,0.67,N/A,N/A,Public
+West Virginia,2003-04,17884,0.67,N/A,N/A,Public
+Montana,2004-05,17750,0.67,N/A,N/A,Public
+Kentucky,2006-07,16907,0.67,N/A,N/A,Private
+Kentucky,2003-04,13919,0.67,N/A,N/A,Private
+Rhode Island,2010-11,33463,0.66,21527,0.62,Private
+New York,2010-11,30015,0.66,21690,0.64,Private
+Vermont,2011-12,29470,0.66,22515,0.64,Private
+South Carolina,2011-12,28734,0.66,25289,0.66,Private
+Ohio,2010-11,26881,0.66,21418,0.65,Public
+Ohio,2009-10,26175,0.66,20132,0.64,Public
+Nation,2007-08,25200,0.66,18248,0.64,Private
+Idaho,2010-11,24112,0.66,23631,0.66,Public
+Idaho,2009-10,23946,0.66,23599,0.66,Public
+Louisiana,2007-08,23701,0.66,18698,0.61,Private
+Wisconsin,2005-06,23426,0.66,N/A,N/A,Private
+Missouri,2009-10,23192,0.66,17089,0.64,Private
+Missouri,2011-12,22824,0.66,21168,0.66,Public
+New Jersey,2009-10,22533,0.66,18390,0.65,Public
+Idaho,2003-04,22126,0.66,N/A,N/A,Public
+Oklahoma,2003-04,21787,0.66,N/A,N/A,Private
+Indiana,2003-04,21679,0.66,N/A,N/A,Private
+Virginia,2005-06,21504,0.66,N/A,N/A,Private
+Maine,2004-05,21351,0.66,N/A,N/A,Private
+Missouri,2008-09,20774,0.66,18076,0.64,Public
+Michigan,2004-05,20504,0.66,N/A,N/A,Private
+Iowa,2004-05,20051,0.66,N/A,N/A,Public
+Oregon,2004-05,19068,0.66,N/A,N/A,Public
+Rhode Island,2006-07,18928,0.66,N/A,N/A,Public
+Michigan,2003-04,18831,0.66,N/A,N/A,Private
+New Jersey,2005-06,18250,0.66,N/A,N/A,Public
+Louisiana,2004-05,18203,0.66,N/A,N/A,Private
+Illinois,2003-04,16908,0.66,N/A,N/A,Private
+Missouri,2005-06,16882,0.66,N/A,N/A,Public
+Montana,2003-04,16815,0.66,N/A,N/A,Public
+New York,2005-06,15469,0.66,N/A,N/A,Public
+New Hampshire,2009-10,30863,0.65,16793,0.6,Private
+New York,2012-13,30397,0.65,23813,0.63,Private
+New York,2011-12,30228,0.65,22887,0.64,Private
+Nation,2012-13,29708,0.65,24044,0.63,Private
+Nation,2011-12,29312,0.65,22942,0.63,Private
+New Jersey,2011-12,29306,0.65,22220,0.65,Public
+New Jersey,2012-13,29241,0.65,25388,0.61,Private
+New Jersey,2011-12,29200,0.65,23423,0.61,Private
+Nation,2010-11,29031,0.65,21889,0.63,Private
+Montana,2012-13,28030,0.65,27282,0.65,Public
+Ohio,2012-13,28010,0.65,24293,0.65,Public
+Iowa,2010-11,27891,0.65,22072,0.63,Public
+Vermont,2012-13,27886,0.65,22461,0.65,Public
+Nation,2009-10,27772,0.65,20030,0.63,Private
+Nation,2008-09,26726,0.65,19357,0.63,Private
+Idaho,2011-12,26624,0.65,25464,0.64,Public
+Wisconsin,2011-12,26603,0.65,22877,0.64,Public
+Florida,2009-10,26266,0.65,19969,0.63,Private
+Connecticut,2012-13,25348,0.65,21729,0.62,Public
+Vermont,2006-07,25123,0.65,N/A,N/A,Public
+Arkansas,2009-10,25087,0.65,20444,0.64,Private
+Arkansas,2007-08,23545,0.65,17313,0.64,Private
+Missouri,2008-09,22578,0.65,17499,0.64,Private
+Connecticut,2009-10,22443,0.65,16852,0.57,Public
+Missouri,2004-05,21155,0.65,N/A,N/A,Private
+South Carolina,2007-08,21115,0.65,17461,0.61,Private
+North Dakota,2005-06,20511,0.65,N/A,N/A,Public
+Virginia,2006-07,20141,0.65,N/A,N/A,Private
+Oregon,2006-07,18843,0.65,N/A,N/A,Public
+Oregon,2005-06,18808,0.65,N/A,N/A,Public
+Maryland,2005-06,18098,0.65,N/A,N/A,Private
+Nevada,2003-04,18000,0.65,N/A,N/A,Private
+West Virginia,2004-05,15143,0.65,N/A,N/A,Public
+New Jersey,2010-11,31150,0.64,22646,0.6,Private
+Florida,2010-11,30501,0.64,23737,0.62,Private
+Georgia,2011-12,29924,0.64,23006,0.63,Private
+Georgia,2010-11,28777,0.64,20980,0.75,Private
+Iowa,2009-10,28108,0.64,20590,0.63,Public
+Iowa,2011-12,28073,0.64,23491,0.62,Public
+Iowa,2012-13,27695,0.64,23588,0.64,Public
+Vermont,2008-09,27619,0.64,16526,0.63,Public
+Vermont,2009-10,27538,0.64,16639,0.63,Public
+Florida,2008-09,27316,0.64,19387,0.63,Private
+New Jersey,2010-11,26794,0.64,20697,0.63,Public
+Texas,2008-09,25932,0.64,20308,0.61,Private
+New Jersey,2006-07,25621,0.64,N/A,N/A,Private
+Florida,2007-08,25357,0.64,18313,0.65,Private
+New Jersey,2007-08,25109,0.64,18216,0.59,Private
+Texas,2007-08,24645,0.64,19593,0.61,Private
+Wisconsin,2010-11,24232,0.64,21967,0.63,Public
+New Jersey,2008-09,24138,0.64,18570,0.61,Private
+Connecticut,2011-12,23972,0.64,19892,0.62,Public
+Nation,2006-07,23845,0.64,N/A,N/A,Private
+Oklahoma,2007-08,23832,0.64,22126,0.66,Private
+Ohio,2008-09,23812,0.64,17714,0.63,Public
+Montana,2010-11,23714,0.64,22950,0.64,Public
+Georgia,2005-06,22913,0.64,N/A,N/A,Private
+Wisconsin,2009-10,22740,0.64,19879,0.62,Public
+Nation,2005-06,22694,0.64,N/A,N/A,Private
+Montana,2009-10,22489,0.64,21058,0.64,Public
+Alabama,2009-10,22383,0.64,19343,0.58,Private
+Missouri,2009-10,22372,0.64,19891,0.62,Public
+Texas,2006-07,22285,0.64,N/A,N/A,Private
+Missouri,2007-08,21885,0.64,17223,0.62,Private
+New York,2004-05,21582,0.64,N/A,N/A,Private
+California,2003-04,21332,0.64,N/A,N/A,Private
+Washington,2003-04,21252,0.64,N/A,N/A,Private
+New York,2003-04,20870,0.64,N/A,N/A,Private
+Nation,2004-05,20724,0.64,N/A,N/A,Private
+Texas,2003-04,19866,0.64,N/A,N/A,Private
+Nation,2003-04,19669,0.64,N/A,N/A,Private
+Maine,2003-04,18578,0.64,N/A,N/A,Public
+Rhode Island,2003-04,14000,0.64,N/A,N/A,Public
+Connecticut,2012-13,36300,0.63,24274,0.64,Private
+Texas,2012-13,31799,0.63,25054,0.62,Private
+Georgia,2012-13,30773,0.63,24925,0.62,Private
+Maryland,2012-13,30233,0.63,24490,0.62,Private
+Florida,2012-13,30044,0.63,25116,0.62,Private
+New Hampshire,2008-09,28777,0.63,16327,0.59,Private
+Oklahoma,2008-09,28718,0.63,21575,0.65,Private
+Alabama,2012-13,28267,0.63,25217,0.61,Private
+Maine,2007-08,28145,0.63,19195,0.6,Private
+Vermont,2008-09,28032,0.63,19312,0.61,Private
+New York,2006-07,26512,0.63,N/A,N/A,Private
+Kansas,2012-13,26087,0.63,24338,0.62,Public
+Maine,2006-07,25301,0.63,N/A,N/A,Private
+North Carolina,2010-11,25094,0.63,20732,0.61,Private
+West Virginia,2010-11,25029,0.63,21222,0.61,Public
+Maryland,2007-08,24014,0.63,15849,0.61,Private
+Ohio,2007-08,23217,0.63,17571,0.61,Public
+Missouri,2005-06,21188,0.63,N/A,N/A,Private
+Maine,2003-04,20706,0.63,N/A,N/A,Private
+Wisconsin,2008-09,20554,0.63,18389,0.61,Public
+Massachusetts,2007-08,19556,0.63,15293,0.61,Public
+Virginia,2003-04,16950,0.63,N/A,N/A,Private
+Maryland,2004-05,16360,0.63,N/A,N/A,Private
+West Virginia,2006-07,16137,0.63,N/A,N/A,Public
+Rhode Island,2012-13,34271,0.62,23998,0.61,Private
+Rhode Island,2011-12,33212,0.62,21686,0.59,Private
+Delaware,2012-13,32571,0.62,22846,0.6,Public
+Connecticut,2007-08,30148,0.62,16821,0.59,Private
+California,2011-12,29037,0.62,22331,0.6,Private
+Maryland,2011-12,28772,0.62,21842,0.6,Private
+New Jersey,2009-10,27644,0.62,20907,0.58,Private
+Indiana,2011-12,27626,0.62,23903,0.61,Public
+Montana,2011-12,27401,0.62,26037,0.62,Public
+South Carolina,2010-11,27087,0.62,23773,0.6,Private
+North Carolina,2012-13,27051,0.62,22962,0.58,Private
+Arkansas,2010-11,26849,0.62,24138,0.61,Private
+South Carolina,2009-10,26527,0.62,23062,0.59,Private
+Maryland,2009-10,26113,0.62,17504,0.59,Private
+Massachusetts,2007-08,25059,0.62,16105,0.59,Private
+Missouri,2010-11,24649,0.62,20160,0.59,Private
+California,2007-08,24570,0.62,18598,0.59,Private
+Maryland,2008-09,24474,0.62,17337,0.58,Private
+Oregon,2008-09,24122,0.62,19383,0.6,Private
+North Carolina,2007-08,22940,0.62,18000,0.59,Private
+Kansas,2010-11,22589,0.62,19854,0.61,Public
+New Jersey,2008-09,22383,0.62,17743,0.61,Public
+Ohio,2006-07,21661,0.62,N/A,N/A,Public
+New Jersey,2004-05,21278,0.62,N/A,N/A,Private
+Georgia,2007-08,20558,0.62,17314,0.78,Private
+Wisconsin,2007-08,19789,0.62,17085,0.61,Public
+Maryland,2006-07,18585,0.62,N/A,N/A,Private
+Nebraska,2004-05,17722,0.62,N/A,N/A,Public
+Massachusetts,2005-06,15910,0.62,N/A,N/A,Public
+Delaware,2003-04,15012,0.62,N/A,N/A,Private
+Rhode Island,2009-10,32165,0.61,20874,0.57,Private
+Florida,2011-12,29990,0.61,23350,0.6,Private
+New Hampshire,2011-12,29926,0.61,22079,0.54,Private
+Mississippi,2012-13,29691,0.61,28219,0.61,Private
+Connecticut,2008-09,29563,0.61,15320,0.58,Private
+Massachusetts,2012-13,29388,0.61,22661,0.58,Private
+Michigan,2012-13,29092,0.61,25547,0.63,Public
+Arkansas,2011-12,28069,0.61,24148,0.6,Private
+California,2010-11,28063,0.61,20997,0.58,Private
+Georgia,2009-10,27208,0.61,18951,0.73,Private
+New Hampshire,2004-05,25931,0.61,N/A,N/A,Private
+Illinois,2010-11,25623,0.61,21117,0.61,Public
+Vermont,2007-08,25057,0.61,15591,0.6,Public
+New Hampshire,2006-07,24507,0.61,N/A,N/A,Private
+Georgia,2008-09,24310,0.61,18156,0.77,Private
+Kentucky,2011-12,24196,0.61,21503,0.6,Public
+Nebraska,2011-12,23982,0.61,22458,0.6,Public
+Massachusetts,2006-07,23460,0.61,N/A,N/A,Private
+North Carolina,2012-13,23440,0.61,21986,0.58,Public
+Georgia,2012-13,22833,0.61,20611,0.59,Public
+Tennessee,2009-10,22017,0.61,18115,0.6,Private
+New Jersey,2003-04,21834,0.61,N/A,N/A,Private
+Colorado,2003-04,20228,0.61,N/A,N/A,Private
+Ohio,2005-06,20061,0.61,N/A,N/A,Public
+Vermont,2004-05,19801,0.61,N/A,N/A,Public
+Massachusetts,2004-05,19779,0.61,N/A,N/A,Private
+Nebraska,2006-07,19544,0.61,N/A,N/A,Public
+Ohio,2004-05,19124,0.61,N/A,N/A,Public
+Wisconsin,2005-06,18418,0.61,N/A,N/A,Public
+Virginia,2004-05,18272,0.61,N/A,N/A,Private
+New Mexico,2011-12,17722,0.61,17615,0.6,Public
+New York,2006-07,17385,0.61,N/A,N/A,Public
+South Carolina,2004-05,16833,0.61,N/A,N/A,Private
+Kentucky,2006-07,16654,0.61,N/A,N/A,Public
+Massachusetts,2006-07,15897,0.61,N/A,N/A,Public
+New York,2003-04,15728,0.61,N/A,N/A,Public
+New York,2004-05,15326,0.61,N/A,N/A,Public
+Missouri,2003-04,14906,0.61,N/A,N/A,Public
+New Jersey,2004-05,14693,0.61,N/A,N/A,Public
+Rhode Island,2008-09,32434,0.6,18831,0.58,Private
+Massachusetts,2011-12,29093,0.6,22293,0.57,Private
+Texas,2009-10,28346,0.6,20699,0.57,Private
+California,2012-13,28191,0.6,22274,0.58,Private
+Michigan,2011-12,28147,0.6,23906,0.62,Public
+Massachusetts,2010-11,28047,0.6,20376,0.56,Private
+Indiana,2012-13,27878,0.6,24485,0.59,Public
+Vermont,2010-11,27317,0.6,19699,0.59,Public
+Vermont,2011-12,27272,0.6,19694,0.59,Public
+North Carolina,2011-12,27024,0.6,22889,0.56,Private
+Illinois,2011-12,26956,0.6,23022,0.6,Public
+Michigan,2010-11,26937,0.6,22572,0.62,Public
+Indiana,2010-11,26488,0.6,21745,0.59,Public
+Massachusetts,2009-10,26126,0.6,18406,0.56,Private
+California,2008-09,25911,0.6,18180,0.57,Private
+Vermont,2012-13,25875,0.6,20725,0.56,Private
+North Carolina,2009-10,25267,0.6,19491,0.57,Private
+Nation,2012-13,25043,0.6,22205,0.59,Public
+Oregon,2010-11,24616,0.6,21373,0.59,Public
+North Carolina,2008-09,24498,0.6,19788,0.58,Private
+Indiana,2008-09,24487,0.6,19193,0.58,Public
+Oregon,2009-10,23675,0.6,20652,0.59,Public
+Vermont,2005-06,23405,0.6,N/A,N/A,Public
+Indiana,2007-08,22261,0.6,17870,0.58,Public
+Nebraska,2010-11,22222,0.6,20845,0.6,Public
+Connecticut,2004-05,21946,0.6,N/A,N/A,Private
+New Hampshire,2003-04,21550,0.6,N/A,N/A,Private
+California,2004-05,21186,0.6,N/A,N/A,Private
+Massachusetts,2005-06,20781,0.6,N/A,N/A,Private
+Nebraska,2008-09,20080,0.6,18381,0.59,Public
+Tennessee,2008-09,19813,0.6,16496,0.59,Private
+Massachusetts,2003-04,18594,0.6,N/A,N/A,Private
+Texas,2007-08,17732,0.6,16623,0.6,Public
+Arkansas,2003-04,17380,0.6,N/A,N/A,Private
+Oregon,2003-04,16361,0.6,N/A,N/A,Public
+Maryland,2003-04,16137,0.6,N/A,N/A,Private
+Texas,2010-11,29043,0.59,22938,0.57,Private
+Maryland,2010-11,28642,0.59,20460,0.58,Private
+Connecticut,2006-07,28462,0.59,N/A,N/A,Private
+Louisiana,2012-13,27775,0.59,24875,0.59,Private
+Massachusetts,2008-09,26305,0.59,17098,0.56,Private
+Indiana,2009-10,25762,0.59,20454,0.57,Public
+Vermont,2007-08,25033,0.59,17056,0.57,Private
+Michigan,2009-10,24854,0.59,20164,0.61,Public
+Nebraska,2012-13,24130,0.59,22634,0.58,Public
+North Carolina,2011-12,22779,0.59,20778,0.55,Public
+Oregon,2008-09,21618,0.59,19123,0.56,Public
+Tennessee,2010-11,21576,0.59,17397,0.58,Private
+Alabama,2006-07,21569,0.59,N/A,N/A,Public
+Connecticut,2003-04,21389,0.59,N/A,N/A,Private
+Vermont,2005-06,20661,0.59,N/A,N/A,Private
+Oregon,2007-08,20291,0.59,17918,0.58,Public
+Tennessee,2006-07,20193,0.59,N/A,N/A,Private
+Nebraska,2005-06,19366,0.59,N/A,N/A,Public
+Georgia,2004-05,19061,0.59,N/A,N/A,Private
+Nebraska,2007-08,18893,0.59,17432,0.62,Public
+Louisiana,2003-04,18621,0.59,N/A,N/A,Public
+North Carolina,2003-04,18436,0.59,N/A,N/A,Private
+Wisconsin,2006-07,17766,0.59,N/A,N/A,Public
+Mississippi,2005-06,17673,0.59,N/A,N/A,Public
+Kentucky,2005-06,14495,0.59,N/A,N/A,Public
+Louisiana,2010-11,32107,0.58,26815,0.58,Private
+Louisiana,2009-10,29971,0.58,25000,0.57,Private
+California,2009-10,26510,0.58,18007,0.56,Private
+Florida,2006-07,25770,0.58,N/A,N/A,Private
+Maryland,2012-13,25156,0.58,21366,0.56,Public
+Nation,2011-12,24477,0.58,21200,0.57,Public
+Tennessee,2012-13,24016,0.58,22204,0.59,Public
+Vermont,2006-07,23909,0.58,N/A,N/A,Private
+Texas,2012-13,23860,0.58,21922,0.57,Public
+California,2006-07,23690,0.58,N/A,N/A,Private
+Tennessee,2011-12,23328,0.58,20391,0.55,Private
+Florida,2003-04,22759,0.58,N/A,N/A,Private
+California,2005-06,22611,0.58,N/A,N/A,Private
+New Jersey,2005-06,22106,0.58,N/A,N/A,Private
+Florida,2004-05,21658,0.58,N/A,N/A,Private
+Georgia,2011-12,21423,0.58,19685,0.57,Public
+Tennessee,2011-12,21064,0.58,19472,0.57,Public
+Tennessee,2007-08,20014,0.58,15891,0.53,Private
+Michigan,2005-06,19935,0.58,N/A,N/A,Public
+Connecticut,2007-08,19869,0.58,15642,0.61,Public
+North Carolina,2005-06,19856,0.58,N/A,N/A,Private
+Washington,2004-05,19721,0.58,N/A,N/A,Public
+Tennessee,2004-05,19678,0.58,N/A,N/A,Private
+North Carolina,2004-05,19207,0.58,N/A,N/A,Private
+Tennessee,2005-06,19091,0.58,N/A,N/A,Private
+Ohio,2003-04,19002,0.58,N/A,N/A,Public
+Michigan,2004-05,18722,0.58,N/A,N/A,Public
+Louisiana,2004-05,18679,0.58,N/A,N/A,Public
+Connecticut,2005-06,17707,0.58,N/A,N/A,Public
+Arkansas,2004-05,17647,0.58,N/A,N/A,Public
+Wisconsin,2004-05,16803,0.58,N/A,N/A,Public
+Wisconsin,2003-04,15840,0.58,N/A,N/A,Public
+Arkansas,2003-04,15402,0.58,N/A,N/A,Public
+Mississippi,2003-04,14998,0.58,N/A,N/A,Public
+Massachusetts,2003-04,13378,0.58,N/A,N/A,Public
+Texas,2011-12,32024,0.57,24442,0.56,Private
+South Carolina,2012-13,29407,0.57,24173,0.56,Public
+Oklahoma,2012-13,28660,0.57,25404,0.57,Private
+Mississippi,2012-13,27222,0.57,25774,0.56,Public
+Missouri,2012-13,25940,0.57,22432,0.57,Private
+Virginia,2011-12,25329,0.57,21858,0.55,Public
+Maryland,2011-12,25060,0.57,20202,0.55,Public
+Kentucky,2012-13,25036,0.57,23310,0.56,Public
+District of Columbia,2006-07,23738,0.57,N/A,N/A,Private
+Missouri,2011-12,23342,0.57,19958,0.56,Private
+Nation,2010-11,23096,0.57,20014,0.56,Public
+Kansas,2011-12,23046,0.57,20591,0.61,Public
+Texas,2005-06,22582,0.57,N/A,N/A,Private
+Kentucky,2010-11,22119,0.57,19784,0.54,Public
+Georgia,2006-07,21837,0.57,N/A,N/A,Private
+Michigan,2006-07,21245,0.57,N/A,N/A,Public
+Connecticut,2008-09,20451,0.57,15382,0.55,Public
+North Carolina,2006-07,20426,0.57,N/A,N/A,Private
+District of Columbia,2003-04,19536,0.57,N/A,N/A,Private
+Texas,2008-09,18748,0.57,16964,0.56,Public
+Michigan,2003-04,18735,0.57,N/A,N/A,Public
+Nebraska,2003-04,17181,0.57,N/A,N/A,Public
+Tennessee,2003-04,16987,0.57,N/A,N/A,Private
+Georgia,2003-04,16869,0.57,N/A,N/A,Private
+Missouri,2004-05,15777,0.57,N/A,N/A,Public
+Massachusetts,2004-05,14728,0.57,N/A,N/A,Public
+Georgia,2008-09,14588,0.57,13031,0.55,Public
+New Jersey,2003-04,14539,0.57,N/A,N/A,Public
+Connecticut,2011-12,33741,0.56,23262,0.54,Private
+Delaware,2011-12,33649,0.56,22257,0.54,Public
+Connecticut,2010-11,33459,0.56,22640,0.54,Private
+Connecticut,2009-10,32316,0.56,20132,0.55,Private
+Oklahoma,2011-12,28569,0.56,23510,0.53,Private
+Maine,2008-09,26502,0.56,17280,0.54,Private
+Florida,2005-06,26489,0.56,N/A,N/A,Private
+Virginia,2012-13,26380,0.56,22348,0.54,Public
+Oregon,2011-12,25880,0.56,23092,0.55,Public
+Connecticut,2005-06,25137,0.56,N/A,N/A,Private
+Louisiana,2006-07,25076,0.56,N/A,N/A,Private
+Michigan,2008-09,24252,0.56,19536,0.58,Public
+Oregon,2012-13,24248,0.56,22147,0.55,Public
+Mississippi,2010-11,24211,0.56,20748,0.55,Private
+South Carolina,2008-09,24090,0.56,18634,0.54,Private
+Virginia,2010-11,22655,0.56,19846,0.54,Public
+Texas,2011-12,22449,0.56,20634,0.55,Public
+District of Columbia,2011-12,22106,0.56,14925,0.54,Private
+Colorado,2010-11,22054,0.56,19159,0.54,Public
+Illinois,2009-10,21842,0.56,17794,0.56,Public
+Nation,2009-10,21604,0.56,18290,0.55,Public
+Texas,2010-11,21089,0.56,19704,0.56,Public
+New York,2008-09,20911,0.56,18843,0.54,Public
+Indiana,2006-07,20722,0.56,N/A,N/A,Public
+Georgia,2010-11,20479,0.56,19162,0.54,Public
+Nation,2008-09,20459,0.56,17167,0.54,Public
+New York,2007-08,18026,0.56,15880,0.55,Public
+Arkansas,2005-06,17969,0.56,N/A,N/A,Public
+Alabama,2004-05,17948,0.56,N/A,N/A,Public
+Nebraska,2009-10,17677,0.56,14449,0.59,Public
+Virginia,2006-07,17672,0.56,N/A,N/A,Public
+Connecticut,2006-07,17544,0.56,N/A,N/A,Public
+Mississippi,2004-05,16909,0.56,N/A,N/A,Public
+Missouri,2003-04,16446,0.56,N/A,N/A,Private
+North Carolina,2005-06,16323,0.56,N/A,N/A,Public
+New Mexico,2009-10,16298,0.56,15975,0.52,Public
+Kentucky,2004-05,16210,0.56,N/A,N/A,Public
+Rhode Island,2004-05,16200,0.56,N/A,N/A,Public
+Rhode Island,2005-06,16200,0.56,N/A,N/A,Public
+Alaska,2012-13,9757,0.56,3921,0.54,Private
+Alaska,2009-10,31000,0.55,19450,0.55,Private
+Louisiana,2011-12,28486,0.55,23601,0.54,Private
+Mississippi,2011-12,26552,0.55,25926,0.54,Public
+Tennessee,2012-13,26266,0.55,23472,0.54,Private
+District of Columbia,2007-08,25996,0.55,17391,0.39,Private
+Arkansas,2012-13,25700,0.55,21731,0.54,Private
+Louisiana,2008-09,25677,0.55,20969,0.56,Private
+Alabama,2009-10,25388,0.55,21525,0.53,Public
+Alabama,2008-09,24011,0.55,25047,0.53,Private
+Colorado,2012-13,23937,0.55,20824,0.54,Public
+Washington,2012-13,22629,0.55,21172,0.53,Public
+New York,2012-13,21720,0.55,19319,0.53,Public
+New York,2009-10,21706,0.55,18185,0.5,Public
+Virginia,2009-10,21495,0.55,18470,0.53,Public
+Colorado,2009-10,21192,0.55,18639,0.53,Public
+New York,2011-12,20875,0.55,18475,0.52,Public
+Virginia,2008-09,19675,0.55,16231,0.53,Public
+Kansas,2008-09,19553,0.55,17745,0.52,Public
+Texas,2009-10,19376,0.55,17700,0.54,Public
+Nation,2007-08,19065,0.55,16314,0.53,Public
+West Virginia,2005-06,18603,0.55,N/A,N/A,Public
+Louisiana,2006-07,18565,0.55,N/A,N/A,Public
+Kansas,2006-07,18485,0.55,N/A,N/A,Public
+Oklahoma,2008-09,18450,0.55,16349,0.51,Public
+Virginia,2007-08,18298,0.55,15250,0.52,Public
+Nation,2005-06,17606,0.55,N/A,N/A,Public
+Texas,2006-07,17498,0.55,N/A,N/A,Public
+Kansas,2005-06,17335,0.55,N/A,N/A,Public
+Kentucky,2007-08,16176,0.55,14517,0.49,Public
+North Carolina,2006-07,15623,0.55,N/A,N/A,Public
+Alaska,2007-08,28597,0.54,14740,0.45,Public
+Colorado,2012-13,28506,0.54,23245,0.53,Private
+Utah,2012-13,27588,0.54,27442,0.54,Private
+Arkansas,2012-13,25257,0.54,23545,0.53,Public
+Mississippi,2010-11,23641,0.54,22833,0.54,Public
+South Carolina,2009-10,22851,0.54,18893,0.52,Public
+Maryland,2010-11,22695,0.54,18121,0.53,Public
+Arizona,2012-13,22165,0.54,20491,0.56,Public
+Michigan,2007-08,21488,0.54,18249,0.47,Public
+Arkansas,2010-11,21413,0.54,20363,0.52,Public
+Kansas,2009-10,21177,0.54,20557,0.53,Public
+South Carolina,2007-08,21076,0.54,17787,0.51,Public
+New York,2010-11,20561,0.54,20155,0.51,Public
+Arizona,2011-12,20265,0.54,17868,0.55,Public
+Indiana,2005-06,20230,0.54,N/A,N/A,Public
+Illinois,2008-09,20192,0.54,16423,0.54,Public
+Alabama,2005-06,20179,0.54,N/A,N/A,Public
+Colorado,2008-09,20087,0.54,17284,0.53,Public
+Oklahoma,2009-10,19874,0.54,18895,0.53,Public
+Arkansas,2009-10,19562,0.54,18278,0.53,Public
+Kentucky,2009-10,19255,0.54,16992,0.52,Public
+Kansas,2007-08,19049,0.54,17574,0.45,Public
+Arkansas,2006-07,18615,0.54,N/A,N/A,Public
+Nation,2006-07,18564,0.54,N/A,N/A,Public
+New Mexico,2012-13,18473,0.54,18133,0.53,Public
+Utah,2011-12,18065,0.54,15124,0.48,Public
+Connecticut,2004-05,17607,0.54,N/A,N/A,Public
+Alabama,2003-04,17601,0.54,N/A,N/A,Public
+Kansas,2004-05,16902,0.54,N/A,N/A,Public
+Nation,2004-05,16867,0.54,N/A,N/A,Public
+Arizona,2004-05,16795,0.54,N/A,N/A,Public
+Washington,2006-07,16493,0.54,N/A,N/A,Public
+Georgia,2009-10,16434,0.54,14565,0.52,Public
+Nation,2003-04,16389,0.54,N/A,N/A,Public
+Connecticut,2003-04,15619,0.54,N/A,N/A,Public
+Virginia,2003-04,15446,0.54,N/A,N/A,Public
+North Carolina,2007-08,15434,0.54,14939,0.49,Public
+Georgia,2007-08,15071,0.54,13526,0.53,Public
+Alabama,2012-13,28994,0.53,25728,0.51,Public
+South Carolina,2011-12,27100,0.53,23706,0.52,Public
+West Virginia,2011-12,26122,0.53,22519,0.52,Public
+South Carolina,2010-11,25358,0.53,20447,0.51,Public
+Colorado,2008-09,25131,0.53,18047,0.42,Private
+South Carolina,2008-09,21958,0.53,17904,0.51,Public
+Arkansas,2011-12,21514,0.53,20388,0.52,Public
+Washington,2011-12,21383,0.53,13101,0.53,Public
+Missouri,2006-07,20982,0.53,N/A,N/A,Private
+Oklahoma,2010-11,20815,0.53,20109,0.51,Public
+Washington,2010-11,20436,0.53,18551,0.54,Public
+North Carolina,2010-11,18750,0.53,17472,0.49,Public
+Oklahoma,2007-08,18549,0.53,16911,0.52,Public
+California,2012-13,18066,0.53,17322,0.53,Public
+Arkansas,2008-09,17835,0.53,16751,0.53,Public
+North Carolina,2008-09,17373,0.53,16067,0.5,Public
+Virginia,2005-06,17121,0.53,N/A,N/A,Public
+Oklahoma,2005-06,16911,0.53,N/A,N/A,Public
+Washington,2008-09,16806,0.53,16011,0.48,Public
+Texas,2005-06,16503,0.53,N/A,N/A,Public
+Washington,2003-04,16190,0.53,N/A,N/A,Public
+Oklahoma,2003-04,15692,0.53,N/A,N/A,Public
+Georgia,2004-05,15381,0.53,N/A,N/A,Public
+Washington,2005-06,15370,0.53,N/A,N/A,Public
+District of Columbia,2010-11,28241,0.52,17371,0.51,Private
+Colorado,2009-10,27176,0.52,18500,0.41,Private
+Oklahoma,2010-11,24511,0.52,16688,0.5,Private
+Colorado,2011-12,23987,0.52,21326,0.51,Public
+Maine,2010-11,23630,0.52,20267,0.51,Private
+Oklahoma,2011-12,22374,0.52,21284,0.51,Public
+District of Columbia,2012-13,22048,0.52,19302,0.44,Private
+Mississippi,2009-10,22006,0.52,20633,0.52,Public
+Mississippi,2008-09,21521,0.52,20000,0.52,Public
+Oklahoma,2012-13,20750,0.52,20414,0.5,Public
+South Carolina,2006-07,20477,0.52,N/A,N/A,Public
+Mississippi,2007-08,19465,0.52,18248,0.51,Public
+Colorado,2007-08,18762,0.52,16111,0.51,Public
+Colorado,2006-07,18320,0.52,N/A,N/A,Public
+South Carolina,2004-05,17900,0.52,N/A,N/A,Public
+Washington,2009-10,17767,0.52,15887,0.52,Public
+Louisiana,2005-06,17693,0.52,N/A,N/A,Public
+Illinois,2007-08,17666,0.52,14672,0.52,Public
+Washington,2007-08,16696,0.52,15898,0.5,Public
+Arkansas,2007-08,16662,0.52,15649,0.52,Public
+Kansas,2003-04,16011,0.52,N/A,N/A,Public
+District of Columbia,2009-10,26932,0.51,17406,0.4,Private
+Alabama,2010-11,25920,0.51,21916,0.5,Public
+Alaska,2008-09,24707,0.51,15316,0.48,Public
+Alabama,2008-09,24009,0.51,19763,0.49,Public
+Florida,2012-13,22065,0.51,20672,0.5,Public
+Maryland,2009-10,20066,0.51,15276,0.5,Public
+Tennessee,2010-11,19702,0.51,18352,0.5,Public
+South Carolina,2005-06,19485,0.51,N/A,N/A,Public
+Indiana,2004-05,18907,0.51,N/A,N/A,Public
+Indiana,2003-04,18536,0.51,N/A,N/A,Public
+Utah,2012-13,18065,0.51,16355,0.49,Public
+Oklahoma,2006-07,17939,0.51,N/A,N/A,Public
+Oklahoma,2004-05,16525,0.51,N/A,N/A,Public
+Colorado,2004-05,16352,0.51,N/A,N/A,Public
+Utah,2010-11,16317,0.51,14543,0.5,Public
+Virginia,2004-05,15926,0.51,N/A,N/A,Public
+New Mexico,2003-04,15916,0.51,N/A,N/A,Private
+Colorado,2003-04,15429,0.51,N/A,N/A,Public
+North Carolina,2004-05,15018,0.51,N/A,N/A,Public
+Georgia,2003-04,14733,0.51,N/A,N/A,Public
+Georgia,2005-06,14587,0.51,N/A,N/A,Public
+Hawaii,2011-12,30893,0.5,21291,0.49,Private
+Maine,2011-12,28167,0.5,22950,0.49,Private
+Alaska,2006-07,27063,0.5,N/A,N/A,Public
+Alabama,2011-12,26544,0.5,23028,0.48,Public
+Nevada,2012-13,26368,0.5,24628,0.5,Private
+Maine,2009-10,22251,0.5,16422,0.49,Private
+North Carolina,2009-10,18845,0.5,17668,0.48,Public
+Mississippi,2006-07,18762,0.5,N/A,N/A,Public
+California,2011-12,17994,0.5,17558,0.5,Public
+Florida,2004-05,17391,0.5,N/A,N/A,Public
+Georgia,2006-07,17347,0.5,N/A,N/A,Public
+Maryland,2006-07,17210,0.5,N/A,N/A,Public
+Wyoming,2008-09,17084,0.5,15127,0.49,Public
+California,2010-11,16840,0.5,16603,0.49,Public
+South Carolina,2003-04,16570,0.5,N/A,N/A,Public
+Maryland,2005-06,16435,0.5,N/A,N/A,Public
+Illinois,2003-04,14765,0.5,N/A,N/A,Public
+Alaska,2012-13,29467,0.49,22737,0.47,Public
+Colorado,2011-12,27958,0.49,21674,0.4,Private
+Alabama,2007-08,24799,0.49,21763,0.44,Public
+Florida,2011-12,20554,0.49,19325,0.47,Public
+Arizona,2010-11,20017,0.49,16787,0.49,Public
+Kentucky,2008-09,18855,0.49,16765,0.47,Public
+Tennessee,2009-10,17694,0.49,16955,0.48,Public
+Colorado,2005-06,17382,0.49,N/A,N/A,Public
+Maryland,2007-08,16741,0.49,14317,0.47,Public
+Wyoming,2006-07,16005,0.49,N/A,N/A,Public
+Illinois,2004-05,15597,0.49,N/A,N/A,Public
+District of Columbia,2008-09,31608,0.48,17799,0.46,Private
 Wyoming,2012-13,22879,0.48,21230,0.47,Public
+Colorado,2007-08,22838,0.48,17362,0.46,Private
+Illinois,2006-07,16756,0.48,N/A,N/A,Public
+Texas,2003-04,16468,0.48,N/A,N/A,Public
+Wyoming,2007-08,16307,0.48,14902,0.47,Public
+North Carolina,2003-04,16133,0.48,N/A,N/A,Public
+Texas,2004-05,16123,0.48,N/A,N/A,Public
+Utah,2003-04,12037,0.48,N/A,N/A,Public
+Alaska,2011-12,30164,0.47,21792,0.46,Public
+Wyoming,2010-11,23341,0.47,21706,0.46,Public
+Tennessee,2008-09,21475,0.47,18025,0.45,Public
+Wyoming,2011-12,21241,0.47,19238,0.46,Public
+Colorado,2004-05,21050,0.47,N/A,N/A,Private
+Florida,2010-11,20221,0.47,19112,0.46,Public
+Arizona,2009-10,18984,0.47,15711,0.46,Public
+Louisiana,2007-08,17228,0.47,16628,0.47,Public
+Arizona,2003-04,17066,0.47,N/A,N/A,Public
+Arizona,2005-06,16762,0.47,N/A,N/A,Public
+Illinois,2005-06,16392,0.47,N/A,N/A,Public
+Utah,2009-10,15738,0.47,13605,0.46,Public
+Alaska,2003-04,14770,0.47,N/A,N/A,Public
+Kentucky,2003-04,14426,0.47,N/A,N/A,Public
+Maine,2012-13,26281,0.46,23364,0.45,Private
+Louisiana,2009-10,23184,0.46,22209,0.46,Public
+Hawaii,2012-13,21979,0.46,19823,0.45,Public
+Louisiana,2011-12,21112,0.46,18594,0.43,Public
+Tennessee,2007-08,20345,0.46,18183,0.44,Public
+Louisiana,2008-09,17948,0.46,16517,0.46,Public
+Arizona,2006-07,17186,0.46,N/A,N/A,Public
+California,2009-10,15913,0.46,15184,0.47,Public
+Florida,2003-04,15398,0.46,N/A,N/A,Public
+Florida,2005-06,14815,0.46,N/A,N/A,Public
+Nevada,2003-04,14094,0.46,N/A,N/A,Public
+Utah,2007-08,11996,0.46,11487,0.44,Public
+Vermont,2003-04,22771,0.45,N/A,N/A,Public
+Louisiana,2012-13,21640,0.45,20740,0.44,Public
+New Mexico,2008-09,20483,0.45,17983,0.45,Public
+Florida,2009-10,19114,0.45,17609,0.44,Public
+Maryland,2008-09,18011,0.45,14340,0.43,Public
+Arizona,2008-09,17428,0.45,14325,0.44,Public
+Wyoming,2004-05,16741,0.45,N/A,N/A,Public
+California,2008-09,14739,0.45,14112,0.45,Public
+California,2003-04,13637,0.45,N/A,N/A,Public
+California,2004-05,13131,0.45,N/A,N/A,Public
+Colorado,2005-06,26283,0.44,N/A,N/A,Private
+Louisiana,2005-06,20507,0.44,N/A,N/A,Private
+Nevada,2010-11,20037,0.44,18640,0.43,Public
+Hawaii,2011-12,19526,0.44,19864,0.43,Public
+Florida,2008-09,17705,0.44,15732,0.43,Public
+Arizona,2007-08,17340,0.44,14648,0.44,Public
+Delaware,2005-06,17200,0.44,N/A,N/A,Public
+Delaware,2006-07,17200,0.44,N/A,N/A,Public
+Delaware,2007-08,17200,0.44,N/A,N/A,Public
+Delaware,2008-09,17200,0.44,N/A,N/A,Public
+Wyoming,2005-06,16855,0.44,N/A,N/A,Public
+Florida,2006-07,16069,0.44,N/A,N/A,Public
+Wyoming,2003-04,15352,0.44,N/A,N/A,Public
+California,2005-06,14761,0.44,N/A,N/A,Public
+Colorado,2006-07,23564,0.43,N/A,N/A,Private
+Nevada,2012-13,21577,0.43,20129,0.42,Public
+Florida,2007-08,15601,0.43,14312,0.42,Public
+California,2007-08,14541,0.43,14118,0.43,Public
+Utah,2004-05,13228,0.43,N/A,N/A,Public
+Colorado,2010-11,24896,0.42,20162,0.42,Private
+Wyoming,2009-10,20571,0.42,18419,0.41,Public
+Louisiana,2010-11,19946,0.42,19164,0.42,Public
+Nevada,2004-05,16748,0.41,N/A,N/A,Public
+California,2006-07,13903,0.41,N/A,N/A,Public
+Nevada,2011-12,20442,0.4,19105,0.39,Public
+Hawaii,2006-07,17961,0.4,N/A,N/A,Private
+Nevada,2007-08,17921,0.4,16732,0.39,Public
+Hawaii,2010-11,17034,0.4,16319,0.4,Public
+Nevada,2006-07,16591,0.4,N/A,N/A,Public
+Delaware,2004-05,15200,0.4,N/A,N/A,Public
+Utah,2007-08,14997,0.4,13721,0.4,Private
+Utah,2006-07,13257,0.4,N/A,N/A,Public
+Hawaii,2003-04,20017,0.38,N/A,N/A,Private
+Nevada,2009-10,16672,0.38,15357,0.37,Public
+Hawaii,2009-10,15550,0.38,14981,0.37,Public
+Delaware,2003-04,14639,0.38,N/A,N/A,Public
+Nevada,2008-09,16742,0.37,14739,0.36,Public
+Hawaii,2007-08,15156,0.37,13881,0.36,Public
+Hawaii,2004-05,16796,0.36,N/A,N/A,Private
+Hawaii,2005-06,15596,0.36,N/A,N/A,Private
+Utah,2003-04,12914,0.36,N/A,N/A,Private
+Utah,2004-05,12955,0.35,N/A,N/A,Private
+Tennessee,2005-06,19467,0.34,N/A,N/A,Public
+Tennessee,2006-07,19404,0.34,N/A,N/A,Public
+Utah,2006-07,13245,0.34,N/A,N/A,Private
+Tennessee,2004-05,19190,0.33,N/A,N/A,Public
+Utah,2005-06,14021,0.32,N/A,N/A,Private
+Hawaii,2006-07,12501,0.3,N/A,N/A,Public
+Tennessee,2003-04,16790,0.29,N/A,N/A,Public
+Hawaii,2005-06,11643,0.28,N/A,N/A,Public
+Utah,2005-06,10530,0.27,N/A,N/A,Public
