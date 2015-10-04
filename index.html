@@ -18,9 +18,28 @@
           text-align: center;
           color: black;
         }
+
+        .state rect {
+            fill: #dedede;
+        }
+
+        .state text {
+            font: 12px sans-serif;
+            text-anchor: middle;
+        }
     </style>
 <head>
     <!-- Add D3 and TopoJSON libraries. -->
+    <script id="grid" type="text/plain">
+                                  ME
+                   WI          VT NH
+    WA ID MT ND MN IL MI    NY MA
+    OR NV WY SD IA IN OH PA NJ CT RI
+    CA UT CO NE MO KY WV VA MD DE
+       AZ NM KS AR TN NC SC
+             OK LA MS AL GA
+    AK HI    TX             FL
+    </script>
     <script src = "http://d3js.org/d3.v3.min.js" > </script>
     <script src = "http://d3js.org/topojson.v1.min.js"> </script>
 
@@ -39,7 +58,18 @@
 
             // Define width and height for SVG canvas.
             var width = 1300;
-            var height = 800;
+            var height = 1300;
+
+            var states = [];
+
+            d3.select("#grid").text().split("\n").forEach(function(line, i) {
+                var re = /\w+/g, m;
+                while (m = re.exec(line)) states.push({
+                    name: m[0],
+                    x: m.index / 3,
+                    y: i
+                });
+            });
 
             // Append SVG canvas to the DOM.
             var svg = d3.select("body")
@@ -59,7 +89,6 @@
             var usStates = [
                 { name: 'ALABAMA', abbreviation: 'AL'},
                 { name: 'ALASKA', abbreviation: 'AK'},
-                { name: 'AMERICAN SAMOA', abbreviation: 'AS'},
                 { name: 'ARIZONA', abbreviation: 'AZ'},
                 { name: 'ARKANSAS', abbreviation: 'AR'},
                 { name: 'CALIFORNIA', abbreviation: 'CA'},
@@ -67,10 +96,8 @@
                 { name: 'CONNECTICUT', abbreviation: 'CT'},
                 { name: 'DELAWARE', abbreviation: 'DE'},
                 { name: 'DISTRICT OF COLUMBIA', abbreviation: 'DC'},
-                { name: 'FEDERATED STATES OF MICRONESIA', abbreviation: 'FM'},
                 { name: 'FLORIDA', abbreviation: 'FL'},
                 { name: 'GEORGIA', abbreviation: 'GA'},
-                { name: 'GUAM', abbreviation: 'GU'},
                 { name: 'HAWAII', abbreviation: 'HI'},
                 { name: 'IDAHO', abbreviation: 'ID'},
                 { name: 'ILLINOIS', abbreviation: 'IL'},
@@ -80,7 +107,6 @@
                 { name: 'KENTUCKY', abbreviation: 'KY'},
                 { name: 'LOUISIANA', abbreviation: 'LA'},
                 { name: 'MAINE', abbreviation: 'ME'},
-                { name: 'MARSHALL ISLANDS', abbreviation: 'MH'},
                 { name: 'MARYLAND', abbreviation: 'MD'},
                 { name: 'MASSACHUSETTS', abbreviation: 'MA'},
                 { name: 'MICHIGAN', abbreviation: 'MI'},
@@ -96,13 +122,10 @@
                 { name: 'NEW YORK', abbreviation: 'NY'},
                 { name: 'NORTH CAROLINA', abbreviation: 'NC'},
                 { name: 'NORTH DAKOTA', abbreviation: 'ND'},
-                { name: 'NORTHERN MARIANA ISLANDS', abbreviation: 'MP'},
                 { name: 'OHIO', abbreviation: 'OH'},
                 { name: 'OKLAHOMA', abbreviation: 'OK'},
                 { name: 'OREGON', abbreviation: 'OR'},
-                { name: 'PALAU', abbreviation: 'PW'},
                 { name: 'PENNSYLVANIA', abbreviation: 'PA'},
-                { name: 'PUERTO RICO', abbreviation: 'PR'},
                 { name: 'RHODE ISLAND', abbreviation: 'RI'},
                 { name: 'SOUTH CAROLINA', abbreviation: 'SC'},
                 { name: 'SOUTH DAKOTA', abbreviation: 'SD'},
@@ -110,7 +133,6 @@
                 { name: 'TEXAS', abbreviation: 'TX'},
                 { name: 'UTAH', abbreviation: 'UT'},
                 { name: 'VERMONT', abbreviation: 'VT'},
-                { name: 'VIRGIN ISLANDS', abbreviation: 'VI'},
                 { name: 'VIRGINIA', abbreviation: 'VA'},
                 { name: 'WASHINGTON', abbreviation: 'WA'},
                 { name: 'WEST VIRGINIA', abbreviation: 'WV'},
@@ -127,7 +149,7 @@
             // Spherical coordinates are projected onto the Cartesian plane (our canvas).
             // Projections can be rotated, scaled, transformed, translated etc.
             var projectionOne = d3.geo.albersUsa()
-                .translate([(width) / 2, height * 0.4])
+                .translate([(width + 100) / 2, height * 0.25])
                 .scale(1400);
 
             var projectionTwo = d3.geo.albersUsa()
@@ -187,9 +209,17 @@
                    return stateAbbr;
                })
                .attr("x", function(d){
-                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware")
+                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware" || d.id.toString() == "New Jersey" || d.id.toString() == "Rhode Island")
                    {
-                       return pathOne.centroid(d)[0] + 60;
+                       return pathOne.centroid(d)[0] + 40;
+                   }
+                   else if(d.id.toString() == "District of Columbia")
+                   {
+                       return pathOne.centroid(d)[0] + 55;
+                   }
+                   else if(d.id.toString() == "Florida")
+                   {
+                       return pathOne.centroid(d)[0] + 10;
                    }
                    else
                    {
@@ -197,18 +227,35 @@
                    }
                })
                .attr("y", function(d){
-                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware")
+                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware" || d.id.toString() == "New Jersey" || d.id.toString() == "Rhode Island")
                    {
                        var point1 = pathOne.centroid(d)[0];
                        var point2 = pathOne.centroid(d)[1];
                        svg.append("line")
                           .attr('x1', point1)
                           .attr('y1', point2)
-                          .attr('x2', point1 + 50)
-                          .attr('y2', point2 + 50)
+                          .attr('x2', point1 + 30)
+                          .attr('y2', point2 + 30)
                           .attr("stroke-width", 2)
                           .attr("stroke", "black");
-                      return  pathOne.centroid(d)[1] + 60;
+                      return  pathOne.centroid(d)[1] + 40;
+                   }
+                   else if(d.id.toString() == "District of Columbia")
+                   {
+                       var point1 = pathOne.centroid(d)[0];
+                       var point2 = pathOne.centroid(d)[1];
+                       svg.append("line")
+                          .attr('x1', point1)
+                          .attr('y1', point2)
+                          .attr('x2', point1 + 45)
+                          .attr('y2', point2 + 45)
+                          .attr("stroke-width", 2)
+                          .attr("stroke", "black");
+                      return  pathOne.centroid(d)[1] + 55;
+                   }
+                   else if(d.id.toString() == "Florida")
+                   {
+                       return pathOne.centroid(d)[1] + 10;
                    }
                    else
                    {
@@ -218,23 +265,130 @@
                .attr("text-anchor","middle")
                .attr('font-size','8pt');
 
-            var legend = svg.append("g")
-                            .attr("class", "legend")
-                            .attr("height", 100)
-                            .attr("width", 100);
+            var legendDebt = svg.append("g")
+                                .attr("class", "legendDebt")
+                                .attr("height", 100)
+                                .attr("width", 100);
+
+            var colorMap = d3.scale.category10();
+            colorMap.domain([0, 1]);
+
+            // Create a custom array for our legend(10 ranges)
+            var legendDataDebt = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+            var avgDebtDict = [
+                { rangeMin: '0000', rangeMax: '4999'},
+                { rangeMin: '5000', rangeMax: '9999'},
+                { rangeMin: '10000', rangeMax: '14999'},
+                { rangeMin: '15000', rangeMax: '19999'},
+                { rangeMin: '20000', rangeMax: '24999'},
+                { rangeMin: '25000', rangeMax: '29999'},
+                { rangeMin: '30000', rangeMax: '34999'},
+                { rangeMin: '35000', rangeMax: '39999'},
+                { rangeMin: '40000', rangeMax: '44999'},
+                { rangeMin: '45000', rangeMax: '49999'},
+                { rangeMin: '50000', rangeMax: '54999'},
+            ]
+
+            // This is for our custom legend
+            var legendRectSize = 18;
+            var legendSpacing = 1;
+
+            var legendDebtDisp = svg.selectAll('.legend')
+                                    .data(legendDataDebt)
+                                    .enter()
+                                    .append('g')
+                                    .attr('class', 'legendDebt')
+                                    .attr('transform', function(d, i) {
+                                        var height = legendRectSize + legendSpacing;
+                                        var offset = height * colorMap.domain().length / 2;
+                                        var horz = legendRectSize;
+                                        var vert = 125 + i * height - offset;
+                                        return 'translate(' + horz + ',' + vert + ')';
+                                    });
+
+            legendDebtDisp.append('rect')
+                          .attr('width', legendRectSize)
+                          .attr('height', legendRectSize)
+                          .style('fill', function(d){
+                              return colorMap(d/10);
+                          });
+
+            legendDebtDisp.append('text')
+                          .attr('x', legendRectSize + legendSpacing)
+                          .attr('y', legendRectSize - legendSpacing)
+                          .text(function(d, i) {
+                              return "$" + avgDebtDict[i].rangeMin + " to $" + avgDebtDict[i].rangeMax;
+                          });
+
+
+            var gridWidth = d3.max(states, function(d) { return d.x; }) + 1,
+                gridHeight = d3.max(states, function(d) { return d.y; }) + 1,
+                cellSize = 40;
 
             debugger;
 
-            /*svg.selectAll('.states')
-               .data(statesTwo.features)
-               .enter()
-               .append('path')
-               .attr('class', function(d) {
-                   return d.id;
-               })
-               .attr('d', pathTwo)
-               .style('fill', "lightBlue")
-               .style('stroke', "black");*/
+            var statesBox = svg.append("g")
+                               .attr("transform", "translate(" + (width / 2 - 50) + "," +(300 + height / 2) + ")")
+                               .selectAll(".state")
+                               .data(states)
+                               .enter()
+                               .append("g")
+                               .attr("class", function(d){
+                                   return "state";
+                               })
+                               .attr("transform", function(d){
+                                   return "translate(" + (d.x - gridWidth / 2) * cellSize + "," + (d.y - gridHeight / 2) * cellSize + ")";
+                               });
+
+            statesBox.append("rect")
+                     .attr("id", function(d){
+                        return d.name;
+                     })
+                     .attr("x", -cellSize / 2)
+                     .attr("y", -cellSize / 2)
+                     .attr("width", cellSize - 1)
+                     .attr("height", cellSize - 1);
+
+            statesBox.append("text")
+                     .attr("dy", ".35em")
+                     .text(function(d){
+                         return d.name;
+                     });
+
+            var legendDataPerc = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+            var legendPerc = svg.append("g")
+                                .attr("class", "legendPerc")
+                                .attr("height", 100)
+                                .attr("width", 100);
+
+            var legendPercDisp = svg.selectAll('.legend')
+                                    .data(legendDataPerc)
+                                    .enter()
+                                    .append('g')
+                                    .attr('class', 'legend')
+                                    .attr('transform', function(d, i) {
+                                        var height = legendRectSize + legendSpacing;
+                                        var offset = height * colorMap.domain().length / 2;
+                                        var horz = legendRectSize;
+                                        var vert = 975 + i * height - offset;
+                                        return 'translate(' + horz + ',' + vert + ')';
+                                    });
+
+            legendPercDisp.append('rect')
+                          .attr('width', legendRectSize)
+                          .attr('height', legendRectSize)
+                          .style('fill', function(d){
+                              return colorMap(d/10);
+                          });
+
+            legendPercDisp.append('text')
+                          .attr('x', legendRectSize + legendSpacing)
+                          .attr('y', legendRectSize - legendSpacing)
+                          .text(function(d, i) {
+                              return (d - 1) * 10 + "% to " + d * 10 + "%";
+                          });
 
             // This is the callback function which is called when
             // d3.csv is called after loading the data
@@ -301,72 +455,30 @@
                 d3.select("h2")
                   .text("Year: " + year);
 
-                var colorMap = d3.scale.category10();
-                colorMap.domain([0, 1]);
-
-                // Create a custom array for our legend(10 ranges)
-                var legendData = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-                var avgDebtDict = [
-                    { rangeMin: '0000', rangeMax: '4999'},
-                    { rangeMin: '5000', rangeMax: '9999'},
-                    { rangeMin: '10000', rangeMax: '14999'},
-                    { rangeMin: '15000', rangeMax: '19999'},
-                    { rangeMin: '20000', rangeMax: '24999'},
-                    { rangeMin: '25000', rangeMax: '29999'},
-                    { rangeMin: '30000', rangeMax: '34999'},
-                    { rangeMin: '35000', rangeMax: '39999'},
-                    { rangeMin: '40000', rangeMax: '44999'},
-                    { rangeMin: '45000', rangeMax: '49999'},
-                    { rangeMin: '50000', rangeMax: '54999'},
-                ]
-
-                // This is for our custom legend
-                var legendRectSize = 18;
-                var legendSpacing = 1;
-
-                var legend = svg.selectAll('.legend')
-                                .data(legendData)
-                                .enter()
-                                .append('g')
-                                .attr('class', 'legend')
-                                .attr('transform', function(d, i) {
-                                    var height = legendRectSize + legendSpacing;
-                                    var offset = height * colorMap.domain().length / 2;
-                                    var horz = legendRectSize;
-                                    var vert = 125 + i * height - offset;
-                                    return 'translate(' + horz + ',' + vert + ')';
-                                });
-
-                legend.append('rect')
-                      .attr('width', legendRectSize)
-                      .attr('height', legendRectSize)
-                      .style('fill', function(d){
-                          return colorMap(d/10);
-                      });
-
-                legend.append('text')
-                      .attr('x', legendRectSize + legendSpacing)
-                      .attr('y', legendRectSize - legendSpacing)
-                      .text(function(d, i) {
-                          console.log("Index:" + i);
-                          return "$" + avgDebtDict[i].rangeMin + " to $" + avgDebtDict[i].rangeMax;
-                      });
+                console.log(filtered);
+                debugger;
 
                 filtered.forEach(function(d){
                     var reg = new RegExp(" ","g");
+                    var stateAbbr = "";
+
+                    usStates.forEach(function(state){
+                        if( (state.name.toString().toLowerCase().replace(reg,"")) == (d.state.toString().toLowerCase().replace(reg,"")) )
+                        {
+                            console.log("st1:" + state.name.toString().toLowerCase().replace(reg,""));
+                            console.log("st2:" + d.state.toString().toLowerCase().replace(reg,""));
+                            stateAbbr = state.abbreviation.toString();
+                        }
+                    });
+
                     var stateName =  d.state.replace(reg,"");
 
                     d3.select("#" + stateName)
                       .style("fill", function(parameter){
-                          /*if(!isNaN(d.perdebt)){
-                              console.log("State(" + d.state + "):" + d.perdebt);
-                              var colorSet = colorMap(d.perdebt);
-                              return colorSet;
-                          }*/
                           var colorSet;
+
                           if(!isNaN(d.avgdebt)){
-                              console.log("State(" + d.state + "):" + d.avgdebt);
+                              console.log("State(avg)(" + d.state + "):" + d.avgdebt);
                               avgDebtDict.forEach(function(amount, index){
                                   if(parseInt(d.avgdebt) >= parseInt(amount.rangeMin) && parseInt(d.avgdebt) <= parseInt(amount.rangeMax))
                                   {
@@ -375,6 +487,16 @@
                               });
                           }
                           return colorSet;
+                    });
+
+                    console.log("Abbr:" + stateAbbr);
+                    d3.select("#" + stateAbbr)
+                      .style("fill", function(parameter){
+                          if(!isNaN(d.perdebt)){
+                              console.log("State(per)(" + d.state + "):" + d.perdebt);
+                              var colorSet = colorMap(d.perdebt);
+                              return colorSet;
+                          }
                     });
                });
             };
@@ -386,8 +508,8 @@
     </script>
 </head>
 <body>
-    <button id="Private" value="Private">Private</button>
-    <button id="Public" value="Public">Public</button>
+    <!-- <button id="Private" value="Private" onclick="privateData()">Private</button>
+    <button id="Public" value="Public" onclick="publicData()">Public</button> -->
     <script type="text/javascript">
         // Use D3's JSON method to load in TopoJSON data and pass
         // in a callback function draw to it.
