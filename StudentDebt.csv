@@ -426,7 +426,6 @@ Vermont,2011-12,29470,0.66,22515,0.64,Private
 South Carolina,2011-12,28734,0.66,25289,0.66,Private
 Ohio,2010-11,26881,0.66,21418,0.65,Public
 Ohio,2009-10,26175,0.66,20132,0.64,Public
-Nation,2007-08,25200,0.66,18248,0.64,Private
 Idaho,2010-11,24112,0.66,23631,0.66,Public
 Idaho,2009-10,23946,0.66,23599,0.66,Public
 Louisiana,2007-08,23701,0.66,18698,0.61,Private
@@ -454,18 +453,13 @@ New York,2005-06,15469,0.66,N/A,N/A,Public
 New Hampshire,2009-10,30863,0.65,16793,0.6,Private
 New York,2012-13,30397,0.65,23813,0.63,Private
 New York,2011-12,30228,0.65,22887,0.64,Private
-Nation,2012-13,29708,0.65,24044,0.63,Private
-Nation,2011-12,29312,0.65,22942,0.63,Private
 New Jersey,2011-12,29306,0.65,22220,0.65,Public
 New Jersey,2012-13,29241,0.65,25388,0.61,Private
 New Jersey,2011-12,29200,0.65,23423,0.61,Private
-Nation,2010-11,29031,0.65,21889,0.63,Private
 Montana,2012-13,28030,0.65,27282,0.65,Public
 Ohio,2012-13,28010,0.65,24293,0.65,Public
 Iowa,2010-11,27891,0.65,22072,0.63,Public
 Vermont,2012-13,27886,0.65,22461,0.65,Public
-Nation,2009-10,27772,0.65,20030,0.63,Private
-Nation,2008-09,26726,0.65,19357,0.63,Private
 Idaho,2011-12,26624,0.65,25464,0.64,Public
 Wisconsin,2011-12,26603,0.65,22877,0.64,Public
 Florida,2009-10,26266,0.65,19969,0.63,Private
@@ -503,13 +497,11 @@ Texas,2007-08,24645,0.64,19593,0.61,Private
 Wisconsin,2010-11,24232,0.64,21967,0.63,Public
 New Jersey,2008-09,24138,0.64,18570,0.61,Private
 Connecticut,2011-12,23972,0.64,19892,0.62,Public
-Nation,2006-07,23845,0.64,N/A,N/A,Private
 Oklahoma,2007-08,23832,0.64,22126,0.66,Private
 Ohio,2008-09,23812,0.64,17714,0.63,Public
 Montana,2010-11,23714,0.64,22950,0.64,Public
 Georgia,2005-06,22913,0.64,N/A,N/A,Private
 Wisconsin,2009-10,22740,0.64,19879,0.62,Public
-Nation,2005-06,22694,0.64,N/A,N/A,Private
 Montana,2009-10,22489,0.64,21058,0.64,Public
 Alabama,2009-10,22383,0.64,19343,0.58,Private
 Missouri,2009-10,22372,0.64,19891,0.62,Public
@@ -519,9 +511,7 @@ New York,2004-05,21582,0.64,N/A,N/A,Private
 California,2003-04,21332,0.64,N/A,N/A,Private
 Washington,2003-04,21252,0.64,N/A,N/A,Private
 New York,2003-04,20870,0.64,N/A,N/A,Private
-Nation,2004-05,20724,0.64,N/A,N/A,Private
 Texas,2003-04,19866,0.64,N/A,N/A,Private
-Nation,2003-04,19669,0.64,N/A,N/A,Private
 Maine,2003-04,18578,0.64,N/A,N/A,Public
 Rhode Island,2003-04,14000,0.64,N/A,N/A,Public
 Connecticut,2012-13,36300,0.63,24274,0.64,Private
@@ -634,7 +624,6 @@ Massachusetts,2009-10,26126,0.6,18406,0.56,Private
 California,2008-09,25911,0.6,18180,0.57,Private
 Vermont,2012-13,25875,0.6,20725,0.56,Private
 North Carolina,2009-10,25267,0.6,19491,0.57,Private
-Nation,2012-13,25043,0.6,22205,0.59,Public
 Oregon,2010-11,24616,0.6,21373,0.59,Public
 North Carolina,2008-09,24498,0.6,19788,0.58,Private
 Indiana,2008-09,24487,0.6,19193,0.58,Public
@@ -683,7 +672,6 @@ Louisiana,2009-10,29971,0.58,25000,0.57,Private
 California,2009-10,26510,0.58,18007,0.56,Private
 Florida,2006-07,25770,0.58,N/A,N/A,Private
 Maryland,2012-13,25156,0.58,21366,0.56,Public
-Nation,2011-12,24477,0.58,21200,0.57,Public
 Tennessee,2012-13,24016,0.58,22204,0.59,Public
 Vermont,2006-07,23909,0.58,N/A,N/A,Private
 Texas,2012-13,23860,0.58,21922,0.57,Public
@@ -723,7 +711,6 @@ Maryland,2011-12,25060,0.57,20202,0.55,Public
 Kentucky,2012-13,25036,0.57,23310,0.56,Public
 District of Columbia,2006-07,23738,0.57,N/A,N/A,Private
 Missouri,2011-12,23342,0.57,19958,0.56,Private
-Nation,2010-11,23096,0.57,20014,0.56,Public
 Kansas,2011-12,23046,0.57,20591,0.61,Public
 Texas,2005-06,22582,0.57,N/A,N/A,Private
 Kentucky,2010-11,22119,0.57,19784,0.54,Public
@@ -761,12 +748,10 @@ Texas,2011-12,22449,0.56,20634,0.55,Public
 District of Columbia,2011-12,22106,0.56,14925,0.54,Private
 Colorado,2010-11,22054,0.56,19159,0.54,Public
 Illinois,2009-10,21842,0.56,17794,0.56,Public
-Nation,2009-10,21604,0.56,18290,0.55,Public
 Texas,2010-11,21089,0.56,19704,0.56,Public
 New York,2008-09,20911,0.56,18843,0.54,Public
 Indiana,2006-07,20722,0.56,N/A,N/A,Public
 Georgia,2010-11,20479,0.56,19162,0.54,Public
-Nation,2008-09,20459,0.56,17167,0.54,Public
 New York,2007-08,18026,0.56,15880,0.55,Public
 Arkansas,2005-06,17969,0.56,N/A,N/A,Public
 Alabama,2004-05,17948,0.56,N/A,N/A,Public
@@ -800,13 +785,11 @@ New York,2011-12,20875,0.55,18475,0.52,Public
 Virginia,2008-09,19675,0.55,16231,0.53,Public
 Kansas,2008-09,19553,0.55,17745,0.52,Public
 Texas,2009-10,19376,0.55,17700,0.54,Public
-Nation,2007-08,19065,0.55,16314,0.53,Public
 West Virginia,2005-06,18603,0.55,N/A,N/A,Public
 Louisiana,2006-07,18565,0.55,N/A,N/A,Public
 Kansas,2006-07,18485,0.55,N/A,N/A,Public
 Oklahoma,2008-09,18450,0.55,16349,0.51,Public
 Virginia,2007-08,18298,0.55,15250,0.52,Public
-Nation,2005-06,17606,0.55,N/A,N/A,Public
 Texas,2006-07,17498,0.55,N/A,N/A,Public
 Kansas,2005-06,17335,0.55,N/A,N/A,Public
 Kentucky,2007-08,16176,0.55,14517,0.49,Public
@@ -834,17 +817,14 @@ Arkansas,2009-10,19562,0.54,18278,0.53,Public
 Kentucky,2009-10,19255,0.54,16992,0.52,Public
 Kansas,2007-08,19049,0.54,17574,0.45,Public
 Arkansas,2006-07,18615,0.54,N/A,N/A,Public
-Nation,2006-07,18564,0.54,N/A,N/A,Public
 New Mexico,2012-13,18473,0.54,18133,0.53,Public
 Utah,2011-12,18065,0.54,15124,0.48,Public
 Connecticut,2004-05,17607,0.54,N/A,N/A,Public
 Alabama,2003-04,17601,0.54,N/A,N/A,Public
 Kansas,2004-05,16902,0.54,N/A,N/A,Public
-Nation,2004-05,16867,0.54,N/A,N/A,Public
 Arizona,2004-05,16795,0.54,N/A,N/A,Public
 Washington,2006-07,16493,0.54,N/A,N/A,Public
 Georgia,2009-10,16434,0.54,14565,0.52,Public
-Nation,2003-04,16389,0.54,N/A,N/A,Public
 Connecticut,2003-04,15619,0.54,N/A,N/A,Public
 Virginia,2003-04,15446,0.54,N/A,N/A,Public
 North Carolina,2007-08,15434,0.54,14939,0.49,Public
