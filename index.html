@@ -27,6 +27,12 @@
             font: 12px sans-serif;
             text-anchor: middle;
         }
+
+        .symbol {
+            fill: steelblue;
+            fill-opacity: .3;
+            stroke: #fff;
+        }
     </style>
 <head>
     <!-- Add D3 and TopoJSON libraries. -->
@@ -39,7 +45,7 @@
        AZ NM KS AR TN NC SC
              OK LA MS AL GA
     AK HI    TX             FL
-    </script>    
+    </script>
     <script src = "http://d3js.org/d3.v3.min.js" > </script>
     <script src = "http://d3js.org/topojson.v1.min.js"> </script>
 
@@ -163,7 +169,7 @@
             //       It generates the path data string suitable for the "d" attribute of an SVG path element.
             //       The d3.geo.path class can render directly to Canvas, which may offer better performance when animating the projection.
             var pathOne = d3.geo.path().projection(projectionOne);
-            var pathTwo = d3.geo.path().projection(projectionTwo);
+            var pathTwo = d3.geo.path();
 
             // Append the newly-created path generator to the map.
             var mapOne = svg.selectAll('path')
@@ -321,8 +327,11 @@
                               return "$" + avgDebtDict[i].rangeMin + " to $" + avgDebtDict[i].rangeMax;
                           });
 
+            var radius = d3.scale.linear()
+                           .domain([0, 1])
+                           .range([0, 50]);
 
-            var gridWidth = d3.max(states, function(d) { return d.x; }) + 1,
+            /*var gridWidth = d3.max(states, function(d) { return d.x; }) + 1,
                 gridHeight = d3.max(states, function(d) { return d.y; }) + 1,
                 cellSize = 40;
 
@@ -400,7 +409,7 @@
                           .attr('y', legendRectSize - legendSpacing)
                           .text(function(d, i) {
                               return (d - 1) * 10 + "% to " + d * 10 + "%";
-                          });
+                          });*/
 
             // This is the callback function which is called when
             // d3.csv is called after loading the data
@@ -415,31 +424,6 @@
                         'schooltype': d['Public or Private']
                     }
                 });
-
-                // This array is just for figuring out the max and min values
-                // of Average Debt
-                var avgDebtArray = [];
-
-                debtData.forEach(function(d) {
-                    if(!isNaN(d.avgdebt)){
-                        avgDebtArray.push(Number(d.avgdebt));
-                    }
-                });
-                console.log(avgDebtArray);
-
-                // Get the maximum value of 'avgdebt'
-                var avgDebtMax = d3.max(avgDebtArray);
-                console.log("Max:" + avgDebtMax);
-
-                // Get the minimum value of 'avgdebt'
-                var avgDebtMin = d3.min(avgDebtArray);
-                console.log("Min:" + avgDebtMin);
-
-                console.log( ( parseInt(avgDebtMax / 5000) ) * 5000 + 5000);
-                console.log( ( parseInt(avgDebtMin / 5000) ) * 5000);
-
-                avgDebtMax = parseInt(avgDebtMax / 5000) * 5000 + 5000;
-                avgDebtMin = parseInt(avgDebtMin / 5000) * 5000;
 
                 // Call a function which plots the data
                 var yearsArray = ["2003-04", "2004-05", "2005-06", "2006-07",
@@ -462,7 +446,7 @@
 
             function modify(debtData, year){
                 var filtered = debtData.filter(function(d) {
-                    return d.year === year && d.schooltype == "Private" && d.state.toString() != "Nation";
+                    return d.year === year && d.schooltype == "Public" && d.state.toString() != "Nation";
                 });
 
                 d3.select("h2")
@@ -501,26 +485,35 @@
                           }
                           return colorSet;
                     });
-
-                    d3.select("#" + stateAbbr)
-                      .style("fill", function(parameter){
-                          var colorSet;
-
-                          if(!isNaN(d.perdebt)){
-                              console.log("State(per)(" + d.state + "):" + d.perdebt);
-                              percDebtDict.forEach(function(percentage, index){
-                                  if((d.perdebt >= percentage.rangeMin) && (d.perdebt <= percentage.rangeMax))
-                                  {
-                                      colorSet = colorMap((index + 1)/10);
-                                  }
-                              });
-                          }
-                          else {
-                              return "white";
-                          }
-                          return colorSet;
-                      });
                });
+
+               svg.append('g')
+                  .attr("class", "bubble")
+                  .selectAll("circle")
+                  .data(statesOne.features)
+                  .enter()
+                  .append("circle")
+                  .attr("class", "symbol")
+                  .attr('cx', function(d) { return pathOne.centroid(d)[0]; })
+                  .attr('cy', function(d) { return pathOne.centroid(d)[1]; })
+                  .attr('r', function(d) {
+                      var radiusToSet;
+                      filtered.forEach(function(element){
+                          if( (element.state.toString().toLowerCase() ) == (d.id.toString().toLowerCase()) )
+                          {
+                              if(!isNaN(element.perdebt))
+                              {
+                                  console.log(radius(element.perdebt));
+                                  radiusToSet = radius(element.perdebt);
+                              }
+                              else
+                              {
+                                  radiusToSet = 0;
+                              }
+                          }
+                      });
+                      return radiusToSet;
+                  });
             };
 
             // Load the student debt data and use the callback to analyze
