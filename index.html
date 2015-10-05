@@ -39,7 +39,7 @@
        AZ NM KS AR TN NC SC
              OK LA MS AL GA
     AK HI    TX             FL
-    </script>
+    </script>    
     <script src = "http://d3js.org/d3.v3.min.js" > </script>
     <script src = "http://d3js.org/topojson.v1.min.js"> </script>
 
@@ -326,8 +326,6 @@
                 gridHeight = d3.max(states, function(d) { return d.y; }) + 1,
                 cellSize = 40;
 
-            debugger;
-
             var statesBox = svg.append("g")
                                .attr("transform", "translate(" + (width / 2 - 50) + "," +(300 + height / 2) + ")")
                                .selectAll(".state")
@@ -356,6 +354,19 @@
                          return d.name;
                      });
 
+            var percDebtDict = [
+                { rangeMin: 0.0, rangeMax: 0.09 },
+                { rangeMin: 0.1, rangeMax: 0.19 },
+                { rangeMin: 0.2, rangeMax: 0.29 },
+                { rangeMin: 0.3, rangeMax: 0.39 },
+                { rangeMin: 0.4, rangeMax: 0.49 },
+                { rangeMin: 0.5, rangeMax: 0.59 },
+                { rangeMin: 0.6, rangeMax: 0.69 },
+                { rangeMin: 0.7, rangeMax: 0.79 },
+                { rangeMin: 0.8, rangeMax: 0.89 },
+                { rangeMin: 0.9, rangeMax: 1.00 },
+            ]
+
             var legendDataPerc = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
             var legendPerc = svg.append("g")
@@ -380,6 +391,7 @@
                           .attr('width', legendRectSize)
                           .attr('height', legendRectSize)
                           .style('fill', function(d){
+                              console.log("Map:" + (d/10) + " " + colorMap(d/10));
                               return colorMap(d/10);
                           });
 
@@ -436,7 +448,7 @@
 
                 var yearIndex = 0;
 
-                var yearInterval = setInterval(function() {
+                /*var yearInterval = setInterval(function() {
                     modify(debtData, yearsArray[yearIndex]);
 
                     yearIndex++;
@@ -444,19 +456,19 @@
                     if(yearIndex >= yearsArray.length) {
                         clearInterval(yearInterval);
                     }
-                }, 2000);
+                }, 2000);*/
+                modify(debtData, "2012-13");
             };
 
             function modify(debtData, year){
                 var filtered = debtData.filter(function(d) {
-                    return d.year === year && d.schooltype == "Private";
+                    return d.year === year && d.schooltype == "Private" && d.state.toString() != "Nation";
                 });
 
                 d3.select("h2")
                   .text("Year: " + year);
 
                 console.log(filtered);
-                debugger;
 
                 filtered.forEach(function(d){
                     var reg = new RegExp(" ","g");
@@ -465,13 +477,11 @@
                     usStates.forEach(function(state){
                         if( (state.name.toString().toLowerCase().replace(reg,"")) == (d.state.toString().toLowerCase().replace(reg,"")) )
                         {
-                            console.log("st1:" + state.name.toString().toLowerCase().replace(reg,""));
-                            console.log("st2:" + d.state.toString().toLowerCase().replace(reg,""));
                             stateAbbr = state.abbreviation.toString();
                         }
                     });
 
-                    var stateName =  d.state.replace(reg,"");
+                    var stateName = d.state.replace(reg,"");
 
                     d3.select("#" + stateName)
                       .style("fill", function(parameter){
@@ -486,18 +496,30 @@
                                   }
                               });
                           }
+                          else {
+                              return "white";
+                          }
                           return colorSet;
                     });
 
-                    console.log("Abbr:" + stateAbbr);
                     d3.select("#" + stateAbbr)
                       .style("fill", function(parameter){
+                          var colorSet;
+
                           if(!isNaN(d.perdebt)){
                               console.log("State(per)(" + d.state + "):" + d.perdebt);
-                              var colorSet = colorMap(d.perdebt);
-                              return colorSet;
+                              percDebtDict.forEach(function(percentage, index){
+                                  if((d.perdebt >= percentage.rangeMin) && (d.perdebt <= percentage.rangeMax))
+                                  {
+                                      colorSet = colorMap((index + 1)/10);
+                                  }
+                              });
                           }
-                    });
+                          else {
+                              return "white";
+                          }
+                          return colorSet;
+                      });
                });
             };
 
