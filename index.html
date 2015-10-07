@@ -296,6 +296,12 @@
                 { rangeMin: '50000', rangeMax: '54999'},
             ]
 
+            svg.append("text")
+               .attr("x", 25)
+               .attr("y", 100 )
+               .style("font-size", "20px")
+               .text("Average Debt");
+
             // This is for our custom legend
             var legendRectSize = 18;
             var legendSpacing = 1;
@@ -329,87 +335,21 @@
 
             var radius = d3.scale.linear()
                            .domain([0, 1])
-                           .range([0, 50]);
+                           .range([0, 60]);
 
-            /*var gridWidth = d3.max(states, function(d) { return d.x; }) + 1,
-                gridHeight = d3.max(states, function(d) { return d.y; }) + 1,
-                cellSize = 40;
+            svg.append("text")
+               .attr("x", 25)
+               .attr("y", 410 )
+               .style("font-size", "20px")
+               .text("% in debt");
 
-            var statesBox = svg.append("g")
-                               .attr("transform", "translate(" + (width / 2 - 50) + "," +(300 + height / 2) + ")")
-                               .selectAll(".state")
-                               .data(states)
-                               .enter()
-                               .append("g")
-                               .attr("class", function(d){
-                                   return "state";
-                               })
-                               .attr("transform", function(d){
-                                   return "translate(" + (d.x - gridWidth / 2) * cellSize + "," + (d.y - gridHeight / 2) * cellSize + ")";
-                               });
-
-            statesBox.append("rect")
-                     .attr("id", function(d){
-                        return d.name;
-                     })
-                     .attr("x", -cellSize / 2)
-                     .attr("y", -cellSize / 2)
-                     .attr("width", cellSize - 1)
-                     .attr("height", cellSize - 1);
-
-            statesBox.append("text")
-                     .attr("dy", ".35em")
-                     .text(function(d){
-                         return d.name;
-                     });
-
-            var percDebtDict = [
-                { rangeMin: 0.0, rangeMax: 0.09 },
-                { rangeMin: 0.1, rangeMax: 0.19 },
-                { rangeMin: 0.2, rangeMax: 0.29 },
-                { rangeMin: 0.3, rangeMax: 0.39 },
-                { rangeMin: 0.4, rangeMax: 0.49 },
-                { rangeMin: 0.5, rangeMax: 0.59 },
-                { rangeMin: 0.6, rangeMax: 0.69 },
-                { rangeMin: 0.7, rangeMax: 0.79 },
-                { rangeMin: 0.8, rangeMax: 0.89 },
-                { rangeMin: 0.9, rangeMax: 1.00 },
-            ]
-
-            var legendDataPerc = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-            var legendPerc = svg.append("g")
-                                .attr("class", "legendPerc")
-                                .attr("height", 100)
-                                .attr("width", 100);
-
-            var legendPercDisp = svg.selectAll('.legend')
-                                    .data(legendDataPerc)
-                                    .enter()
-                                    .append('g')
-                                    .attr('class', 'legend')
-                                    .attr('transform', function(d, i) {
-                                        var height = legendRectSize + legendSpacing;
-                                        var offset = height * colorMap.domain().length / 2;
-                                        var horz = legendRectSize;
-                                        var vert = 975 + i * height - offset;
-                                        return 'translate(' + horz + ',' + vert + ')';
-                                    });
-
-            legendPercDisp.append('rect')
-                          .attr('width', legendRectSize)
-                          .attr('height', legendRectSize)
-                          .style('fill', function(d){
-                              console.log("Map:" + (d/10) + " " + colorMap(d/10));
-                              return colorMap(d/10);
-                          });
-
-            legendPercDisp.append('text')
-                          .attr('x', legendRectSize + legendSpacing)
-                          .attr('y', legendRectSize - legendSpacing)
-                          .text(function(d, i) {
-                              return (d - 1) * 10 + "% to " + d * 10 + "%";
-                          });*/
+            svg.append("circle")
+               .attr("class", "symbol")
+               .attr('cx', 70)
+               .attr('cy', 450)
+               .attr('r', radius(0.5))
+               .style('fill', "steelblue")
+               .style('fill-opacity', 0.3);
 
             // This is the callback function which is called when
             // d3.csv is called after loading the data
@@ -425,33 +365,68 @@
                     }
                 });
 
-                // Call a function which plots the data
-                var yearsArray = ["2003-04", "2004-05", "2005-06", "2006-07",
-                                  "2007-08", "2008-09", "2009-10", "2010-11",
-                                  "2011-12", "2012-13"];
+                var yearsDict = [
+                  { yearInput: '2004', yearOutput: '2003-04'},
+                  { yearInput: '2005', yearOutput: '2004-05'},
+                  { yearInput: '2006', yearOutput: '2005-06'},
+                  { yearInput: '2007', yearOutput: '2006-07'},
+                  { yearInput: '2008', yearOutput: '2007-08'},
+                  { yearInput: '2009', yearOutput: '2008-09'},
+                  { yearInput: '2010', yearOutput: '2009-10'},
+                  { yearInput: '2011', yearOutput: '2010-11'},
+                  { yearInput: '2012', yearOutput: '2011-12'},
+                  { yearInput: '2013', yearOutput: '2012-13'},
+                ]
 
-                var yearIndex = 0;
+                console.log("DebtData");
+                console.log(debtData);
+                modify(debtData, "2003-04", "Public");
 
-                /*var yearInterval = setInterval(function() {
-                    modify(debtData, yearsArray[yearIndex]);
+                // Default value
+                var yearToParse = "2003-04";
+                var schoolTypeSelected = "Public";
 
-                    yearIndex++;
+                // When the input range changes update the circle
+                d3.select("#idYear").on("input", function() {
+                    d3.select("#idYear-value").text( +this.value);
+                    d3.select("#idYear").property("value", +this.value);
+                    var inputYear = +this.value.toString();
+                    console.log(inputYear);
+                    yearsDict.forEach(function(year){
+                        if(year.yearInput == inputYear)
+                        {
+                            yearToParse = year.yearOutput;
+                        }
+                    });
 
-                    if(yearIndex >= yearsArray.length) {
-                        clearInterval(yearInterval);
-                    }
-                }, 2000);*/
-                modify(debtData, "2012-13");
+                    modify(debtData, yearToParse, schoolTypeSelected);
+                });
+
+                d3.select("#publicradio").on("click", function(){
+                    d3.select("#privateradio").property('checked', false);
+                    schoolTypeSelected = d3.select("#publicradio").node().value;
+                    console.log(schoolTypeSelected);
+                    modify(debtData, yearToParse, schoolTypeSelected);
+                });
+
+                d3.select("#privateradio").on("click", function(){
+                    d3.select("#publicradio").property('checked', false);
+                    schoolTypeSelected = d3.select("#privateradio").node().value;
+                    console.log(schoolTypeSelected);
+                    modify(debtData, yearToParse, schoolTypeSelected);
+                });
+
             };
 
-            function modify(debtData, year){
+            function modify(debtData, year, schoolTypeSelected){
                 var filtered = debtData.filter(function(d) {
-                    return d.year === year && d.schooltype == "Public" && d.state.toString() != "Nation";
+                    return d.year === year && d.schooltype == schoolTypeSelected && d.state.toString() != "Nation";
                 });
 
                 d3.select("h2")
                   .text("Year: " + year);
 
+                console.log("Filtered");
                 console.log(filtered);
 
                 filtered.forEach(function(d){
@@ -487,6 +462,8 @@
                     });
                });
 
+               svg.selectAll('g.bubble').remove();
+
                svg.append('g')
                   .attr("class", "bubble")
                   .selectAll("circle")
@@ -499,16 +476,19 @@
                   .attr('r', function(d) {
                       var radiusToSet;
                       filtered.forEach(function(element){
-                          if( (element.state.toString().toLowerCase() ) == (d.id.toString().toLowerCase()) )
+                          var reg = new RegExp(" ","g");
+                          var stateAbbr = "";
+
+                          if( (element.state.toString().toLowerCase().replace(reg, "") ) === (d.id.toString().toLowerCase().replace(reg, "")) )
                           {
                               if(!isNaN(element.perdebt))
                               {
-                                  console.log(radius(element.perdebt));
+                                  console.log("State(per)(" + element.state + "):" + element.perdebt);
                                   radiusToSet = radius(element.perdebt);
                               }
                               else
                               {
-                                  radiusToSet = 0;
+                                  radiusToSet = 0.0;
                               }
                           }
                       });
@@ -518,14 +498,28 @@
 
             // Load the student debt data and use the callback to analyze
             // the data
-            d3.csv("StudentDebt.csv", plot_points);
+            d3.csv("DebtStudent.csv", plot_points);
         };
     </script>
 </head>
 <body>
-    <!-- <button id="Private" value="Private" onclick="privateData()">Private</button>
-    <button id="Public" value="Public" onclick="publicData()">Public</button> -->
+    <h1 align="center">Average debt and percentage of students in debt from 2004 to 2013</h1>
+    <p>
+        <label for="idYear"
+            style="display: inline-block; width: 730px; text-align: right">
+            Year = <span id="idYear-value">…</span>
+        </label>
+        <input type="range" min="2004" max="2013" id="idYear">2013
+    </p>
+    <input type="radio" id="publicradio" value="Public" checked>
+        <label for="publicradio" >Public Schools</label>
+    </input>
+    <input type="radio" id="privateradio" value="Private">
+        <label for="privateradio" >Private Schools</label>
+    </input>
     <script type="text/javascript">
+        d3.select("#idYear-value").text(2004);
+        d3.select("#idYear").property("value", 2004);
         // Use D3's JSON method to load in TopoJSON data and pass
         // in a callback function draw to it.
         d3.json("convertedstates.json", draw);
