@@ -29,7 +29,7 @@
         }
 
         .symbol {
-            fill: steelblue;
+            fill: #00675a;
             fill-opacity: .3;
             stroke: #fff;
         }
@@ -215,11 +215,16 @@
                    return stateAbbr;
                })
                .attr("x", function(d){
-                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware" || d.id.toString() == "New Jersey" || d.id.toString() == "Rhode Island")
+                   if( d.id.toString() == "Maryland" ||
+                       d.id.toString() == "Delaware" ||
+                       d.id.toString() == "New Jersey" ||
+                       d.id.toString() == "Rhode Island" ||
+                       d.id.toString() == "Connecticut")
                    {
                        return pathOne.centroid(d)[0] + 40;
                    }
-                   else if(d.id.toString() == "District of Columbia")
+                   else if( d.id.toString() == "District of Columbia" ||
+                            d.id.toString() == "New Hampshire" )
                    {
                        return pathOne.centroid(d)[0] + 55;
                    }
@@ -233,7 +238,11 @@
                    }
                })
                .attr("y", function(d){
-                   if(d.id.toString() == "Maryland" || d.id.toString() == "Delaware" || d.id.toString() == "New Jersey" || d.id.toString() == "Rhode Island")
+                   if( d.id.toString() == "Maryland" ||
+                       d.id.toString() == "Delaware" ||
+                       d.id.toString() == "New Jersey" ||
+                       d.id.toString() == "Rhode Island" ||
+                       d.id.toString() == "Connecticut" )
                    {
                        var point1 = pathOne.centroid(d)[0];
                        var point2 = pathOne.centroid(d)[1];
@@ -246,7 +255,8 @@
                           .attr("stroke", "black");
                       return  pathOne.centroid(d)[1] + 40;
                    }
-                   else if(d.id.toString() == "District of Columbia")
+                   else if( d.id.toString() == "District of Columbia" ||
+                            d.id.toString() == "New Hampshire" )
                    {
                        var point1 = pathOne.centroid(d)[0];
                        var point2 = pathOne.centroid(d)[1];
@@ -276,8 +286,9 @@
                                 .attr("height", 100)
                                 .attr("width", 100);
 
-            var colorMap = d3.scale.category10();
-            colorMap.domain([0, 1]);
+            var colorMap = d3.scale.linear()
+                             .domain([0, 1])
+                             .range(["#fff5f0", "#67000d"]);
 
             // Create a custom array for our legend(10 ranges)
             var legendDataDebt = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -319,6 +330,17 @@
                                         return 'translate(' + horz + ',' + vert + ')';
                                     });
 
+            svg.append('text')
+               .attr('x', legendRectSize + legendSpacing)
+               .attr('y', legendRectSize - legendSpacing)
+               .attr('transform', function() {
+                   var horz = legendRectSize;
+                   var offset = height * colorMap.domain().length / 2;
+                   var vert = 125 + 10 * height - offset;
+                   return 'translate(' + horz + ',' + vert + ')';
+               })
+               .text("N/A");
+
             legendDebtDisp.append('rect')
                           .attr('width', legendRectSize)
                           .attr('height', legendRectSize)
@@ -326,12 +348,25 @@
                               return colorMap(d/10);
                           });
 
+            svg.append('rect')
+               .attr('width', legendRectSize)
+               .attr('height', legendRectSize)
+               .style('fill', "white")
+               .style('stroke', "black")
+               .attr('x', legendRectSize)
+               .attr('y', 316);
+
             legendDebtDisp.append('text')
                           .attr('x', legendRectSize + legendSpacing)
                           .attr('y', legendRectSize - legendSpacing)
                           .text(function(d, i) {
                               return "$" + avgDebtDict[i].rangeMin + " to $" + avgDebtDict[i].rangeMax;
                           });
+
+            svg.append('text')
+               .attr('x', 40)
+               .attr('y', 330)
+               .text("N/A");
 
             var radius = d3.scale.linear()
                            .domain([0, 1])
@@ -343,12 +378,18 @@
                .style("font-size", "20px")
                .text("% in debt");
 
+            svg.append("text")
+              .attr("x", 58)
+              .attr("y", 455)
+              .style("font-size", "16px")
+              .text("50%");
+
             svg.append("circle")
                .attr("class", "symbol")
                .attr('cx', 70)
                .attr('cy', 450)
                .attr('r', radius(0.5))
-               .style('fill', "steelblue")
+               .style('fill', "#00675a")
                .style('fill-opacity', 0.3);
 
             // This is the callback function which is called when
