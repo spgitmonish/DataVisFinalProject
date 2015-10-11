@@ -95,12 +95,17 @@
                 .attr('class', 'map');
 
             // Define the variable states.
-            // Assign the "states" variable to the GeoJSON feature collection("geometric collection") for the specified topology object.
-            // While TopoJSON data is stored more efficiently, we need to convert back to GeoJSON for display purposes.
-            // The function "topojson.feature" is used to return the GeoJSON Feature or FeatureCollection for the specified object in the given topology.
-            var statesOne = topojson.feature(us_states, us_states.objects.states);
-            var statesTwo = statesOne;
+            // Assign the "states" variable to the GeoJSON feature collection
+            // ("geometric collection") for the specified topology object.
+            // While TopoJSON data is stored more efficiently, we need to
+            // convert back to GeoJSON for display purposes. The function
+            // "topojson.feature" is used to return the GeoJSON Feature or
+            // FeatureCollection for the specified object in the given topology.
+            var statesOne = topojson.feature(us_states,
+                                             us_states.objects.states);
 
+            // This is an array of entries to get abbrevations for comparing
+            // (used later in the code)
             var usStates = [
                 { name: 'ALABAMA', abbreviation: 'AL'},
                 { name: 'ALASKA', abbreviation: 'AK'},
@@ -155,13 +160,15 @@
                 { name: 'WYOMING', abbreviation: 'WY' }
             ];
 
-            // "states" is an object which has a "type"(FeatureCollection) and a "features" array which is a collection of objects one for each
+            // "states" is an object which has a "type"(FeatureCollection) and
+            // a "features" array which is a collection of objects one for each
             // US State, this includes Washington DC
             console.log(statesOne.features);
 
-            // Create a projection suited to fit the US (pre-defined in the library).
-            // A projection simply describes how you want to view your specified area of the globe.
-            // Spherical coordinates are projected onto the Cartesian plane (our canvas).
+            // Create a projection suited to fit the US (pre-defined).
+            // A projection simply describes how you want to view your
+            // specified area of the globe.
+            // Spherical coordinates are projected onto the Cartesian plane
             // Projections can be rotated, scaled, transformed, translated etc.
             var projectionOne = d3.geo.albersUsa()
                 .translate([(width + 100) / 2, height * 0.25])
@@ -172,13 +179,15 @@
                 .scale(700);
 
             // Create a path generator to draw lines around US, state borders.
-            // Path generators take in a geometry/features object and create a path to be used for outline rendering.
-            // Use our previously-defined projection.
-            // NOTE: The primary mechanism for displaying geographic data is d3.geo.path.
-            //       It generates the path data string suitable for the "d" attribute of an SVG path element.
-            //       The d3.geo.path class can render directly to Canvas, which may offer better performance when animating the projection.
+            // Path generators take in a geometry/features object and create a
+            // path to be used for outline rendering. Use our previously-defined
+            // projection.
+            // NOTE: The primary mechanism for displaying geographic
+            //       data is d3.geo.path. It generates the path data string
+            //       suitable for the "d" attribute of an SVG path element.
+            //       The d3.geo.path class can render directly to Canvas, which
+            //       may offer better performance when animating the projection.
             var pathOne = d3.geo.path().projection(projectionOne);
-            var pathTwo = d3.geo.path();
 
             // Append the newly-created path generator to the map.
             var mapOne = svg.selectAll('path')
@@ -187,15 +196,10 @@
                 .append('path')
                 .attr('d', pathOne);
 
-            var mapTwo = svg.selectAll('path')
-                .data(statesTwo)
-                .enter()
-                .append('path')
-                .attr('d', pathTwo);
-
             // Create state boundaries and coloring.
             // Create and select elements for each state.
-            // The states.features data creates a specific path (boundary) for each state which is then appended.
+            // The states.features data creates a specific path (boundary)
+            // for each state which is then appended.
             svg.selectAll('.states')
                .data(statesOne.features)
                .enter()
@@ -208,7 +212,7 @@
                .style('fill', "white")
                .style('stroke', "black");
 
-            // Add the names of the states into the map
+            // Add the names of the states with some customizations
             svg.selectAll("text")
                .data(statesOne.features)
                .enter()
@@ -216,7 +220,8 @@
                .text(function(d){
                    var stateAbbr = "";
                    usStates.forEach(function(state){
-                       if( (state.name.toString().toLowerCase() ) == (d.id.toString().toLowerCase()) )
+                       if( (state.name.toString().toLowerCase() ) ==
+                           (d.id.toString().toLowerCase()) )
                        {
                            stateAbbr = state.abbreviation.toString();
                        }
@@ -307,11 +312,13 @@
                .attr("text-anchor","middle")
                .attr('font-size','8pt');
 
+            // Create a legend class for average debt
             var legendDebt = svg.append("g")
                                 .attr("class", "legendDebt")
                                 .attr("height", 100)
                                 .attr("width", 100);
 
+            // Color Map for mapping the debt ranges into a color(i.e. a scale)
             var colorMap = d3.scale.linear()
                              .domain([0, 1])
                              .range(["#fff5f0", "#67000d"]);
@@ -319,6 +326,7 @@
             // Create a custom array for our legend(10 ranges)
             var legendDataDebt = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+            // The average debt ranges
             var avgDebtDict = [
                 { rangeMin: '0000', rangeMax: '4999'},
                 { rangeMin: '5000', rangeMax: '9999'},
@@ -333,6 +341,7 @@
                 { rangeMin: '50000', rangeMax: '54999'},
             ]
 
+            // Append text for the average debt legend
             svg.append("text")
                .attr("x", 25)
                .attr("y", 220 )
@@ -343,30 +352,21 @@
             var legendRectSize = 18;
             var legendSpacing = 1;
 
+            // Append "g" elements with the class "legend"
             var legendDebtDisp = svg.selectAll('.legend')
-                                    .data(legendDataDebt)
-                                    .enter()
-                                    .append('g')
-                                    .attr('class', 'legendDebt')
-                                    .attr('transform', function(d, i) {
-                                        var height = legendRectSize + legendSpacing;
-                                        var offset = height * colorMap.domain().length / 2;
-                                        var horz = legendRectSize;
-                                        var vert = 245 + i * height - offset;
-                                        return 'translate(' + horz + ',' + vert + ')';
-                                    });
+                        .data(legendDataDebt)
+                        .enter()
+                        .append('g')
+                        .attr('class', 'legendDebt')
+                        .attr('transform', function(d, i) {
+                            var height = legendRectSize + legendSpacing;
+                            var offset = height * colorMap.domain().length / 2;
+                            var horz = legendRectSize;
+                            var vert = 245 + i * height - offset;
+                            return 'translate(' + horz + ',' + vert + ')';
+                        });
 
-            svg.append('text')
-               .attr('x', legendRectSize + legendSpacing)
-               .attr('y', legendRectSize - legendSpacing)
-               .attr('transform', function() {
-                   var horz = legendRectSize;
-                   var offset = height * colorMap.domain().length / 2;
-                   var vert = 245 + 10 * height - offset;
-                   return 'translate(' + horz + ',' + vert + ')';
-               })
-               .text("N/A");
-
+            // Change the color based on the range
             legendDebtDisp.append('rect')
                           .attr('width', legendRectSize)
                           .attr('height', legendRectSize)
@@ -374,6 +374,7 @@
                               return colorMap(d/10);
                           });
 
+            // Rectangle for when N/A square
             svg.append('rect')
                .attr('width', legendRectSize)
                .attr('height', legendRectSize)
@@ -382,13 +383,16 @@
                .attr('x', legendRectSize)
                .attr('y', 436);
 
+            // Add the text for the ranges
             legendDebtDisp.append('text')
                           .attr('x', legendRectSize + legendSpacing)
                           .attr('y', legendRectSize - legendSpacing)
                           .text(function(d, i) {
-                              return "$" + avgDebtDict[i].rangeMin + " to $" + avgDebtDict[i].rangeMax;
+                              return "$" + avgDebtDict[i].rangeMin + " to $"
+                                         + avgDebtDict[i].rangeMax;
                           });
 
+            // Text for the N/A square
             svg.append('text')
                .attr('x', 40)
                .attr('y', 450)
@@ -398,26 +402,31 @@
                            .domain([0, 1])
                            .range([0, 60]);
 
+            // Header for the percentage of students in debt legend
             svg.append("text")
                .attr("x", 1100)
                .attr("y", 420)
                .style("font-size", "20px")
                .text("% in Debt");
 
+            // The legend for percentage of students in debt
             var legendBubble = svg.append("g")
                                   .attr("class", "legendBubble")
-                                  .attr("transform", "translate(" + 1145 + "," + 545 + ")")
+                                  .attr("transform",
+                                        "translate(" + 1145 + "," + 545 + ")")
                                   .selectAll("g")
                                   .data([0.25, 0.5, 0.75, 1.00])
                                   .enter()
                                   .append("g");
 
+            // Create the circles
             legendBubble.append("circle")
                         .attr("cy", function(d) { return - radius(d); })
                         .attr("r", function(d) { return radius(d); })
                         .style('fill', "#00675a")
                         .style('fill-opacity', 0.3);
 
+            // Append the text for percentage in debt legend
             // em (font size units), "dx" and "dy" are relative co-ordinates to
             // the specified x, y
             legendBubble.append("text")
@@ -426,6 +435,7 @@
                         .attr("text-anchor", "middle")
                         .text(function(d) { return d * 100 + "%"; });
 
+            // Tooltip for displaying respective state's information(used later)
             var tooltip = d3.select("body")
             	            .append("div")
                             .attr("class", "tooltip")
@@ -447,6 +457,8 @@
                     }
                 });
 
+                // Used to get the string to be passed into the modify function,
+                // when the user uses the slider to specify the year.
                 var yearsDict = [
                   { yearInput: '2004', yearOutput: '2003-04'},
                   { yearInput: '2005', yearOutput: '2004-05'},
@@ -463,7 +475,7 @@
                 // By default start at "2003-04", Public
                 modify(debtData, "2003-04", "Public");
 
-                // Default value
+                // Default values
                 var yearToParse = "2003-04";
                 var schoolTypeSelected = "Public";
 
@@ -482,12 +494,14 @@
                     modify(debtData, yearToParse, schoolTypeSelected);
                 });
 
+                // Called when the user checks the "Public Schools" options
                 d3.select("#publicradio").on("click", function(){
                     d3.select("#privateradio").property('checked', false);
                     schoolTypeSelected = d3.select("#publicradio").node().value;
                     modify(debtData, yearToParse, schoolTypeSelected);
                 });
 
+                // Called when the user checks the "Private Schools" options
                 d3.select("#privateradio").on("click", function(){
                     d3.select("#publicradio").property('checked', false);
                     schoolTypeSelected = d3.select("#privateradio").node().value;
@@ -496,18 +510,26 @@
 
             };
 
+            // Function which is called repeatedly when the user changes
+            // the year or the school type on the interface
             function modify(debtData, year, schoolTypeSelected){
+                // Get the national data
                 var nationData = debtData.filter(function(d) {
                     var reg = new RegExp(" ","g");
-                    return d.year === year && d.schooltype == schoolTypeSelected && d.state.toString().replace(reg,"") == "Nation";
+                    return d.year === year && d.schooltype == schoolTypeSelected
+                           && d.state.toString().replace(reg,"") == "Nation";
                 });
 
+                // Get the state data
                 var filtered = debtData.filter(function(d) {
-                    return d.year === year && d.schooltype == schoolTypeSelected && d.state.toString() != "Nation";
+                    return d.year === year && d.schooltype == schoolTypeSelected
+                           && d.state.toString() != "Nation";
                 });
 
+                // Remove the previous "National" related text
                 svg.selectAll("text.nationText").remove();
 
+                // Rectangle which contains National Data
                 svg.append("rect")
                    .attr("x", 20)
                    .attr("y", 55)
@@ -517,6 +539,7 @@
                    .attr("fill", "white")
                    .attr("opacity", 1.0);
 
+                // Display "National" data within the rectangle(defined above)
                 nationData.forEach(function(d){
                     svg.append("text")
                        .attr("class", "nationText")
@@ -544,12 +567,17 @@
                        .attr("fill", "black");
                 });
 
+                // Using the filtered date, modify the state's color for avgdebt
+                // and changing the size of the bubble to indicate percentage of
+                // people in debt.
                 filtered.forEach(function(d){
                     var reg = new RegExp(" ","g");
                     var stateAbbr = "";
 
+                    // Get the abbreviation of the state in question
                     usStates.forEach(function(state){
-                        if( (state.name.toString().toLowerCase().replace(reg,"")) == (d.state.toString().toLowerCase().replace(reg,"")) )
+                        if((state.name.toString().toLowerCase().replace(reg,""))
+                          == (d.state.toString().toLowerCase().replace(reg,"")))
                         {
                             stateAbbr = state.abbreviation.toString();
                         }
@@ -557,16 +585,18 @@
 
                     var stateName = d.state.replace(reg,"");
 
+                    // Change the color of the state based on the average debt
                     d3.select("#" + stateName)
                       .style("fill", function(parameter){
                           var colorSet;
 
                           if(!isNaN(d.avgdebt)){
                               avgDebtDict.forEach(function(amount, index){
-                                  if(parseInt(d.avgdebt) >= parseInt(amount.rangeMin) && parseInt(d.avgdebt) <= parseInt(amount.rangeMax))
-                                  {
-                                      colorSet = colorMap(index/10);
-                                  }
+                              if(parseInt(d.avgdebt)>=parseInt(amount.rangeMin)
+                              && parseInt(d.avgdebt)<=parseInt(amount.rangeMax))
+                              {
+                                  colorSet = colorMap(index/10);
+                              }
                               });
                           }
                           else {
@@ -576,8 +606,10 @@
                     });
                });
 
+               // Remove all the bubbles from the previous round
                svg.selectAll('g.bubble').remove();
 
+               // Append bubbles correspomnding to the percentage
                svg.append('g')
                   .attr("class", "bubble")
                   .selectAll("circle")
@@ -587,23 +619,33 @@
                   .enter()
                   .append("circle")
                   .attr("class", "symbol")
-                  .on("mouseover", function(){ tooltip.style("visibility", "visible"); })
+                  .on("mouseover", function(){
+                      tooltip.style("visibility", "visible");
+                  })
 	              .on("mousemove", function(d){
-                      tooltip.style("top", (event.pageY - 10)+"px").style("left",(event.pageX + 10)+"px");
+                      tooltip.style("top",
+                      (event.pageY - 10)+"px").style("left",
+                      (event.pageX + 10)+"px");
 
                       filtered.forEach(function(element){
                           var reg = new RegExp(" ","g");
-
-                          if( (element.state.toString().toLowerCase().replace(reg, "") ) === (d.id.toString().toLowerCase().replace(reg, "")) )
+                          if((element.state.toString().toLowerCase().replace(reg, ""))
+                            === (d.id.toString().toLowerCase().replace(reg, "")) )
                           {
                               if(!isNaN(element.avgdebt) || !isNaN(element.perdebt))
                               {
-                                  tooltip.html("<b>" + element.state + "</b><br/>Avg Debt: $" + d3.format(',')(element.avgdebt) + "</b><br/>In Debt: " + d3.format('%')(element.perdebt));
+                                  tooltip.html("<b>" + element.state +
+                                  "</b><br/>Avg Debt: $" +
+                                  d3.format(',')(element.avgdebt) +
+                                  "</b><br/>In Debt: " +
+                                  d3.format('%')(element.perdebt));
                               }
                           }
                       });
                   })
-	              .on("mouseout", function(){ tooltip.style("visibility", "hidden"); })
+	              .on("mouseout", function(){
+                      tooltip.style("visibility", "hidden");
+                  })
                   .attr('cx', function(d) { return pathOne.centroid(d)[0]; })
                   .attr('cy', function(d) { return pathOne.centroid(d)[1]; })
                   .attr('r', function(d) {
@@ -611,7 +653,8 @@
                       filtered.forEach(function(element){
                           var reg = new RegExp(" ","g");
 
-                          if( (element.state.toString().toLowerCase().replace(reg, "") ) === (d.id.toString().toLowerCase().replace(reg, "")) )
+                          if((element.state.toString().toLowerCase().replace(reg, ""))
+                            === (d.id.toString().toLowerCase().replace(reg, "")) )
                           {
                               if(!isNaN(element.perdebt))
                               {
@@ -634,7 +677,8 @@
     </script>
 </head>
 <body>
-    <h1 align="center">Average debt and percentage of students in debt from 2004 to 2013</h1>
+    <h1 align="center">Average debt and percentage of students in
+                       debt from 2004 to 2013</h1>
     <input type="radio" id="publicradio" value="Public" checked>
         <label for="publicradio" >Public Schools</label>
     </input>
