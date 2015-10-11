@@ -33,6 +33,19 @@
             fill-opacity: .3;
             stroke: #fff;
         }
+
+        .tooltip{
+            background-color:rgba(255, 255, 255, 0.5);
+            margin: 10px;
+            height: 60px;
+            width: 150px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .nationtext{
+
+        }
     </style>
 <head>
     <!-- Add D3 and TopoJSON libraries. -->
@@ -55,12 +68,8 @@
             if (error) {
                 return console.error(error);
             } else {
-                console.log(us_states);
+                console.log("Maps loaded!");
             }
-
-            d3.select("body")
-              .append("h2")
-              .text("Year ");
 
             // Define width and height for SVG canvas.
             var width = 1300;
@@ -148,7 +157,7 @@
 
             // "states" is an object which has a "type"(FeatureCollection) and a "features" array which is a collection of objects one for each
             // US State, this includes Washington DC
-            console.log(statesOne);
+            console.log(statesOne.features);
 
             // Create a projection suited to fit the US (pre-defined in the library).
             // A projection simply describes how you want to view your specified area of the globe.
@@ -228,6 +237,10 @@
                    {
                        return pathOne.centroid(d)[0] + 55;
                    }
+                   else if( d.id.toString() == "Massachusetts" )
+                   {
+                       return pathOne.centroid(d)[0] + 55;
+                   }
                    else if(d.id.toString() == "Florida")
                    {
                        return pathOne.centroid(d)[0] + 10;
@@ -269,6 +282,19 @@
                           .attr("stroke", "black");
                       return  pathOne.centroid(d)[1] + 55;
                    }
+                   else if( d.id.toString() == "Massachusetts" )
+                   {
+                       var point1 = pathOne.centroid(d)[0];
+                       var point2 = pathOne.centroid(d)[1];
+                       svg.append("line")
+                          .attr('x1', point1)
+                          .attr('y1', point2)
+                          .attr('x2', point1 + 45)
+                          .attr('y2', point2 - 45)
+                          .attr("stroke-width", 2)
+                          .attr("stroke", "black");
+                      return  pathOne.centroid(d)[1] - 50;
+                   }
                    else if(d.id.toString() == "Florida")
                    {
                        return pathOne.centroid(d)[1] + 10;
@@ -309,7 +335,7 @@
 
             svg.append("text")
                .attr("x", 25)
-               .attr("y", 100 )
+               .attr("y", 220 )
                .style("font-size", "20px")
                .text("Average Debt");
 
@@ -326,7 +352,7 @@
                                         var height = legendRectSize + legendSpacing;
                                         var offset = height * colorMap.domain().length / 2;
                                         var horz = legendRectSize;
-                                        var vert = 125 + i * height - offset;
+                                        var vert = 245 + i * height - offset;
                                         return 'translate(' + horz + ',' + vert + ')';
                                     });
 
@@ -336,7 +362,7 @@
                .attr('transform', function() {
                    var horz = legendRectSize;
                    var offset = height * colorMap.domain().length / 2;
-                   var vert = 125 + 10 * height - offset;
+                   var vert = 245 + 10 * height - offset;
                    return 'translate(' + horz + ',' + vert + ')';
                })
                .text("N/A");
@@ -354,7 +380,7 @@
                .style('fill', "white")
                .style('stroke', "black")
                .attr('x', legendRectSize)
-               .attr('y', 316);
+               .attr('y', 436);
 
             legendDebtDisp.append('text')
                           .attr('x', legendRectSize + legendSpacing)
@@ -365,32 +391,47 @@
 
             svg.append('text')
                .attr('x', 40)
-               .attr('y', 330)
-               .text("N/A");
+               .attr('y', 450)
+               .text("Data not available");
 
             var radius = d3.scale.linear()
                            .domain([0, 1])
                            .range([0, 60]);
 
             svg.append("text")
-               .attr("x", 25)
-               .attr("y", 410 )
+               .attr("x", 1100)
+               .attr("y", 420)
                .style("font-size", "20px")
-               .text("% in debt");
+               .text("% in Debt");
 
-            svg.append("text")
-              .attr("x", 58)
-              .attr("y", 455)
-              .style("font-size", "16px")
-              .text("50%");
+            var legendBubble = svg.append("g")
+                                  .attr("class", "legendBubble")
+                                  .attr("transform", "translate(" + 1145 + "," + 545 + ")")
+                                  .selectAll("g")
+                                  .data([0.25, 0.5, 0.75, 1.00])
+                                  .enter()
+                                  .append("g");
 
-            svg.append("circle")
-               .attr("class", "symbol")
-               .attr('cx', 70)
-               .attr('cy', 450)
-               .attr('r', radius(0.5))
-               .style('fill', "#00675a")
-               .style('fill-opacity', 0.3);
+            legendBubble.append("circle")
+                        .attr("cy", function(d) { return - radius(d); })
+                        .attr("r", function(d) { return radius(d); })
+                        .style('fill', "#00675a")
+                        .style('fill-opacity', 0.3);
+
+            // em (font size units), "dx" and "dy" are relative co-ordinates to
+            // the specified x, y
+            legendBubble.append("text")
+                        .attr("y", function(d) { return - 2 * radius(d); })
+                        .attr("dy", "1.3em")
+                        .attr("text-anchor", "middle")
+                        .text(function(d) { return d * 100 + "%"; });
+
+            var tooltip = d3.select("body")
+            	            .append("div")
+                            .attr("class", "tooltip")
+                        	.style("position", "absolute")
+                        	.style("z-index", "10")
+                        	.style("visibility", "hidden");
 
             // This is the callback function which is called when
             // d3.csv is called after loading the data
@@ -419,8 +460,7 @@
                   { yearInput: '2013', yearOutput: '2012-13'},
                 ]
 
-                console.log("DebtData");
-                console.log(debtData);
+                // By default start at "2003-04", Public
                 modify(debtData, "2003-04", "Public");
 
                 // Default value
@@ -432,7 +472,6 @@
                     d3.select("#idYear-value").text( +this.value);
                     d3.select("#idYear").property("value", +this.value);
                     var inputYear = +this.value.toString();
-                    console.log(inputYear);
                     yearsDict.forEach(function(year){
                         if(year.yearInput == inputYear)
                         {
@@ -446,29 +485,64 @@
                 d3.select("#publicradio").on("click", function(){
                     d3.select("#privateradio").property('checked', false);
                     schoolTypeSelected = d3.select("#publicradio").node().value;
-                    console.log(schoolTypeSelected);
                     modify(debtData, yearToParse, schoolTypeSelected);
                 });
 
                 d3.select("#privateradio").on("click", function(){
                     d3.select("#publicradio").property('checked', false);
                     schoolTypeSelected = d3.select("#privateradio").node().value;
-                    console.log(schoolTypeSelected);
                     modify(debtData, yearToParse, schoolTypeSelected);
                 });
 
             };
 
             function modify(debtData, year, schoolTypeSelected){
+                var nationData = debtData.filter(function(d) {
+                    var reg = new RegExp(" ","g");
+                    return d.year === year && d.schooltype == schoolTypeSelected && d.state.toString().replace(reg,"") == "Nation";
+                });
+
                 var filtered = debtData.filter(function(d) {
                     return d.year === year && d.schooltype == schoolTypeSelected && d.state.toString() != "Nation";
                 });
 
-                d3.select("h2")
-                  .text("Year: " + year);
+                svg.selectAll("text.nationText").remove();
 
-                console.log("Filtered");
-                console.log(filtered);
+                svg.append("rect")
+                   .attr("x", 20)
+                   .attr("y", 55)
+                   .attr("width", 120)
+                   .attr("height", 70)
+                   .attr("stroke", "black")
+                   .attr("fill", "white")
+                   .attr("opacity", 1.0);
+
+                nationData.forEach(function(d){
+                    svg.append("text")
+                       .attr("class", "nationText")
+                       .attr("x", 35)
+                       .attr("y", 70)
+                       .text("National Data")
+                       .attr("font-size", "16px")
+                       .attr("text-decoration", "underline")
+                       .attr("fill", "black");
+
+                    svg.append("text")
+                       .attr("class", "nationText")
+                       .attr("x", 25)
+                       .attr("y", 95)
+                       .text("Avg Debt: $" + d3.format(',')(d.avgdebt))
+                       .attr("font-size", "14px")
+                       .attr("fill", "black");
+
+                    svg.append("text")
+                       .attr("class", "nationText")
+                       .attr("x", 25 )
+                       .attr("y", 115)
+                       .text("In Debt: " + d3.format('%')(d.perdebt))
+                       .attr("font-size", "14px")
+                       .attr("fill", "black");
+                });
 
                 filtered.forEach(function(d){
                     var reg = new RegExp(" ","g");
@@ -488,7 +562,6 @@
                           var colorSet;
 
                           if(!isNaN(d.avgdebt)){
-                              console.log("State(avg)(" + d.state + "):" + d.avgdebt);
                               avgDebtDict.forEach(function(amount, index){
                                   if(parseInt(d.avgdebt) >= parseInt(amount.rangeMin) && parseInt(d.avgdebt) <= parseInt(amount.rangeMax))
                                   {
@@ -508,23 +581,40 @@
                svg.append('g')
                   .attr("class", "bubble")
                   .selectAll("circle")
-                  .data(statesOne.features)
+                  .data(statesOne.features.sort(function(a, b){
+                      return pathOne.area(b) - pathOne.area(a);
+                  }))
                   .enter()
                   .append("circle")
                   .attr("class", "symbol")
+                  .on("mouseover", function(){ tooltip.style("visibility", "visible"); })
+	              .on("mousemove", function(d){
+                      tooltip.style("top", (event.pageY - 10)+"px").style("left",(event.pageX + 10)+"px");
+
+                      filtered.forEach(function(element){
+                          var reg = new RegExp(" ","g");
+
+                          if( (element.state.toString().toLowerCase().replace(reg, "") ) === (d.id.toString().toLowerCase().replace(reg, "")) )
+                          {
+                              if(!isNaN(element.avgdebt) || !isNaN(element.perdebt))
+                              {
+                                  tooltip.html("<b>" + element.state + "</b><br/>Avg Debt: $" + d3.format(',')(element.avgdebt) + "</b><br/>In Debt: " + d3.format('%')(element.perdebt));
+                              }
+                          }
+                      });
+                  })
+	              .on("mouseout", function(){ tooltip.style("visibility", "hidden"); })
                   .attr('cx', function(d) { return pathOne.centroid(d)[0]; })
                   .attr('cy', function(d) { return pathOne.centroid(d)[1]; })
                   .attr('r', function(d) {
                       var radiusToSet;
                       filtered.forEach(function(element){
                           var reg = new RegExp(" ","g");
-                          var stateAbbr = "";
 
                           if( (element.state.toString().toLowerCase().replace(reg, "") ) === (d.id.toString().toLowerCase().replace(reg, "")) )
                           {
                               if(!isNaN(element.perdebt))
                               {
-                                  console.log("State(per)(" + element.state + "):" + element.perdebt);
                                   radiusToSet = radius(element.perdebt);
                               }
                               else
@@ -545,19 +635,19 @@
 </head>
 <body>
     <h1 align="center">Average debt and percentage of students in debt from 2004 to 2013</h1>
-    <p>
+    <input type="radio" id="publicradio" value="Public" checked>
+        <label for="publicradio" >Public Schools</label>
+    </input>
+    <input align="center" type="radio" id="privateradio" value="Private">
+        <label for="privateradio" >Private Schools</label>
+    </input>
+    <p align="center">
         <label for="idYear"
-            style="display: inline-block; width: 730px; text-align: right">
+            style="display: inline-block; text-align: right">
             Year = <span id="idYear-value">…</span>
         </label>
         <input type="range" min="2004" max="2013" id="idYear">2013
     </p>
-    <input type="radio" id="publicradio" value="Public" checked>
-        <label for="publicradio" >Public Schools</label>
-    </input>
-    <input type="radio" id="privateradio" value="Private">
-        <label for="privateradio" >Private Schools</label>
-    </input>
     <script type="text/javascript">
         d3.select("#idYear-value").text(2004);
         d3.select("#idYear").property("value", 2004);
