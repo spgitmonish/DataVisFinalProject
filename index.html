@@ -75,17 +75,6 @@
             var width = 1300;
             var height = 1300;
 
-            var states = [];
-
-            d3.select("#grid").text().split("\n").forEach(function(line, i) {
-                var re = /\w+/g, m;
-                while (m = re.exec(line)) states.push({
-                    name: m[0],
-                    x: m.index / 3,
-                    y: i
-                });
-            });
-
             // Append SVG canvas to the DOM.
             var svg = d3.select("body")
                 .append("svg")
@@ -95,16 +84,16 @@
                 .attr('class', 'map');
 
             // Define the variable states.
-            // Assign the "states" variable to the GeoJSON feature collection
+            // Assign the GeoJSON feature collection to the "states" variable
             // ("geometric collection") for the specified topology object.
             // While TopoJSON data is stored more efficiently, we need to
             // convert back to GeoJSON for display purposes. The function
             // "topojson.feature" is used to return the GeoJSON Feature or
             // FeatureCollection for the specified object in the given topology.
-            var statesOne = topojson.feature(us_states,
+            var states = topojson.feature(us_states,
                                              us_states.objects.states);
 
-            // This is an array of entries to get abbrevations for comparing
+            // This is an array of entries to get abbrevations.
             // (used later in the code)
             var usStates = [
                 { name: 'ALABAMA', abbreviation: 'AL'},
@@ -163,58 +152,54 @@
             // "states" is an object which has a "type"(FeatureCollection) and
             // a "features" array which is a collection of objects one for each
             // US State, this includes Washington DC
-            console.log(statesOne.features);
+            console.log(states.features);
 
             // Create a projection suited to fit the US (pre-defined).
             // A projection simply describes how you want to view your
             // specified area of the globe.
-            // Spherical coordinates are projected onto the Cartesian plane
+            // Spherical coordinates are projected onto the Cartesian plane.
             // Projections can be rotated, scaled, transformed, translated etc.
-            var projectionOne = d3.geo.albersUsa()
+            var projection = d3.geo.albersUsa()
                 .translate([(width + 100) / 2, height * 0.25])
                 .scale(1400);
 
-            var projectionTwo = d3.geo.albersUsa()
-                .translate([(width + 150) / 2, height * 0.5])
-                .scale(700);
-
-            // Create a path generator to draw lines around US, state borders.
+            // Create a path generator to draw lines around US state borders.
             // Path generators take in a geometry/features object and create a
-            // path to be used for outline rendering. Use our previously-defined
+            // path to be used for outline rendering. Use the previously-defined
             // projection.
             // NOTE: The primary mechanism for displaying geographic
             //       data is d3.geo.path. It generates the path data string
             //       suitable for the "d" attribute of an SVG path element.
             //       The d3.geo.path class can render directly to Canvas, which
             //       may offer better performance when animating the projection.
-            var pathOne = d3.geo.path().projection(projectionOne);
+            var path = d3.geo.path().projection(projection);
 
-            // Append the newly-created path generator to the map.
-            var mapOne = svg.selectAll('path')
-                .data(statesOne)
+            // Append the newly-created path generator to the svg element(map).
+            var map = svg.selectAll('path')
+                .data(states)
                 .enter()
                 .append('path')
-                .attr('d', pathOne);
+                .attr('d', path);
 
             // Create state boundaries and coloring.
             // Create and select elements for each state.
             // The states.features data creates a specific path (boundary)
             // for each state which is then appended.
             svg.selectAll('.states')
-               .data(statesOne.features)
+               .data(states.features)
                .enter()
                .append('path')
                .attr('id', function(d) {
                    var reg = new RegExp(" ","g");
                    return d.id.replace(reg,"");
                })
-               .attr('d', pathOne)
+               .attr('d', path)
                .style('fill', "white")
                .style('stroke', "black");
 
             // Add the names of the states with some customizations
             svg.selectAll("text")
-               .data(statesOne.features)
+               .data(states.features)
                .enter()
                .append("svg:text")
                .text(function(d){
@@ -235,24 +220,24 @@
                        d.id.toString() == "Rhode Island" ||
                        d.id.toString() == "Connecticut")
                    {
-                       return pathOne.centroid(d)[0] + 40;
+                       return path.centroid(d)[0] + 40;
                    }
                    else if( d.id.toString() == "District of Columbia" ||
                             d.id.toString() == "New Hampshire" )
                    {
-                       return pathOne.centroid(d)[0] + 55;
+                       return path.centroid(d)[0] + 55;
                    }
                    else if( d.id.toString() == "Massachusetts" )
                    {
-                       return pathOne.centroid(d)[0] + 55;
+                       return path.centroid(d)[0] + 55;
                    }
                    else if(d.id.toString() == "Florida")
                    {
-                       return pathOne.centroid(d)[0] + 10;
+                       return path.centroid(d)[0] + 10;
                    }
                    else
                    {
-                       return pathOne.centroid(d)[0];
+                       return path.centroid(d)[0];
                    }
                })
                .attr("y", function(d){
@@ -262,8 +247,8 @@
                        d.id.toString() == "Rhode Island" ||
                        d.id.toString() == "Connecticut" )
                    {
-                       var point1 = pathOne.centroid(d)[0];
-                       var point2 = pathOne.centroid(d)[1];
+                       var point1 = path.centroid(d)[0];
+                       var point2 = path.centroid(d)[1];
                        svg.append("line")
                           .attr('x1', point1)
                           .attr('y1', point2)
@@ -271,13 +256,13 @@
                           .attr('y2', point2 + 30)
                           .attr("stroke-width", 2)
                           .attr("stroke", "black");
-                      return  pathOne.centroid(d)[1] + 40;
+                      return  path.centroid(d)[1] + 40;
                    }
                    else if( d.id.toString() == "District of Columbia" ||
                             d.id.toString() == "New Hampshire" )
                    {
-                       var point1 = pathOne.centroid(d)[0];
-                       var point2 = pathOne.centroid(d)[1];
+                       var point1 = path.centroid(d)[0];
+                       var point2 = path.centroid(d)[1];
                        svg.append("line")
                           .attr('x1', point1)
                           .attr('y1', point2)
@@ -285,12 +270,12 @@
                           .attr('y2', point2 + 45)
                           .attr("stroke-width", 2)
                           .attr("stroke", "black");
-                      return  pathOne.centroid(d)[1] + 55;
+                      return  path.centroid(d)[1] + 55;
                    }
                    else if( d.id.toString() == "Massachusetts" )
                    {
-                       var point1 = pathOne.centroid(d)[0];
-                       var point2 = pathOne.centroid(d)[1];
+                       var point1 = path.centroid(d)[0];
+                       var point2 = path.centroid(d)[1];
                        svg.append("line")
                           .attr('x1', point1)
                           .attr('y1', point2)
@@ -298,15 +283,15 @@
                           .attr('y2', point2 - 45)
                           .attr("stroke-width", 2)
                           .attr("stroke", "black");
-                      return  pathOne.centroid(d)[1] - 50;
+                      return  path.centroid(d)[1] - 50;
                    }
                    else if(d.id.toString() == "Florida")
                    {
-                       return pathOne.centroid(d)[1] + 10;
+                       return path.centroid(d)[1] + 10;
                    }
                    else
                    {
-                      return  pathOne.centroid(d)[1];
+                      return  path.centroid(d)[1];
                    }
                })
                .attr("text-anchor","middle")
@@ -374,14 +359,14 @@
                               return colorMap(d/10);
                           });
 
-            // Rectangle for when N/A square
+            // Rectangle for the N/A data
             svg.append('rect')
                .attr('width', legendRectSize)
                .attr('height', legendRectSize)
                .style('fill', "white")
                .style('stroke', "black")
                .attr('x', legendRectSize)
-               .attr('y', 436);
+               .attr('y', 536);
 
             // Add the text for the ranges
             legendDebtDisp.append('text')
@@ -395,9 +380,11 @@
             // Text for the N/A square
             svg.append('text')
                .attr('x', 40)
-               .attr('y', 450)
+               .attr('y', 550)
                .text("Data not available");
 
+            // Another scale for mapping the percentage of students in debt to
+            // a circle
             var radius = d3.scale.linear()
                            .domain([0, 1])
                            .range([0, 60]);
@@ -419,7 +406,8 @@
                                   .enter()
                                   .append("g");
 
-            // Create the circles
+            // Create the circles for the legend
+            // NOTE: cy is the y-axis location for a circle object
             legendBubble.append("circle")
                         .attr("cy", function(d) { return - radius(d); })
                         .attr("r", function(d) { return radius(d); })
@@ -427,8 +415,8 @@
                         .style('fill-opacity', 0.3);
 
             // Append the text for percentage in debt legend
-            // em (font size units), "dx" and "dy" are relative co-ordinates to
-            // the specified x, y
+            // NOTE: em (font size units), "dx" and "dy" are relative
+            // co-ordinates to the specified x, y
             legendBubble.append("text")
                         .attr("y", function(d) { return - 2 * radius(d); })
                         .attr("dy", "1.3em")
@@ -443,10 +431,18 @@
                         	.style("z-index", "10")
                         	.style("visibility", "hidden");
 
+            // Append the site where the data was obtained from
+            svg.append('text')
+               .attr('x', width/2)
+               .attr('y', 700)
+               .text("Data obtained from: http://college-insight.org/")
+               .attr("font-size", "14px")
+               .attr("fill", "black")
+
             // This is the callback function which is called when
             // d3.csv is called after loading the data
             function plot_points(data){
-                // Parse each row in the CSV file
+                // Parse each row in the CSV file into an array of objects
                 debtData = data.map(function(d){
                     return{
                         'state': d['Name'],
@@ -472,14 +468,14 @@
                   { yearInput: '2013', yearOutput: '2012-13'},
                 ]
 
-                // By default start at "2003-04", Public
-                modify(debtData, "2003-04", "Public");
-
-                // Default values
+                // Default values to start off with
                 var yearToParse = "2003-04";
                 var schoolTypeSelected = "Public";
 
-                // When the input range changes update the circle
+                // By default start at "2003-04", Public
+                modify(debtData, yearToParse, schoolTypeSelected);
+
+                // When the slider input range changes update the data
                 d3.select("#idYear").on("input", function() {
                     d3.select("#idYear-value").text( +this.value);
                     d3.select("#idYear").property("value", +this.value);
@@ -491,6 +487,7 @@
                         }
                     });
 
+                    // Call to modify the visual elements
                     modify(debtData, yearToParse, schoolTypeSelected);
                 });
 
@@ -511,22 +508,22 @@
             };
 
             // Function which is called repeatedly when the user changes
-            // the year or the school type on the interface
+            // the year or the school type using the interface
             function modify(debtData, year, schoolTypeSelected){
-                // Get the national data
+                // Get only the National data
                 var nationData = debtData.filter(function(d) {
                     var reg = new RegExp(" ","g");
                     return d.year === year && d.schooltype == schoolTypeSelected
                            && d.state.toString().replace(reg,"") == "Nation";
                 });
 
-                // Get the state data
+                // Get the state data without any National data
                 var filtered = debtData.filter(function(d) {
                     return d.year === year && d.schooltype == schoolTypeSelected
                            && d.state.toString() != "Nation";
                 });
 
-                // Remove the previous "National" related text
+                // Remove the "National" related text from the previous cycle
                 svg.selectAll("text.nationText").remove();
 
                 // Rectangle which contains National Data
@@ -568,7 +565,7 @@
                 });
 
                 // Using the filtered date, modify the state's color for avgdebt
-                // and changing the size of the bubble to indicate percentage of
+                // and change the size of the bubble to indicate percentage of
                 // people in debt.
                 filtered.forEach(function(d){
                     var reg = new RegExp(" ","g");
@@ -583,6 +580,7 @@
                         }
                     });
 
+                    // Remove any spaces
                     var stateName = d.state.replace(reg,"");
 
                     // Change the color of the state based on the average debt
@@ -606,26 +604,28 @@
                     });
                });
 
-               // Remove all the bubbles from the previous round
+               // Remove all the bubbles from the previous cycle
                svg.selectAll('g.bubble').remove();
 
-               // Append bubbles correspomnding to the percentage
+               // Append bubbles corresponding to the percentage in debt
                svg.append('g')
                   .attr("class", "bubble")
                   .selectAll("circle")
-                  .data(statesOne.features.sort(function(a, b){
-                      return pathOne.area(b) - pathOne.area(a);
+                  .data(states.features.sort(function(a, b){
+                      return path.area(b) - path.area(a);
                   }))
                   .enter()
                   .append("circle")
                   .attr("class", "symbol")
+                  // Make the tool tip visible
                   .on("mouseover", function(){
                       tooltip.style("visibility", "visible");
                   })
+                  // Actions to take when the mouse moves over the respective
+                  // bubbles associated with each state
 	              .on("mousemove", function(d){
-                      tooltip.style("top",
-                      (event.pageY - 10)+"px").style("left",
-                      (event.pageX + 10)+"px");
+                      tooltip.style("top",(event.pageY - 10)+"px")
+                             .style("left",(event.pageX + 10)+"px");
 
                       filtered.forEach(function(element){
                           var reg = new RegExp(" ","g");
@@ -643,18 +643,19 @@
                           }
                       });
                   })
+                  // Remove the tooltip when the mouse out of the bubble range
 	              .on("mouseout", function(){
                       tooltip.style("visibility", "hidden");
                   })
-                  .attr('cx', function(d) { return pathOne.centroid(d)[0]; })
-                  .attr('cy', function(d) { return pathOne.centroid(d)[1]; })
+                  .attr('cx', function(d) { return path.centroid(d)[0]; })
+                  .attr('cy', function(d) { return path.centroid(d)[1]; })
                   .attr('r', function(d) {
                       var radiusToSet;
                       filtered.forEach(function(element){
                           var reg = new RegExp(" ","g");
 
                           if((element.state.toString().toLowerCase().replace(reg, ""))
-                            === (d.id.toString().toLowerCase().replace(reg, "")) )
+                            === (d.id.toString().toLowerCase().replace(reg, "")))
                           {
                               if(!isNaN(element.perdebt))
                               {
@@ -693,6 +694,7 @@
         <input type="range" min="2004" max="2013" id="idYear">2013
     </p>
     <script type="text/javascript">
+        // Pre-defined to be 2004
         d3.select("#idYear-value").text(2004);
         d3.select("#idYear").property("value", 2004);
         // Use D3's JSON method to load in TopoJSON data and pass
