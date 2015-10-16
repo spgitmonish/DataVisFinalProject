@@ -1,56 +1,27 @@
 # Make Effective Data Visualization Final Project
 ### Summary
-After a lot of contemplation I finally decided on visualizing student debt.
-Using data I found on the website http://college-insight.org/, I created a map
-of the US states, with each state colored in a different shade of red to show
-average debt and a "bubble" to indicate the percentage of students in debt. The
-main point I am trying to convey with my visualization is that student debt
-has worsened over the years.
+After a lot of contemplation I finally decided on visualizing student debt. Using data I found on the website http://college-insight.org/, I created a map of the US states, with each state colored in a different shade of red to show average debt and a "bubble" to indicate the percentage of students in debt. The main point I am trying to convey with my visualization is that student debt has worsened over the years.
 
 ### Design
 #### Revision 1(http://bl.ocks.org/spgitmonish/raw/a63036ef024e1b27c8d3/)
-When I decided on visualizing student data across the US, I wanted to convey my
-message using a mix of color coding and size variations on a map of the US. It
-was pretty easy to get the information I needed to display the US states(for more
-information look at the Resources section). Once I created the map, I had to
-go through my .csv file which had the debt data to understand which fields to use
-for visually conveying the information.
+When I decided on visualizing student data across the US, I wanted to convey my message on a map of the US. It was pretty easy to get the information I needed to display the US states(for more information look at the Resources section). Once I created the map, I had to go through my .csv file which had the debt data to understand which fields to use for visually conveying the information.
 
-The two pieces of information I decided to convey are: _Average Debt in a State &
-Percentage of Students in Debt_.
+The two pieces of information I decided to convey were: _Average Debt in a State & Percentage of Students in Debt_.
 
-For the average debt I went for a change of color as my visual cue and for percentage
-in debt I went for varying sized circles. After doing a little bit of online
-research I found a pre-defined color scale d3.scale.category10() to use for the
-different ranges of the average debt($0 - $54,999). I decided to use unique
-colors for easy correlation(also added a legend to help the user correlate).
-On the same map I used a custom scale to convert percentage of students in debt
-to varying sized circles. These circles are displayed on top of each state,
-approximately centered at the center of each state.
+I definitely had to think about what visual cues/encodings I wanted to use for my visualization. I was pretty conviced that a color encoding would be one of the most effective cues to use for conveying my message. I wasn't surely initially whether I wanted to use the color encoding for Average Student Debt or for Percentage of Students in Debt. After using color encoding for both, I decided that it would be best to use color coding for Average Student debt because based on the data, the student debt increased but the percentage of students in debt didn't necessarily increase year by year. Once that decision was made, I decided Percentage of Students in Debt would be an additional piece of information I wanted to display and after looking at a few options(like an option on the map to toggle for the two types of data) decided that a "bubble" would be a nice addition to overlay on the map. Since percentage has only a limited range, it would the "bubbles" limited in size and wouldn't add too much clutter on the map(this is also the reason why a squareroot scale in the code didn't make sense to me when using it for the radius of the bubble because the range is so limited). 
 
-The data I have varies based on the academic year(for example "2003-04") and also
-based on the type of school("Private" or "Public"). For better user interaction,
-I went for a slider for the user to change the year and radio buttons to change
-the school type.
+With my encodings decisions finalized, I did a little bit of online research and found a pre-defined color scale d3.scale.category10() to use for the different ranges of the average debt($0 - $54,999). I decided to use unique colors for easy correlation(also added a legend to help the user correlate). On the same map I used a custom scale to convert percentage of students in debt to varying sized circles. These circles are displayed on top of each state, approximately centered at the center of each state.
+
+The data I have varies based on the academic year(for example "2003-04") and also based on the type of school("Private" or "Public"). For better user interaction, I went for a slider for the user to change the year and radio buttons to change the school type.
 
 #### Revision 2(http://bl.ocks.org/spgitmonish/raw/efbe68d690f006e3f2b0/)
-After going through all the feedback from my friends, I decided to make significant
-changes in my visualization. One of the main takeaways for me was to change the color
-scheme from random colors to a gradient, that way as the user goes from year to year,
-the increase in debt is more evident i.e. a heat map!.
+After going through all the feedback from my friends, I decided to make significant changes in my visualization. One of the main takeaways for me was to change the color scheme from random colors to a gradient, that way as the user goes from year to year, the increase in debt is more evident i.e. a heat map!.
 
-From the feedback it was pretty obvious that users had a tough time understanding
-the size of the circle and correlating it to the percentage. So to make this more
-obvious for the users, I added a tooltip and a legend. The tooltip displays more detailed
-information when the user hovers using the mouse over the circles.
+From the feedback it was pretty obvious that users had a tough time understanding the size of the circle and correlating it to the percentage. So to make this more obvious for the users, I added a tooltip and a legend. The tooltip displays more detailed information when the user hovers using the mouse over the circles because Percentage of Students is only an additional piece of information to go along with Average Debt of Students. 
 
-Other modifications I made was to add a legend entry to help the user correlate
-for when the data was not available for the selected year and school type(this was
-again in response to the universal feedback). Since a couple of users were curious as to
-where I got my data, I also added my source at the bottom of the map.
+Other modifications I made was to add a legend entry to help the user correlate for when the data was not available for the selected year and school type(this was again in response to the universal feedback). Since a couple of users were curious as to where I got my data, I also added my source at the bottom of the map.
 
-Finally decided to display "National" data in a little box as I liked the suggestion
-from User 1.
+Finally decided to display "National" data in a little box as I liked the suggestion from User 1.
 
 ### Feedback
 #### User 1  
