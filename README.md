@@ -3,7 +3,7 @@
 After a lot of contemplation I finally decided on visualizing student debt. Using data I found on the website http://college-insight.org/, I created a map of the US states, with each state colored in a different shade of red to show average debt and a "bubble" to indicate the percentage of students in debt. The main point I am trying to convey with my visualization is that student debt has worsened over the years.
 
 ### Design
-#### Revision 1(http://bl.ocks.org/spgitmonish/raw/a63036ef024e1b27c8d3/)
+#### Revision 1( http://bl.ocks.org/spgitmonish/raw/a63036ef024e1b27c8d3/ )
 When I decided on visualizing student data across the US, I wanted to convey my message on a map of the US. It was pretty easy to get the information I needed to display the US states(for more information look at the Resources section). Once I created the map, I had to go through my .csv file which had the debt data to understand which fields to use for visually conveying the information.
 
 The two pieces of information I decided to convey were: _Average Debt in a State & Percentage of Students in Debt_.
@@ -14,7 +14,7 @@ With my encodings decisions finalized, I did a little bit of online research and
 
 The data I have varies based on the academic year(for example "2003-04") and also based on the type of school("Private" or "Public"). For better user interaction, I went for a slider for the user to change the year and radio buttons to change the school type.
 
-#### Revision 2(http://bl.ocks.org/spgitmonish/raw/efbe68d690f006e3f2b0/)
+#### Revision 2( http://bl.ocks.org/spgitmonish/raw/efbe68d690f006e3f2b0/ )
 After going through all the feedback from my friends, I decided to make significant changes in my visualization. One of the main takeaways for me was to change the color scheme from random colors to a gradient, that way as the user goes from year to year, the increase in debt is more evident i.e. a heat map!.
 
 From the feedback it was pretty obvious that users had a tough time understanding the size of the circle and correlating it to the percentage. So to make this more obvious for the users, I added a tooltip and a legend. The tooltip displays more detailed information when the user hovers using the mouse over the circles because Percentage of Students is only an additional piece of information to go along with Average Debt of Students. 
