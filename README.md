@@ -1,4 +1,4 @@
-# A visualization of Student Debt
+# A Visualization of Student Debt
 ### Summary
 After a lot of contemplation I finally decided on visualizing student debt. Using data I found on the website http://college-insight.org/, I created a map of the US states, with each state colored in a different shade of red to show average debt and a "bubble" to indicate the percentage of students in debt. The main point I am trying to convey with my visualization is that student debt has worsened over the years.
 
